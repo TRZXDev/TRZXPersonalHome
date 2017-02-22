@@ -30,30 +30,12 @@
 		B7C0B85C1E5D6A160030D138 /* CeHuaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7C01E5D6A160030D138 /* CeHuaTableViewCell.m */; };
 		B7C0B85D1E5D6A160030D138 /* CeHuaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7C11E5D6A160030D138 /* CeHuaTableViewCell.xib */; };
 		B7C0B85E1E5D6A160030D138 /* GifView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7C31E5D6A160030D138 /* GifView.m */; };
-		B7C0B85F1E5D6A160030D138 /* IncubateVIPMsgTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7C51E5D6A160030D138 /* IncubateVIPMsgTableViewCell.m */; };
-		B7C0B8601E5D6A160030D138 /* IncubateVIPMsgTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7C61E5D6A160030D138 /* IncubateVIPMsgTableViewCell.xib */; };
-		B7C0B8611E5D6A160030D138 /* IncubateVIPTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7C81E5D6A160030D138 /* IncubateVIPTitleTableViewCell.m */; };
-		B7C0B8621E5D6A160030D138 /* IncubateVIPTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7C91E5D6A160030D138 /* IncubateVIPTitleTableViewCell.xib */; };
-		B7C0B8631E5D6A160030D138 /* LianXiKeFuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7CB1E5D6A160030D138 /* LianXiKeFuTableViewCell.m */; };
-		B7C0B8641E5D6A160030D138 /* LianXiKeFuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7CC1E5D6A160030D138 /* LianXiKeFuTableViewCell.xib */; };
-		B7C0B8651E5D6A160030D138 /* NewSGZTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7CE1E5D6A160030D138 /* NewSGZTCollectionView.m */; };
-		B7C0B8661E5D6A160030D138 /* NewSGZTCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7CF1E5D6A160030D138 /* NewSGZTCollectionView.xib */; };
-		B7C0B8671E5D6A160030D138 /* NewWenDaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7D11E5D6A160030D138 /* NewWenDaTableViewCell.m */; };
-		B7C0B8681E5D6A160030D138 /* NewWenDaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7D21E5D6A160030D138 /* NewWenDaTableViewCell.xib */; };
 		B7C0B8691E5D6A160030D138 /* PersonalBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7D41E5D6A160030D138 /* PersonalBottomView.m */; };
 		B7C0B86A1E5D6A160030D138 /* PersonalBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7D51E5D6A160030D138 /* PersonalBottomView.xib */; };
-		B7C0B86B1E5D6A160030D138 /* PersonalChengJiuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7D71E5D6A160030D138 /* PersonalChengJiuCell.m */; };
-		B7C0B86C1E5D6A160030D138 /* PersonalChengJiuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7D81E5D6A160030D138 /* PersonalChengJiuCell.xib */; };
-		B7C0B86D1E5D6A160030D138 /* PersonalCJXMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7DA1E5D6A160030D138 /* PersonalCJXMCell.m */; };
-		B7C0B86E1E5D6A160030D138 /* PersonalCJXMCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7DB1E5D6A160030D138 /* PersonalCJXMCell.xib */; };
 		B7C0B86F1E5D6A160030D138 /* PersonalCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7DD1E5D6A160030D138 /* PersonalCollectionView.m */; };
 		B7C0B8701E5D6A160030D138 /* PersonalCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7DE1E5D6A160030D138 /* PersonalCollectionView.xib */; };
-		B7C0B8711E5D6A170030D138 /* PersonalGuanZhuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7E01E5D6A160030D138 /* PersonalGuanZhuCell.m */; };
-		B7C0B8721E5D6A170030D138 /* PersonalGuanZhuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7E11E5D6A160030D138 /* PersonalGuanZhuCell.xib */; };
 		B7C0B8731E5D6A170030D138 /* PersonalJianJieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7E31E5D6A160030D138 /* PersonalJianJieCell.m */; };
 		B7C0B8741E5D6A170030D138 /* PersonalJianJieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7E41E5D6A160030D138 /* PersonalJianJieCell.xib */; };
-		B7C0B8751E5D6A170030D138 /* PersonaljiaoyiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7E61E5D6A160030D138 /* PersonaljiaoyiCell.m */; };
-		B7C0B8761E5D6A170030D138 /* PersonaljiaoyiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7E71E5D6A160030D138 /* PersonaljiaoyiCell.xib */; };
 		B7C0B8771E5D6A170030D138 /* PersonalJiaoYiTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7E91E5D6A160030D138 /* PersonalJiaoYiTabCell.m */; };
 		B7C0B8781E5D6A170030D138 /* PersonalJiaoYiTabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7EA1E5D6A160030D138 /* PersonalJiaoYiTabCell.xib */; };
 		B7C0B8791E5D6A170030D138 /* PersonalTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7EC1E5D6A160030D138 /* PersonalTopView.m */; };
@@ -70,18 +52,12 @@
 		B7C0B8841E5D6A170030D138 /* StudentJianJieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7FC1E5D6A160030D138 /* StudentJianJieCell.xib */; };
 		B7C0B8851E5D6A170030D138 /* StudentJingLiBTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7FE1E5D6A160030D138 /* StudentJingLiBTCell.m */; };
 		B7C0B8861E5D6A170030D138 /* StudentJingLiBTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7FF1E5D6A160030D138 /* StudentJingLiBTCell.xib */; };
-		B7C0B8871E5D6A170030D138 /* WoDaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B8011E5D6A160030D138 /* WoDaTableViewCell.m */; };
-		B7C0B8881E5D6A170030D138 /* WoDaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8021E5D6A160030D138 /* WoDaTableViewCell.xib */; };
-		B7C0B8891E5D6A170030D138 /* WoWenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B8041E5D6A160030D138 /* WoWenTableViewCell.m */; };
-		B7C0B88A1E5D6A170030D138 /* WoWenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8051E5D6A160030D138 /* WoWenTableViewCell.xib */; };
 		B7C0B88B1E5D6A170030D138 /* xiaoxi2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B8071E5D6A160030D138 /* xiaoxi2Cell.m */; };
 		B7C0B88C1E5D6A170030D138 /* xiaoxi2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8081E5D6A160030D138 /* xiaoxi2Cell.xib */; };
 		B7C0B88D1E5D6A170030D138 /* xiaoxiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B80A1E5D6A160030D138 /* xiaoxiCell.m */; };
 		B7C0B88E1E5D6A170030D138 /* xiaoxiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B80B1E5D6A160030D138 /* xiaoxiCell.xib */; };
 		B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B80D1E5D6A160030D138 /* xihuanTableViewCell.m */; };
 		B7C0B8901E5D6A170030D138 /* xihuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B80E1E5D6A160030D138 /* xihuanTableViewCell.xib */; };
-		B7C0B8911E5D6A170030D138 /* zhanshiVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B8101E5D6A160030D138 /* zhanshiVeiw.m */; };
-		B7C0B8921E5D6A170030D138 /* zhanshiVeiw.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8111E5D6A160030D138 /* zhanshiVeiw.xib */; };
 		B7C0B8931E5D6A170030D138 /* ZHScrollViewLB.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B8131E5D6A160030D138 /* ZHScrollViewLB.m */; };
 		B7C0B8D11E5D70610030D138 /* bianjiG.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8951E5D70610030D138 /* bianjiG.png */; };
 		B7C0B8D21E5D70610030D138 /* bianjiW.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8961E5D70610030D138 /* bianjiW.png */; };
@@ -145,6 +121,9 @@
 		B7C0B90C1E5D70610030D138 /* 首页头像.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8D01E5D70610030D138 /* 首页头像.png */; };
 		B7C0B90E1E5D74C90030D138 /* 路演003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B90D1E5D74C90030D138 /* 路演003@2x.png */; };
 		B7C0B9101E5D74E50030D138 /* 挂牌企业@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B90F1E5D74E50030D138 /* 挂牌企业@2x.png */; };
+		B7C0B9121E5D76130030D138 /* xlb02.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B9111E5D76130030D138 /* xlb02.png */; };
+		B7C0B9141E5D76610030D138 /* 个人介绍.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B9131E5D76610030D138 /* 个人介绍.png */; };
+		B7C0B9161E5D76AA0030D138 /* 回看.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B9151E5D76AA0030D138 /* 回看.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,42 +186,15 @@
 		B7C0B7C11E5D6A160030D138 /* CeHuaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CeHuaTableViewCell.xib; sourceTree = "<group>"; };
 		B7C0B7C21E5D6A160030D138 /* GifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifView.h; sourceTree = "<group>"; };
 		B7C0B7C31E5D6A160030D138 /* GifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifView.m; sourceTree = "<group>"; };
-		B7C0B7C41E5D6A160030D138 /* IncubateVIPMsgTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncubateVIPMsgTableViewCell.h; sourceTree = "<group>"; };
-		B7C0B7C51E5D6A160030D138 /* IncubateVIPMsgTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncubateVIPMsgTableViewCell.m; sourceTree = "<group>"; };
-		B7C0B7C61E5D6A160030D138 /* IncubateVIPMsgTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncubateVIPMsgTableViewCell.xib; sourceTree = "<group>"; };
-		B7C0B7C71E5D6A160030D138 /* IncubateVIPTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncubateVIPTitleTableViewCell.h; sourceTree = "<group>"; };
-		B7C0B7C81E5D6A160030D138 /* IncubateVIPTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncubateVIPTitleTableViewCell.m; sourceTree = "<group>"; };
-		B7C0B7C91E5D6A160030D138 /* IncubateVIPTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncubateVIPTitleTableViewCell.xib; sourceTree = "<group>"; };
-		B7C0B7CA1E5D6A160030D138 /* LianXiKeFuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LianXiKeFuTableViewCell.h; sourceTree = "<group>"; };
-		B7C0B7CB1E5D6A160030D138 /* LianXiKeFuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LianXiKeFuTableViewCell.m; sourceTree = "<group>"; };
-		B7C0B7CC1E5D6A160030D138 /* LianXiKeFuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LianXiKeFuTableViewCell.xib; sourceTree = "<group>"; };
-		B7C0B7CD1E5D6A160030D138 /* NewSGZTCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSGZTCollectionView.h; sourceTree = "<group>"; };
-		B7C0B7CE1E5D6A160030D138 /* NewSGZTCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSGZTCollectionView.m; sourceTree = "<group>"; };
-		B7C0B7CF1E5D6A160030D138 /* NewSGZTCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewSGZTCollectionView.xib; sourceTree = "<group>"; };
-		B7C0B7D01E5D6A160030D138 /* NewWenDaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWenDaTableViewCell.h; sourceTree = "<group>"; };
-		B7C0B7D11E5D6A160030D138 /* NewWenDaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWenDaTableViewCell.m; sourceTree = "<group>"; };
-		B7C0B7D21E5D6A160030D138 /* NewWenDaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewWenDaTableViewCell.xib; sourceTree = "<group>"; };
 		B7C0B7D31E5D6A160030D138 /* PersonalBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalBottomView.h; sourceTree = "<group>"; };
 		B7C0B7D41E5D6A160030D138 /* PersonalBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalBottomView.m; sourceTree = "<group>"; };
 		B7C0B7D51E5D6A160030D138 /* PersonalBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalBottomView.xib; sourceTree = "<group>"; };
-		B7C0B7D61E5D6A160030D138 /* PersonalChengJiuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalChengJiuCell.h; sourceTree = "<group>"; };
-		B7C0B7D71E5D6A160030D138 /* PersonalChengJiuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalChengJiuCell.m; sourceTree = "<group>"; };
-		B7C0B7D81E5D6A160030D138 /* PersonalChengJiuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalChengJiuCell.xib; sourceTree = "<group>"; };
-		B7C0B7D91E5D6A160030D138 /* PersonalCJXMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCJXMCell.h; sourceTree = "<group>"; };
-		B7C0B7DA1E5D6A160030D138 /* PersonalCJXMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCJXMCell.m; sourceTree = "<group>"; };
-		B7C0B7DB1E5D6A160030D138 /* PersonalCJXMCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalCJXMCell.xib; sourceTree = "<group>"; };
 		B7C0B7DC1E5D6A160030D138 /* PersonalCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCollectionView.h; sourceTree = "<group>"; };
 		B7C0B7DD1E5D6A160030D138 /* PersonalCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCollectionView.m; sourceTree = "<group>"; };
 		B7C0B7DE1E5D6A160030D138 /* PersonalCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalCollectionView.xib; sourceTree = "<group>"; };
-		B7C0B7DF1E5D6A160030D138 /* PersonalGuanZhuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalGuanZhuCell.h; sourceTree = "<group>"; };
-		B7C0B7E01E5D6A160030D138 /* PersonalGuanZhuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalGuanZhuCell.m; sourceTree = "<group>"; };
-		B7C0B7E11E5D6A160030D138 /* PersonalGuanZhuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalGuanZhuCell.xib; sourceTree = "<group>"; };
 		B7C0B7E21E5D6A160030D138 /* PersonalJianJieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalJianJieCell.h; sourceTree = "<group>"; };
 		B7C0B7E31E5D6A160030D138 /* PersonalJianJieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalJianJieCell.m; sourceTree = "<group>"; };
 		B7C0B7E41E5D6A160030D138 /* PersonalJianJieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalJianJieCell.xib; sourceTree = "<group>"; };
-		B7C0B7E51E5D6A160030D138 /* PersonaljiaoyiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonaljiaoyiCell.h; sourceTree = "<group>"; };
-		B7C0B7E61E5D6A160030D138 /* PersonaljiaoyiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonaljiaoyiCell.m; sourceTree = "<group>"; };
-		B7C0B7E71E5D6A160030D138 /* PersonaljiaoyiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonaljiaoyiCell.xib; sourceTree = "<group>"; };
 		B7C0B7E81E5D6A160030D138 /* PersonalJiaoYiTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalJiaoYiTabCell.h; sourceTree = "<group>"; };
 		B7C0B7E91E5D6A160030D138 /* PersonalJiaoYiTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalJiaoYiTabCell.m; sourceTree = "<group>"; };
 		B7C0B7EA1E5D6A160030D138 /* PersonalJiaoYiTabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalJiaoYiTabCell.xib; sourceTree = "<group>"; };
@@ -267,12 +219,6 @@
 		B7C0B7FD1E5D6A160030D138 /* StudentJingLiBTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentJingLiBTCell.h; sourceTree = "<group>"; };
 		B7C0B7FE1E5D6A160030D138 /* StudentJingLiBTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentJingLiBTCell.m; sourceTree = "<group>"; };
 		B7C0B7FF1E5D6A160030D138 /* StudentJingLiBTCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudentJingLiBTCell.xib; sourceTree = "<group>"; };
-		B7C0B8001E5D6A160030D138 /* WoDaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoDaTableViewCell.h; sourceTree = "<group>"; };
-		B7C0B8011E5D6A160030D138 /* WoDaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoDaTableViewCell.m; sourceTree = "<group>"; };
-		B7C0B8021E5D6A160030D138 /* WoDaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoDaTableViewCell.xib; sourceTree = "<group>"; };
-		B7C0B8031E5D6A160030D138 /* WoWenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWenTableViewCell.h; sourceTree = "<group>"; };
-		B7C0B8041E5D6A160030D138 /* WoWenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoWenTableViewCell.m; sourceTree = "<group>"; };
-		B7C0B8051E5D6A160030D138 /* WoWenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoWenTableViewCell.xib; sourceTree = "<group>"; };
 		B7C0B8061E5D6A160030D138 /* xiaoxi2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xiaoxi2Cell.h; sourceTree = "<group>"; };
 		B7C0B8071E5D6A160030D138 /* xiaoxi2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xiaoxi2Cell.m; sourceTree = "<group>"; };
 		B7C0B8081E5D6A160030D138 /* xiaoxi2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xiaoxi2Cell.xib; sourceTree = "<group>"; };
@@ -282,9 +228,6 @@
 		B7C0B80C1E5D6A160030D138 /* xihuanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xihuanTableViewCell.h; sourceTree = "<group>"; };
 		B7C0B80D1E5D6A160030D138 /* xihuanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xihuanTableViewCell.m; sourceTree = "<group>"; };
 		B7C0B80E1E5D6A160030D138 /* xihuanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xihuanTableViewCell.xib; sourceTree = "<group>"; };
-		B7C0B80F1E5D6A160030D138 /* zhanshiVeiw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhanshiVeiw.h; sourceTree = "<group>"; };
-		B7C0B8101E5D6A160030D138 /* zhanshiVeiw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhanshiVeiw.m; sourceTree = "<group>"; };
-		B7C0B8111E5D6A160030D138 /* zhanshiVeiw.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zhanshiVeiw.xib; sourceTree = "<group>"; };
 		B7C0B8121E5D6A160030D138 /* ZHScrollViewLB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHScrollViewLB.h; sourceTree = "<group>"; };
 		B7C0B8131E5D6A160030D138 /* ZHScrollViewLB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHScrollViewLB.m; sourceTree = "<group>"; };
 		B7C0B8951E5D70610030D138 /* bianjiG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bianjiG.png; sourceTree = "<group>"; };
@@ -349,6 +292,9 @@
 		B7C0B8D01E5D70610030D138 /* 首页头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页头像.png"; sourceTree = "<group>"; };
 		B7C0B90D1E5D74C90030D138 /* 路演003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路演003@2x.png"; sourceTree = "<group>"; };
 		B7C0B90F1E5D74E50030D138 /* 挂牌企业@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "挂牌企业@2x.png"; sourceTree = "<group>"; };
+		B7C0B9111E5D76130030D138 /* xlb02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xlb02.png; sourceTree = "<group>"; };
+		B7C0B9131E5D76610030D138 /* 个人介绍.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人介绍.png"; sourceTree = "<group>"; };
+		B7C0B9151E5D76AA0030D138 /* 回看.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "回看.png"; sourceTree = "<group>"; };
 		F4DC5E20D1DDAAB4BF3EAD7C /* Pods_TRZXPersonalHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRZXPersonalHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -504,42 +450,15 @@
 				B7C0B7C11E5D6A160030D138 /* CeHuaTableViewCell.xib */,
 				B7C0B7C21E5D6A160030D138 /* GifView.h */,
 				B7C0B7C31E5D6A160030D138 /* GifView.m */,
-				B7C0B7C41E5D6A160030D138 /* IncubateVIPMsgTableViewCell.h */,
-				B7C0B7C51E5D6A160030D138 /* IncubateVIPMsgTableViewCell.m */,
-				B7C0B7C61E5D6A160030D138 /* IncubateVIPMsgTableViewCell.xib */,
-				B7C0B7C71E5D6A160030D138 /* IncubateVIPTitleTableViewCell.h */,
-				B7C0B7C81E5D6A160030D138 /* IncubateVIPTitleTableViewCell.m */,
-				B7C0B7C91E5D6A160030D138 /* IncubateVIPTitleTableViewCell.xib */,
-				B7C0B7CA1E5D6A160030D138 /* LianXiKeFuTableViewCell.h */,
-				B7C0B7CB1E5D6A160030D138 /* LianXiKeFuTableViewCell.m */,
-				B7C0B7CC1E5D6A160030D138 /* LianXiKeFuTableViewCell.xib */,
-				B7C0B7CD1E5D6A160030D138 /* NewSGZTCollectionView.h */,
-				B7C0B7CE1E5D6A160030D138 /* NewSGZTCollectionView.m */,
-				B7C0B7CF1E5D6A160030D138 /* NewSGZTCollectionView.xib */,
-				B7C0B7D01E5D6A160030D138 /* NewWenDaTableViewCell.h */,
-				B7C0B7D11E5D6A160030D138 /* NewWenDaTableViewCell.m */,
-				B7C0B7D21E5D6A160030D138 /* NewWenDaTableViewCell.xib */,
 				B7C0B7D31E5D6A160030D138 /* PersonalBottomView.h */,
 				B7C0B7D41E5D6A160030D138 /* PersonalBottomView.m */,
 				B7C0B7D51E5D6A160030D138 /* PersonalBottomView.xib */,
-				B7C0B7D61E5D6A160030D138 /* PersonalChengJiuCell.h */,
-				B7C0B7D71E5D6A160030D138 /* PersonalChengJiuCell.m */,
-				B7C0B7D81E5D6A160030D138 /* PersonalChengJiuCell.xib */,
-				B7C0B7D91E5D6A160030D138 /* PersonalCJXMCell.h */,
-				B7C0B7DA1E5D6A160030D138 /* PersonalCJXMCell.m */,
-				B7C0B7DB1E5D6A160030D138 /* PersonalCJXMCell.xib */,
 				B7C0B7DC1E5D6A160030D138 /* PersonalCollectionView.h */,
 				B7C0B7DD1E5D6A160030D138 /* PersonalCollectionView.m */,
 				B7C0B7DE1E5D6A160030D138 /* PersonalCollectionView.xib */,
-				B7C0B7DF1E5D6A160030D138 /* PersonalGuanZhuCell.h */,
-				B7C0B7E01E5D6A160030D138 /* PersonalGuanZhuCell.m */,
-				B7C0B7E11E5D6A160030D138 /* PersonalGuanZhuCell.xib */,
 				B7C0B7E21E5D6A160030D138 /* PersonalJianJieCell.h */,
 				B7C0B7E31E5D6A160030D138 /* PersonalJianJieCell.m */,
 				B7C0B7E41E5D6A160030D138 /* PersonalJianJieCell.xib */,
-				B7C0B7E51E5D6A160030D138 /* PersonaljiaoyiCell.h */,
-				B7C0B7E61E5D6A160030D138 /* PersonaljiaoyiCell.m */,
-				B7C0B7E71E5D6A160030D138 /* PersonaljiaoyiCell.xib */,
 				B7C0B7E81E5D6A160030D138 /* PersonalJiaoYiTabCell.h */,
 				B7C0B7E91E5D6A160030D138 /* PersonalJiaoYiTabCell.m */,
 				B7C0B7EA1E5D6A160030D138 /* PersonalJiaoYiTabCell.xib */,
@@ -564,12 +483,6 @@
 				B7C0B7FD1E5D6A160030D138 /* StudentJingLiBTCell.h */,
 				B7C0B7FE1E5D6A160030D138 /* StudentJingLiBTCell.m */,
 				B7C0B7FF1E5D6A160030D138 /* StudentJingLiBTCell.xib */,
-				B7C0B8001E5D6A160030D138 /* WoDaTableViewCell.h */,
-				B7C0B8011E5D6A160030D138 /* WoDaTableViewCell.m */,
-				B7C0B8021E5D6A160030D138 /* WoDaTableViewCell.xib */,
-				B7C0B8031E5D6A160030D138 /* WoWenTableViewCell.h */,
-				B7C0B8041E5D6A160030D138 /* WoWenTableViewCell.m */,
-				B7C0B8051E5D6A160030D138 /* WoWenTableViewCell.xib */,
 				B7C0B8061E5D6A160030D138 /* xiaoxi2Cell.h */,
 				B7C0B8071E5D6A160030D138 /* xiaoxi2Cell.m */,
 				B7C0B8081E5D6A160030D138 /* xiaoxi2Cell.xib */,
@@ -579,9 +492,6 @@
 				B7C0B80C1E5D6A160030D138 /* xihuanTableViewCell.h */,
 				B7C0B80D1E5D6A160030D138 /* xihuanTableViewCell.m */,
 				B7C0B80E1E5D6A160030D138 /* xihuanTableViewCell.xib */,
-				B7C0B80F1E5D6A160030D138 /* zhanshiVeiw.h */,
-				B7C0B8101E5D6A160030D138 /* zhanshiVeiw.m */,
-				B7C0B8111E5D6A160030D138 /* zhanshiVeiw.xib */,
 				B7C0B8121E5D6A160030D138 /* ZHScrollViewLB.h */,
 				B7C0B8131E5D6A160030D138 /* ZHScrollViewLB.m */,
 			);
@@ -591,6 +501,9 @@
 		B7C0B8941E5D70610030D138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B7C0B9151E5D76AA0030D138 /* 回看.png */,
+				B7C0B9131E5D76610030D138 /* 个人介绍.png */,
+				B7C0B9111E5D76130030D138 /* xlb02.png */,
 				B7C0B90F1E5D74E50030D138 /* 挂牌企业@2x.png */,
 				B7C0B90D1E5D74C90030D138 /* 路演003@2x.png */,
 				B7C0B8951E5D70610030D138 /* bianjiG.png */,
@@ -774,7 +687,6 @@
 				B7C0B8E31E5D70610030D138 /* 官.png in Resources */,
 				B7C0B8D11E5D70610030D138 /* bianjiG.png in Resources */,
 				B7C0B7441E5D610E0030D138 /* LaunchScreen.storyboard in Resources */,
-				B7C0B8881E5D6A170030D138 /* WoDaTableViewCell.xib in Resources */,
 				B7C0B90A1E5D70610030D138 /* 预览商业计划书@2x.png in Resources */,
 				B7C0B8841E5D6A170030D138 /* StudentJianJieCell.xib in Resources */,
 				B7C0B90E1E5D74C90030D138 /* 路演003@2x.png in Resources */,
@@ -797,22 +709,18 @@
 				B7C0B8DD1E5D70610030D138 /* 加好友1@2x.png in Resources */,
 				B7C0B9081E5D70610030D138 /* 钱包@2x.png in Resources */,
 				B7C0B8821E5D6A170030D138 /* presonalNavgationViw.xib in Resources */,
-				B7C0B8601E5D6A160030D138 /* IncubateVIPMsgTableViewCell.xib in Resources */,
-				B7C0B86C1E5D6A160030D138 /* PersonalChengJiuCell.xib in Resources */,
 				B7C0B8DE1E5D70610030D138 /* 发布项目@2x.png in Resources */,
 				B7C0B8EE1E5D70610030D138 /* 我的专家@3x.png in Resources */,
 				B7C0B8E81E5D70610030D138 /* 延展@2x.png in Resources */,
 				B7C0B9071E5D70610030D138 /* 返回白.png in Resources */,
 				B7C0B86A1E5D6A160030D138 /* PersonalBottomView.xib in Resources */,
 				B7C0B8F11E5D70610030D138 /* 我的发布@2x.png in Resources */,
-				B7C0B8641E5D6A160030D138 /* LianXiKeFuTableViewCell.xib in Resources */,
 				B7C0B8D31E5D70610030D138 /* investor_BP@1x.png in Resources */,
 				B7C0B8E01E5D70610030D138 /* 商城@3x.png in Resources */,
 				B7C0B8FD1E5D70610030D138 /* 我的项目@3x.png in Resources */,
 				B7C0B8E91E5D70610030D138 /* 延展bai@1x.png in Resources */,
-				B7C0B8661E5D6A160030D138 /* NewSGZTCollectionView.xib in Resources */,
 				B7C0B8FB1E5D70610030D138 /* 我的问答@2x.png in Resources */,
-				B7C0B8681E5D6A160030D138 /* NewWenDaTableViewCell.xib in Resources */,
+				B7C0B9161E5D76AA0030D138 /* 回看.png in Resources */,
 				B7C0B9001E5D70610030D138 /* 指南@2x.png in Resources */,
 				B7C0B8F31E5D70610030D138 /* 我的团队@2x.png in Resources */,
 				B7C0B8E71E5D70610030D138 /* 展位图1.png in Resources */,
@@ -830,7 +738,6 @@
 				B7C0B9101E5D74E50030D138 /* 挂牌企业@2x.png in Resources */,
 				B7C0B8E61E5D70610030D138 /* 展位图.png in Resources */,
 				B7C0B8FF1E5D70610030D138 /* 我需要的资源.png in Resources */,
-				B7C0B8621E5D6A160030D138 /* IncubateVIPTitleTableViewCell.xib in Resources */,
 				B7C0B8E21E5D70610030D138 /* 孵化会员.png in Resources */,
 				B7C0B90B1E5D70610030D138 /* 首页g.png in Resources */,
 				B7C0B8E41E5D70610030D138 /* 客服中心@2x.png in Resources */,
@@ -838,29 +745,26 @@
 				B7C0B9051E5D70610030D138 /* 私信2@2x.png in Resources */,
 				B7C0B88E1E5D6A170030D138 /* xiaoxiCell.xib in Resources */,
 				B7C0B8901E5D6A170030D138 /* xihuanTableViewCell.xib in Resources */,
+				B7C0B9141E5D76610030D138 /* 个人介绍.png in Resources */,
 				B7C0B87C1E5D6A170030D138 /* PersonalZBCollectionView.xib in Resources */,
-				B7C0B86E1E5D6A160030D138 /* PersonalCJXMCell.xib in Resources */,
-				B7C0B88A1E5D6A170030D138 /* WoWenTableViewCell.xib in Resources */,
 				B7C0B8E11E5D70610030D138 /* 女.png in Resources */,
 				B7C0B8591E5D6A160030D138 /* CeHuaCollectionViewCell.xib in Resources */,
 				B7C0B8D71E5D70610030D138 /* shenniu.gif in Resources */,
 				B7C0B8DA1E5D70610030D138 /* 个人主页图@1x.png in Resources */,
 				B7C0B8ED1E5D70610030D138 /* 我的专家@2x.png in Resources */,
-				B7C0B8921E5D6A170030D138 /* zhanshiVeiw.xib in Resources */,
 				B7C0B8D51E5D70610030D138 /* shareG.png in Resources */,
 				B7C0B8D91E5D70610030D138 /* 一键认证@2x.png in Resources */,
-				B7C0B8761E5D6A170030D138 /* PersonaljiaoyiCell.xib in Resources */,
 				B7C0B8861E5D6A170030D138 /* StudentJingLiBTCell.xib in Resources */,
 				B7C0B8781E5D6A170030D138 /* PersonalJiaoYiTabCell.xib in Resources */,
 				B7C0B9031E5D70610030D138 /* 收藏@3x.png in Resources */,
 				B7C0B9061E5D70610030D138 /* 返回.png in Resources */,
 				B7C0B8FE1E5D70610030D138 /* 我要讲课@2x.png in Resources */,
+				B7C0B9121E5D76130030D138 /* xlb02.png in Resources */,
 				B7C0B8FC1E5D70610030D138 /* 我的项目@2x.png in Resources */,
 				B7C0B8F21E5D70610030D138 /* 我的发布@3x.png in Resources */,
 				B7C0B9011E5D70610030D138 /* 指南@3x.png in Resources */,
 				B7C0B8F01E5D70610030D138 /* 我的主题@2x.png in Resources */,
 				B7C0B9021E5D70610030D138 /* 收藏@2x.png in Resources */,
-				B7C0B8721E5D6A170030D138 /* PersonalGuanZhuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,38 +842,26 @@
 				B7C0B8521E5D6A160030D138 /* PersonalModell.m in Sources */,
 				B7C0B87B1E5D6A170030D138 /* PersonalZBCollectionView.m in Sources */,
 				B7C0B88D1E5D6A170030D138 /* xiaoxiCell.m in Sources */,
-				B7C0B85F1E5D6A160030D138 /* IncubateVIPMsgTableViewCell.m in Sources */,
 				B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */,
 				B7C0B88B1E5D6A170030D138 /* xiaoxi2Cell.m in Sources */,
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
 				B7C0B85A1E5D6A160030D138 /* CeHuaTableView2Cell.m in Sources */,
 				B7C0B8771E5D6A170030D138 /* PersonalJiaoYiTabCell.m in Sources */,
 				B7C0B87D1E5D6A170030D138 /* PersonalZhiBoCollectionViewCell.m in Sources */,
-				B7C0B8651E5D6A160030D138 /* NewSGZTCollectionView.m in Sources */,
 				B7C0B76A1E5D61A90030D138 /* TRZXPersonalHomeViewController.m in Sources */,
-				B7C0B86B1E5D6A160030D138 /* PersonalChengJiuCell.m in Sources */,
 				B7C0B8511E5D6A160030D138 /* PersonalLiveVideoModel.m in Sources */,
 				B7C0B8531E5D6A160030D138 /* TRZXCourse.m in Sources */,
-				B7C0B8871E5D6A170030D138 /* WoDaTableViewCell.m in Sources */,
 				B7C0B85C1E5D6A160030D138 /* CeHuaTableViewCell.m in Sources */,
-				B7C0B8611E5D6A160030D138 /* IncubateVIPTitleTableViewCell.m in Sources */,
 				B7C0B8501E5D6A160030D138 /* LatestLiveModel.m in Sources */,
-				B7C0B86D1E5D6A160030D138 /* PersonalCJXMCell.m in Sources */,
-				B7C0B8711E5D6A170030D138 /* PersonalGuanZhuCell.m in Sources */,
 				B7C0B8811E5D6A170030D138 /* presonalNavgationViw.m in Sources */,
-				B7C0B8911E5D6A170030D138 /* zhanshiVeiw.m in Sources */,
 				B7C0B8551E5D6A160030D138 /* UIButton+Extension.m in Sources */,
 				B7C0B86F1E5D6A160030D138 /* PersonalCollectionView.m in Sources */,
 				B7C0B8561E5D6A160030D138 /* CeHuaButtonCell.m in Sources */,
 				B7C0B7361E5D610E0030D138 /* main.m in Sources */,
-				B7C0B8631E5D6A160030D138 /* LianXiKeFuTableViewCell.m in Sources */,
-				B7C0B8751E5D6A170030D138 /* PersonaljiaoyiCell.m in Sources */,
 				B7C0B8791E5D6A170030D138 /* PersonalTopView.m in Sources */,
 				B7C0B8581E5D6A160030D138 /* CeHuaCollectionViewCell.m in Sources */,
 				B7C0B85E1E5D6A160030D138 /* GifView.m in Sources */,
-				B7C0B8891E5D6A170030D138 /* WoWenTableViewCell.m in Sources */,
 				B7C0B8831E5D6A170030D138 /* StudentJianJieCell.m in Sources */,
-				B7C0B8671E5D6A160030D138 /* NewWenDaTableViewCell.m in Sources */,
 				B7C0B8691E5D6A160030D138 /* PersonalBottomView.m in Sources */,
 				B7C0B8731E5D6A170030D138 /* PersonalJianJieCell.m in Sources */,
 				B7C0B87F1E5D6A170030D138 /* PhotoDTableViewCell.m in Sources */,
