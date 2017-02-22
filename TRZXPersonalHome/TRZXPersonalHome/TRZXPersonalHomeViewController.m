@@ -10,6 +10,7 @@
 #import "TRZXKit.h"
 #import "Masonry.h"
 #import <UIKit/UIKit.h>
+#import "TRZXNetwork.h"
 #import "UIImageView+AFNetworking.h"
 #import "PersonalTopView.h"
 #import "StudentJianJieCell.h"
@@ -35,7 +36,6 @@
 #import "PersonalJiaoYiTabCell.h"
 #import "PersonalBottomView.h"
 #import "AFHTTPSessionManager.h"
-#import "TRZXPersonalViewModel.h"
 #import "UIImageView+WebCache.h"
 #import <UIKit/UIKit.h>
 
@@ -73,7 +73,6 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 @property (strong, nonatomic) NSArray *chengjiuArr;
 @property (strong, nonatomic) NSString * otherTwoStr;
 @property (strong, nonatomic) UILabel * titleLab;
-@property (strong, nonatomic) TRZXPersonalViewModel *viewModel;
 @property (strong, nonatomic) UITableView * tableView;
 @property (strong, nonatomic) UICollectionView *collectionView;
 
@@ -191,13 +190,6 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     
 }
 
-- (TRZXPersonalViewModel *)viewModel {
-    
-    if (!_viewModel) {
-        _viewModel = [TRZXPersonalViewModel new];
-    }
-    return _viewModel;
-}
 
 
 - (void)viewWillAppear:(BOOL)animated{

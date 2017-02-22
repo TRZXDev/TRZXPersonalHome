@@ -20,7 +20,6 @@
 		B7C0B8511E5D6A160030D138 /* PersonalLiveVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7AC1E5D6A160030D138 /* PersonalLiveVideoModel.m */; };
 		B7C0B8521E5D6A160030D138 /* PersonalModell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7AE1E5D6A160030D138 /* PersonalModell.m */; };
 		B7C0B8531E5D6A160030D138 /* TRZXCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7B01E5D6A160030D138 /* TRZXCourse.m */; };
-		B7C0B8541E5D6A160030D138 /* TRZXPersonalViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7B21E5D6A160030D138 /* TRZXPersonalViewModel.m */; };
 		B7C0B8551E5D6A160030D138 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7B41E5D6A160030D138 /* UIButton+Extension.m */; };
 		B7C0B8561E5D6A160030D138 /* CeHuaButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7B71E5D6A160030D138 /* CeHuaButtonCell.m */; };
 		B7C0B8571E5D6A160030D138 /* CeHuaButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7B81E5D6A160030D138 /* CeHuaButtonCell.xib */; };
@@ -144,6 +143,8 @@
 		B7C0B90A1E5D70610030D138 /* 预览商业计划书@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8CE1E5D70610030D138 /* 预览商业计划书@2x.png */; };
 		B7C0B90B1E5D70610030D138 /* 首页g.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8CF1E5D70610030D138 /* 首页g.png */; };
 		B7C0B90C1E5D70610030D138 /* 首页头像.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8D01E5D70610030D138 /* 首页头像.png */; };
+		B7C0B90E1E5D74C90030D138 /* 路演003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B90D1E5D74C90030D138 /* 路演003@2x.png */; };
+		B7C0B9101E5D74E50030D138 /* 挂牌企业@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B90F1E5D74E50030D138 /* 挂牌企业@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,8 +191,6 @@
 		B7C0B7AE1E5D6A160030D138 /* PersonalModell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalModell.m; sourceTree = "<group>"; };
 		B7C0B7AF1E5D6A160030D138 /* TRZXCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXCourse.h; sourceTree = "<group>"; };
 		B7C0B7B01E5D6A160030D138 /* TRZXCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXCourse.m; sourceTree = "<group>"; };
-		B7C0B7B11E5D6A160030D138 /* TRZXPersonalViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalViewModel.h; sourceTree = "<group>"; };
-		B7C0B7B21E5D6A160030D138 /* TRZXPersonalViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalViewModel.m; sourceTree = "<group>"; };
 		B7C0B7B31E5D6A160030D138 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		B7C0B7B41E5D6A160030D138 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		B7C0B7B61E5D6A160030D138 /* CeHuaButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeHuaButtonCell.h; sourceTree = "<group>"; };
@@ -348,6 +347,8 @@
 		B7C0B8CE1E5D70610030D138 /* 预览商业计划书@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "预览商业计划书@2x.png"; sourceTree = "<group>"; };
 		B7C0B8CF1E5D70610030D138 /* 首页g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页g.png"; sourceTree = "<group>"; };
 		B7C0B8D01E5D70610030D138 /* 首页头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页头像.png"; sourceTree = "<group>"; };
+		B7C0B90D1E5D74C90030D138 /* 路演003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路演003@2x.png"; sourceTree = "<group>"; };
+		B7C0B90F1E5D74E50030D138 /* 挂牌企业@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "挂牌企业@2x.png"; sourceTree = "<group>"; };
 		F4DC5E20D1DDAAB4BF3EAD7C /* Pods_TRZXPersonalHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRZXPersonalHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -480,8 +481,6 @@
 				B7C0B7AE1E5D6A160030D138 /* PersonalModell.m */,
 				B7C0B7AF1E5D6A160030D138 /* TRZXCourse.h */,
 				B7C0B7B01E5D6A160030D138 /* TRZXCourse.m */,
-				B7C0B7B11E5D6A160030D138 /* TRZXPersonalViewModel.h */,
-				B7C0B7B21E5D6A160030D138 /* TRZXPersonalViewModel.m */,
 				B7C0B7B31E5D6A160030D138 /* UIButton+Extension.h */,
 				B7C0B7B41E5D6A160030D138 /* UIButton+Extension.m */,
 			);
@@ -592,6 +591,8 @@
 		B7C0B8941E5D70610030D138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B7C0B90F1E5D74E50030D138 /* 挂牌企业@2x.png */,
+				B7C0B90D1E5D74C90030D138 /* 路演003@2x.png */,
 				B7C0B8951E5D70610030D138 /* bianjiG.png */,
 				B7C0B8961E5D70610030D138 /* bianjiW.png */,
 				B7C0B8971E5D70610030D138 /* investor_BP@1x.png */,
@@ -776,6 +777,7 @@
 				B7C0B8881E5D6A170030D138 /* WoDaTableViewCell.xib in Resources */,
 				B7C0B90A1E5D70610030D138 /* 预览商业计划书@2x.png in Resources */,
 				B7C0B8841E5D6A170030D138 /* StudentJianJieCell.xib in Resources */,
+				B7C0B90E1E5D74C90030D138 /* 路演003@2x.png in Resources */,
 				B7C0B8F71E5D70610030D138 /* 我的购买@2x.png in Resources */,
 				B7C0B7411E5D610E0030D138 /* Assets.xcassets in Resources */,
 				B7C0B8F41E5D70610030D138 /* 我的学员@2x.png in Resources */,
@@ -825,6 +827,7 @@
 				B7C0B85D1E5D6A160030D138 /* CeHuaTableViewCell.xib in Resources */,
 				B7C0B8EA1E5D70610030D138 /* 录制路演@2x.png in Resources */,
 				B7C0B87A1E5D6A170030D138 /* PersonalTopView.xib in Resources */,
+				B7C0B9101E5D74E50030D138 /* 挂牌企业@2x.png in Resources */,
 				B7C0B8E61E5D70610030D138 /* 展位图.png in Resources */,
 				B7C0B8FF1E5D70610030D138 /* 我需要的资源.png in Resources */,
 				B7C0B8621E5D6A160030D138 /* IncubateVIPTitleTableViewCell.xib in Resources */,
@@ -939,7 +942,6 @@
 				B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */,
 				B7C0B88B1E5D6A170030D138 /* xiaoxi2Cell.m in Sources */,
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
-				B7C0B8541E5D6A160030D138 /* TRZXPersonalViewModel.m in Sources */,
 				B7C0B85A1E5D6A160030D138 /* CeHuaTableView2Cell.m in Sources */,
 				B7C0B8771E5D6A170030D138 /* PersonalJiaoYiTabCell.m in Sources */,
 				B7C0B87D1E5D6A170030D138 /* PersonalZhiBoCollectionViewCell.m in Sources */,
