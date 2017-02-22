@@ -1,0 +1,71 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - DVSwitch (1.0.2)
+  - FDStackView (1.0)
+  - Masonry (1.0.2)
+  - MJExtension (3.0.13)
+  - MLLabel (1.10.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDAutoLayout (2.1.7)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - TRZXKit (0.0.8)
+  - TRZXNetwork (0.0.7):
+    - AFNetworking
+    - YYCache
+  - TRZXShufflingView (0.0.3):
+    - AFNetworking
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - DVSwitch
+  - FDStackView
+  - Masonry
+  - MJExtension
+  - MLLabel
+  - ReactiveCocoa (~> 2.5)
+  - SDAutoLayout
+  - SDWebImage
+  - TRZXKit
+  - TRZXNetwork
+  - TRZXShufflingView
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DVSwitch: cc13ee6ca6244edcb2afa07b6f07978a0b053c1d
+  FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MLLabel: 71315bd11dc45bebba159e07427496ea8bfc2b0a
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  TRZXKit: bc6878e8c00bce6384300c7200e8408e20b34fba
+  TRZXNetwork: 971adad8c503f4e1fa21a2a3cfa8b73a7e4f3a13
+  TRZXShufflingView: 97117ad6d49274dec380ec0ba3c44c3f93a79f37
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: 6173e6d83d7d9c5e06e0bb87bea9e448ffbcb46d
+
+COCOAPODS: 1.2.0
