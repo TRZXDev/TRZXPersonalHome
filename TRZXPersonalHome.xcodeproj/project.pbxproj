@@ -15,6 +15,7 @@
 		B7C0B7441E5D610E0030D138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B7421E5D610E0030D138 /* LaunchScreen.storyboard */; };
 		B7C0B74F1E5D610E0030D138 /* TRZXPersonalHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B74E1E5D610E0030D138 /* TRZXPersonalHomeTests.m */; };
 		B7C0B75A1E5D610E0030D138 /* TRZXPersonalHomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7591E5D610E0030D138 /* TRZXPersonalHomeUITests.m */; };
+		B7C0B76A1E5D61A90030D138 /* TRZXPersonalHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7691E5D61A90030D138 /* TRZXPersonalHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B7C0B7551E5D610E0030D138 /* TRZXPersonalHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXPersonalHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C0B7591E5D610E0030D138 /* TRZXPersonalHomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalHomeUITests.m; sourceTree = "<group>"; };
 		B7C0B75B1E5D610E0030D138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C0B7681E5D61A90030D138 /* TRZXPersonalHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalHomeViewController.h; sourceTree = "<group>"; };
+		B7C0B7691E5D61A90030D138 /* TRZXPersonalHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		B7C0B7331E5D610E0030D138 /* TRZXPersonalHome */ = {
 			isa = PBXGroup;
 			children = (
+				B7C0B7671E5D617C0030D138 /* TRZXPersonalHome */,
 				B7C0B7371E5D610E0030D138 /* AppDelegate.h */,
 				B7C0B7381E5D610E0030D138 /* AppDelegate.m */,
 				B7C0B73A1E5D610E0030D138 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				B7C0B75B1E5D610E0030D138 /* Info.plist */,
 			);
 			path = TRZXPersonalHomeUITests;
+			sourceTree = "<group>";
+		};
+		B7C0B7671E5D617C0030D138 /* TRZXPersonalHome */ = {
+			isa = PBXGroup;
+			children = (
+				B7C0B7681E5D61A90030D138 /* TRZXPersonalHomeViewController.h */,
+				B7C0B7691E5D61A90030D138 /* TRZXPersonalHomeViewController.m */,
+			);
+			path = TRZXPersonalHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +288,7 @@
 			files = (
 				B7C0B73C1E5D610E0030D138 /* ViewController.m in Sources */,
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
+				B7C0B76A1E5D61A90030D138 /* TRZXPersonalHomeViewController.m in Sources */,
 				B7C0B7361E5D610E0030D138 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
