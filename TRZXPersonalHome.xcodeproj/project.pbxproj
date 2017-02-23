@@ -65,7 +65,6 @@
 		B7C0B8D41E5D70610030D138 /* investor_BP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8981E5D70610030D138 /* investor_BP@2x.png */; };
 		B7C0B8D51E5D70610030D138 /* shareG.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8991E5D70610030D138 /* shareG.png */; };
 		B7C0B8D61E5D70610030D138 /* shareW.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B89A1E5D70610030D138 /* shareW.png */; };
-		B7C0B8D71E5D70610030D138 /* shenniu.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B89B1E5D70610030D138 /* shenniu.gif */; };
 		B7C0B8D81E5D70610030D138 /* wodegg.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B89C1E5D70610030D138 /* wodegg.png */; };
 		B7C0B8D91E5D70610030D138 /* 一键认证@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B89D1E5D70610030D138 /* 一键认证@2x.png */; };
 		B7C0B8DA1E5D70610030D138 /* 个人主页图@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B89E1E5D70610030D138 /* 个人主页图@1x.png */; };
@@ -236,7 +235,6 @@
 		B7C0B8981E5D70610030D138 /* investor_BP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "investor_BP@2x.png"; sourceTree = "<group>"; };
 		B7C0B8991E5D70610030D138 /* shareG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareG.png; sourceTree = "<group>"; };
 		B7C0B89A1E5D70610030D138 /* shareW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareW.png; sourceTree = "<group>"; };
-		B7C0B89B1E5D70610030D138 /* shenniu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shenniu.gif; sourceTree = "<group>"; };
 		B7C0B89C1E5D70610030D138 /* wodegg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wodegg.png; sourceTree = "<group>"; };
 		B7C0B89D1E5D70610030D138 /* 一键认证@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "一键认证@2x.png"; sourceTree = "<group>"; };
 		B7C0B89E1E5D70610030D138 /* 个人主页图@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人主页图@1x.png"; sourceTree = "<group>"; };
@@ -512,7 +510,6 @@
 				B7C0B8981E5D70610030D138 /* investor_BP@2x.png */,
 				B7C0B8991E5D70610030D138 /* shareG.png */,
 				B7C0B89A1E5D70610030D138 /* shareW.png */,
-				B7C0B89B1E5D70610030D138 /* shenniu.gif */,
 				B7C0B89C1E5D70610030D138 /* wodegg.png */,
 				B7C0B89D1E5D70610030D138 /* 一键认证@2x.png */,
 				B7C0B89E1E5D70610030D138 /* 个人主页图@1x.png */,
@@ -749,7 +746,6 @@
 				B7C0B87C1E5D6A170030D138 /* PersonalZBCollectionView.xib in Resources */,
 				B7C0B8E11E5D70610030D138 /* 女.png in Resources */,
 				B7C0B8591E5D6A160030D138 /* CeHuaCollectionViewCell.xib in Resources */,
-				B7C0B8D71E5D70610030D138 /* shenniu.gif in Resources */,
 				B7C0B8DA1E5D70610030D138 /* 个人主页图@1x.png in Resources */,
 				B7C0B8ED1E5D70610030D138 /* 我的专家@2x.png in Resources */,
 				B7C0B8D51E5D70610030D138 /* shareG.png in Resources */,
