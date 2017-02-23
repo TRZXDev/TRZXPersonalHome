@@ -7,7 +7,6 @@
 //
 #import "TRZXPersonalHomeViewController.h"
 #import "MJExtension.h"
-#import "TRZXKit.h"
 #import "Masonry.h"
 #import <UIKit/UIKit.h>
 #import "TRZXNetwork.h"

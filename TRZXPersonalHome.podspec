@@ -7,12 +7,11 @@ Pod::Spec.new do |s|
     s.license              = { :type => "MIT", :file => "FILE_LICENSE" }
     s.author             = { "bicassos" => "383929022@qq.com" }
     s.source       = { :git => "https://github.com/TRZXDev/TRZXPersonalHome.git", :tag => s.version }
-    s.source_files  = "TRZXPersonalHome/TRZXPersonalHome/**/*.{h,m,xib}"
-    
+    s.source_files  = "TRZXPersonalHome/TRZXPersonalHome/**/*.{h,m,xib,png,gif}"
+   # s.resources    = 'TRZXPersonalHome/TRZXPersonalHome/**/*.{png,gif}'
     s.dependency "TRZXNetwork"
     s.dependency "ReactiveCocoa", "~> 2.5"
     s.dependency "MJExtension"
-    s.dependency "TRZXKit"
     s.dependency "SDWebImage"
     s.dependency "TRZXShufflingView"
     s.dependency "DVSwitch"

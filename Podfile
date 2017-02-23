@@ -11,7 +11,6 @@ def pods
     pod 'ReactiveCocoa', '~> 2.5’
     pod 'MJExtension'
     pod 'TRZXShufflingView'
-    pod 'TRZXKit'
     pod 'SDWebImage'
     pod 'DVSwitch'
     pod 'Masonry'

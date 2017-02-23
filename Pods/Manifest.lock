@@ -30,7 +30,6 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TRZXKit (0.0.8)
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
@@ -47,7 +46,6 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - SDAutoLayout
   - SDWebImage
-  - TRZXKit
   - TRZXNetwork
   - TRZXShufflingView
 
@@ -61,11 +59,10 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TRZXKit: bc6878e8c00bce6384300c7200e8408e20b34fba
   TRZXNetwork: 971adad8c503f4e1fa21a2a3cfa8b73a7e4f3a13
   TRZXShufflingView: 97117ad6d49274dec380ec0ba3c44c3f93a79f37
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 6173e6d83d7d9c5e06e0bb87bea9e448ffbcb46d
+PODFILE CHECKSUM: 425b414228d725ad1198ebf4497277d8944f7a28
 
 COCOAPODS: 1.2.0
