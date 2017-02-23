@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4224661D621D3B618CFB811 /* Pods_TRZXPersonalHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC5E20D1DDAAB4BF3EAD7C /* Pods_TRZXPersonalHome.framework */; };
+		B70D451E1E5EB5C8000E2C4D /* shenniu.gif in Resources */ = {isa = PBXBuildFile; fileRef = B70D451D1E5EB5C8000E2C4D /* shenniu.gif */; };
 		B7C0B7361E5D610E0030D138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7351E5D610E0030D138 /* main.m */; };
 		B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7381E5D610E0030D138 /* AppDelegate.m */; };
 		B7C0B73F1E5D610E0030D138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B73D1E5D610E0030D138 /* Main.storyboard */; };
@@ -145,6 +146,7 @@
 /* Begin PBXFileReference section */
 		18DC6D189970754C0FC82EA5 /* Pods-TRZXPersonalHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXPersonalHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXPersonalHome/Pods-TRZXPersonalHome.release.xcconfig"; sourceTree = "<group>"; };
 		33B8A734D1001114B25B21E1 /* Pods-TRZXPersonalHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXPersonalHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXPersonalHome/Pods-TRZXPersonalHome.debug.xcconfig"; sourceTree = "<group>"; };
+		B70D451D1E5EB5C8000E2C4D /* shenniu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shenniu.gif; sourceTree = "<group>"; };
 		B7C0B7311E5D610E0030D138 /* TRZXPersonalHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXPersonalHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C0B7351E5D610E0030D138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7C0B7371E5D610E0030D138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -499,6 +501,7 @@
 		B7C0B8941E5D70610030D138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B70D451D1E5EB5C8000E2C4D /* shenniu.gif */,
 				B7C0B9151E5D76AA0030D138 /* 回看.png */,
 				B7C0B9131E5D76610030D138 /* 个人介绍.png */,
 				B7C0B9111E5D76130030D138 /* xlb02.png */,
@@ -747,6 +750,7 @@
 				B7C0B8E11E5D70610030D138 /* 女.png in Resources */,
 				B7C0B8591E5D6A160030D138 /* CeHuaCollectionViewCell.xib in Resources */,
 				B7C0B8DA1E5D70610030D138 /* 个人主页图@1x.png in Resources */,
+				B70D451E1E5EB5C8000E2C4D /* shenniu.gif in Resources */,
 				B7C0B8ED1E5D70610030D138 /* 我的专家@2x.png in Resources */,
 				B7C0B8D51E5D70610030D138 /* shareG.png in Resources */,
 				B7C0B8D91E5D70610030D138 /* 一键认证@2x.png in Resources */,
