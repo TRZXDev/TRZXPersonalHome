@@ -61,6 +61,6 @@
 @property(nonatomic,strong)UIImageView *AmplifyImageView;
 
 
--(void)bottomBtnView;
+//-(void)bottomBtnView;
 
 @end

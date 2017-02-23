@@ -62,8 +62,8 @@
 // 关注点击 同时改变
 NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
-@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,gengduoDelegate>
-//,UMSocialUIDelegate,AllSettingDelegate,yysDelegate,GuanZhuDelegate,PhotoDelegate,GuanKanDelegate,VideoDelegate>
+@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate>
+//,gengduoDelegate,UMSocialUIDelegate,AllSettingDelegate,yysDelegate,GuanZhuDelegate,PhotoDelegate,GuanKanDelegate,VideoDelegate>
 
 
 @property (strong, nonatomic) NSDictionary *dataDic;
@@ -485,7 +485,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(maxImageRemove) name:@"maxImageRemove" object:nil];
     
     _isImageCompleteSecond = YES;
-    __block zjself;
+//    __block zjself;
     self.maxImageComplete = ^{
         //先注销放大图片
         //        [SJAvatarBrowser showImage:sfself.PersonalTopView.AmplifyImageView];//调用方法
@@ -1037,7 +1037,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
             cell.chengjiuArr = _chengjiuArr;
             [cell jiazaichegguoView];
             [cell.gengduoBtn addTarget:self action:@selector(gengduoClick:) forControlEvents:UIControlEventTouchUpInside];
-            cell.moreDelegate = self;
+            //先注销
+//            cell.moreDelegate = self;
             cell.chengguoStr = @"2";
         }else{
             if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
@@ -1053,7 +1054,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
             [cell.gengduoBtn setTitle:@"更多直播" forState:UIControlStateNormal];
             [cell jiazaizhiboView];
             [cell.gengduoBtn addTarget:self action:@selector(zhiBoClick:) forControlEvents:UIControlEventTouchUpInside];
-            cell.moreDelegate = self;
+            //先注销
+//            cell.moreDelegate = self;
             cell.zhiboStr = @"2";
         }
         return cell;
@@ -1348,10 +1350,10 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     //    }
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    [self.PersonalBottomView guanzhuBtnStatusChange];
-    [[NSNotificationCenter defaultCenter] postNotificationName:collectionStasusChangeKey object:nil];
-}
+//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+//    [self.PersonalBottomView guanzhuBtnStatusChange];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:collectionStasusChangeKey object:nil];
+//}
 
 
 //投递BP事件
