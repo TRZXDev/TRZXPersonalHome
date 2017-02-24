@@ -175,7 +175,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)viewDidLoad {
     [super viewDidLoad];
     _otherStr = @"1";
-    _midStrr = @"908675a0e22e464eb2633dd23c80819c";
+    _midStrr = @"d8c86c8f343e4de6a9faab7e148bed63";
     [self bgTableview];
 }
 

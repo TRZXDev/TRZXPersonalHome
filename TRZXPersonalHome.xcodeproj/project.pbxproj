@@ -640,6 +640,7 @@
 				TargetAttributes = {
 					B7C0B7301E5D610E0030D138 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 487PQPPTGA;
 						ProvisioningStyle = Automatic;
 					};
 					B7C0B7491E5D610E0030D138 = {
@@ -1014,6 +1015,7 @@
 			baseConfigurationReference = 33B8A734D1001114B25B21E1 /* Pods-TRZXPersonalHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 487PQPPTGA;
 				INFOPLIST_FILE = TRZXPersonalHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JWZhang.TRZXPersonalHome;
@@ -1026,6 +1028,7 @@
 			baseConfigurationReference = 18DC6D189970754C0FC82EA5 /* Pods-TRZXPersonalHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 487PQPPTGA;
 				INFOPLIST_FILE = TRZXPersonalHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JWZhang.TRZXPersonalHome;

@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.author             = { "bicassos" => "383929022@qq.com" }
     s.source       = { :git => "https://github.com/TRZXDev/TRZXPersonalHome.git", :tag => s.version }
     s.source_files = "TRZXPersonalHome/TRZXPersonalHome/**/*.{h,m}"
-    s.resources    = 'TRZXPersonalHome/TRZXPersonalHome/**/*.{xib,png}'
+    s.resources    = 'TRZXPersonalHome/TRZXPersonalHome/**/*.{xib,png,gif}’
     s.dependency "TRZXNetwork"
     s.dependency "ReactiveCocoa", "~> 2.5"
     s.dependency "MJExtension"

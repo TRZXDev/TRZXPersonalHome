@@ -19,8 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSMutableDictionary *headers = [[NSMutableDictionary alloc]init];
-    [headers setValue:@"455d7a955f0f785a1ab41315fbc3df60" forKey:@"token"];
-    [headers setValue:@"f6a09320ee87449ba8669f9868e05df6" forKey:@"userId"];
+    [headers setValue:@"1ed6a51e2436552c07184418dc745c26" forKey:@"token"];
+    [headers setValue:@"d8c86c8f343e4de6a9faab7e148bed63" forKey:@"userId"];
     [headers setValue:@"iOS" forKey:@"equipment"];
     
     
