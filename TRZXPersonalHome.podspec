@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
     s.name         = "TRZXPersonalHome"
-    s.version      = "0.0.4"
+    s.version      = "0.0.5"
     s.ios.deployment_target = '8.0'
     s.summary      = "TRZXPersonalHome"
-    s.homepage     = "https://github.com/TRZXDev"
+    s.homepage     = "https://github.com/TRZXDev/TRZXPersonalHome"
     s.license              = { :type => "MIT", :file => "FILE_LICENSE" }
     s.author             = { "bicassos" => "383929022@qq.com" }
     s.source       = { :git => "https://github.com/TRZXDev/TRZXPersonalHome.git", :tag => s.version }
