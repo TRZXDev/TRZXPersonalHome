@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A4224661D621D3B618CFB811 /* Pods_TRZXPersonalHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC5E20D1DDAAB4BF3EAD7C /* Pods_TRZXPersonalHome.framework */; };
 		B70D451E1E5EB5C8000E2C4D /* shenniu.gif in Resources */ = {isa = PBXBuildFile; fileRef = B70D451D1E5EB5C8000E2C4D /* shenniu.gif */; };
+		B70E98F41E64097E00FA3145 /* Target_TRZXPersonalHome.m in Sources */ = {isa = PBXBuildFile; fileRef = B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */; };
 		B7C0B7361E5D610E0030D138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7351E5D610E0030D138 /* main.m */; };
 		B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7381E5D610E0030D138 /* AppDelegate.m */; };
 		B7C0B73F1E5D610E0030D138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B73D1E5D610E0030D138 /* Main.storyboard */; };
@@ -147,6 +148,8 @@
 		18DC6D189970754C0FC82EA5 /* Pods-TRZXPersonalHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXPersonalHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXPersonalHome/Pods-TRZXPersonalHome.release.xcconfig"; sourceTree = "<group>"; };
 		33B8A734D1001114B25B21E1 /* Pods-TRZXPersonalHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXPersonalHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXPersonalHome/Pods-TRZXPersonalHome.debug.xcconfig"; sourceTree = "<group>"; };
 		B70D451D1E5EB5C8000E2C4D /* shenniu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shenniu.gif; sourceTree = "<group>"; };
+		B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TRZXPersonalHome.h; sourceTree = "<group>"; };
+		B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TRZXPersonalHome.m; sourceTree = "<group>"; };
 		B7C0B7311E5D610E0030D138 /* TRZXPersonalHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXPersonalHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C0B7351E5D610E0030D138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7C0B7371E5D610E0030D138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 				B7C0B7B51E5D6A160030D138 /* View */,
 				B7C0B7681E5D61A90030D138 /* TRZXPersonalHomeViewController.h */,
 				B7C0B7691E5D61A90030D138 /* TRZXPersonalHomeViewController.m */,
+				B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */,
+				B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */,
 			);
 			path = TRZXPersonalHome;
 			sourceTree = "<group>";
@@ -844,6 +849,7 @@
 				B7C0B87B1E5D6A170030D138 /* PersonalZBCollectionView.m in Sources */,
 				B7C0B88D1E5D6A170030D138 /* xiaoxiCell.m in Sources */,
 				B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */,
+				B70E98F41E64097E00FA3145 /* Target_TRZXPersonalHome.m in Sources */,
 				B7C0B88B1E5D6A170030D138 /* xiaoxi2Cell.m in Sources */,
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
 				B7C0B85A1E5D6A160030D138 /* CeHuaTableView2Cell.m in Sources */,

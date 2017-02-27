@@ -174,8 +174,6 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _otherStr = @"1";
-    _midStrr = @"d8c86c8f343e4de6a9faab7e148bed63";
     [self bgTableview];
 }
 
@@ -214,7 +212,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     
     NSDictionary *params = @{@"requestType":@"Live_Video_Api",
                              @"apiType":@"list",
-                             @"beVistedId":_midStrr};
+                             @"beVistedId":_midStrr?_midStrr:@""};
     [TRZXNetwork requestWithUrl:nil params:params method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id data, NSError *error) {
         
         // 请求完成后，更新UI
