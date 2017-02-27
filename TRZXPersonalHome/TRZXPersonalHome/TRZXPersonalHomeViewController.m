@@ -23,7 +23,7 @@
 #import "xihuanTableViewCell.h"
 //#import "SJAvatarBrowser.h"
 #import "PhotoDTableViewCell.h"
-#import "ZHScrollViewLB.h"
+#import "TRZXZHScrollViewLB.h"
 #import "PersonalLiveVideoModel.h"
 #import "CeHuaTableView2Cell.h"
 #import "PersonalZBCollectionView.h"
@@ -83,7 +83,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 @property (copy, nonatomic) NSString * peopleStr;
 
 
-@property (nonatomic, strong)ZHScrollViewLB *scrollView;
+@property (nonatomic, strong)TRZXZHScrollViewLB *scrollView;
 @property (strong, nonatomic) PersonalTopView *PersonalTopView;
 @property (strong, nonatomic) PersonalCollectionView *PersonalCollectionView;
 @property (strong, nonatomic) PersonalZBCollectionView*PersonalZBCollectionView;

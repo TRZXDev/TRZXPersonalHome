@@ -60,7 +60,7 @@
 		B7C0B88E1E5D6A170030D138 /* xiaoxiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B80B1E5D6A160030D138 /* xiaoxiCell.xib */; };
 		B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B80D1E5D6A160030D138 /* xihuanTableViewCell.m */; };
 		B7C0B8901E5D6A170030D138 /* xihuanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B80E1E5D6A160030D138 /* xihuanTableViewCell.xib */; };
-		B7C0B8931E5D6A170030D138 /* ZHScrollViewLB.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B8131E5D6A160030D138 /* ZHScrollViewLB.m */; };
+		B7C0B8931E5D6A170030D138 /* TRZXZHScrollViewLB.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B8131E5D6A160030D138 /* TRZXZHScrollViewLB.m */; };
 		B7C0B8D11E5D70610030D138 /* bianjiG.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8951E5D70610030D138 /* bianjiG.png */; };
 		B7C0B8D21E5D70610030D138 /* bianjiW.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8961E5D70610030D138 /* bianjiW.png */; };
 		B7C0B8D31E5D70610030D138 /* investor_BP@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8971E5D70610030D138 /* investor_BP@1x.png */; };
@@ -232,8 +232,8 @@
 		B7C0B80C1E5D6A160030D138 /* xihuanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xihuanTableViewCell.h; sourceTree = "<group>"; };
 		B7C0B80D1E5D6A160030D138 /* xihuanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xihuanTableViewCell.m; sourceTree = "<group>"; };
 		B7C0B80E1E5D6A160030D138 /* xihuanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xihuanTableViewCell.xib; sourceTree = "<group>"; };
-		B7C0B8121E5D6A160030D138 /* ZHScrollViewLB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHScrollViewLB.h; sourceTree = "<group>"; };
-		B7C0B8131E5D6A160030D138 /* ZHScrollViewLB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHScrollViewLB.m; sourceTree = "<group>"; };
+		B7C0B8121E5D6A160030D138 /* TRZXZHScrollViewLB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXZHScrollViewLB.h; sourceTree = "<group>"; };
+		B7C0B8131E5D6A160030D138 /* TRZXZHScrollViewLB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXZHScrollViewLB.m; sourceTree = "<group>"; };
 		B7C0B8951E5D70610030D138 /* bianjiG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bianjiG.png; sourceTree = "<group>"; };
 		B7C0B8961E5D70610030D138 /* bianjiW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bianjiW.png; sourceTree = "<group>"; };
 		B7C0B8971E5D70610030D138 /* investor_BP@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "investor_BP@1x.png"; sourceTree = "<group>"; };
@@ -497,8 +497,8 @@
 				B7C0B80C1E5D6A160030D138 /* xihuanTableViewCell.h */,
 				B7C0B80D1E5D6A160030D138 /* xihuanTableViewCell.m */,
 				B7C0B80E1E5D6A160030D138 /* xihuanTableViewCell.xib */,
-				B7C0B8121E5D6A160030D138 /* ZHScrollViewLB.h */,
-				B7C0B8131E5D6A160030D138 /* ZHScrollViewLB.m */,
+				B7C0B8121E5D6A160030D138 /* TRZXZHScrollViewLB.h */,
+				B7C0B8131E5D6A160030D138 /* TRZXZHScrollViewLB.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -843,7 +843,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7C0B8931E5D6A170030D138 /* ZHScrollViewLB.m in Sources */,
+				B7C0B8931E5D6A170030D138 /* TRZXZHScrollViewLB.m in Sources */,
 				B7C0B8851E5D6A170030D138 /* StudentJingLiBTCell.m in Sources */,
 				B7C0B8521E5D6A160030D138 /* PersonalModell.m in Sources */,
 				B7C0B87B1E5D6A170030D138 /* PersonalZBCollectionView.m in Sources */,

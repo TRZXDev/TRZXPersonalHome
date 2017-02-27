@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 蓝鸥. All rights reserved.
 //
 
-#import "ZHScrollViewLB.h"
+#import "TRZXZHScrollViewLB.h"
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
 
 
-@interface ZHScrollViewLB ()<UIScrollViewDelegate>
+@interface TRZXZHScrollViewLB ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong)UILabel *nextImageV;
 @property (nonatomic, strong)UILabel *firstImageV;
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation ZHScrollViewLB
+@implementation TRZXZHScrollViewLB
 
 - (instancetype)initWithFrame:(CGRect)frame WithImageName:(NSArray *)imageNames WithTime:(NSInteger)time
 {

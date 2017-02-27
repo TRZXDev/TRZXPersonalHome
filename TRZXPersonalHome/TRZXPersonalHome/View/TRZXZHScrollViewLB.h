@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZHScrollViewLB : UIScrollView
+@interface TRZXZHScrollViewLB : UIScrollView
 
 @property (nonatomic, assign)NSInteger time;
 
