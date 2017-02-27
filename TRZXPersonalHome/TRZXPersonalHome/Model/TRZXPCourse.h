@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TRZXCourse : NSObject
+@interface TRZXPCourse : NSObject
 @property (copy, nonatomic) NSString *photo;
 @end

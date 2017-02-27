@@ -6,8 +6,8 @@
 //  Copyright © 2017年 TRZX. All rights reserved.
 //
 
-#import "TRZXCourse.h"
+#import "TRZXPCourse.h"
 
-@implementation TRZXCourse
+@implementation TRZXPCourse
 
 @end

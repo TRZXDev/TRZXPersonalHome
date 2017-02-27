@@ -17,6 +17,8 @@ def pods
     pod 'MLLabel'
     pod 'FDStackView'
     pod 'SDAutoLayout'
+
+
 end
 
 target 'TRZXPersonalHome' do
