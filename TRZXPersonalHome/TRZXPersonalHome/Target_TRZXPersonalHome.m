@@ -8,7 +8,8 @@
 
 #import "Target_TRZXPersonalHome.h"
 #import "TRZXPersonalHomeViewController.h"
-#import "CTMediator+PersonalProfile.h"
+#import <TRZXPersonalProfile/CTMediator+PersonalProfile.h>
+
 
 
 
