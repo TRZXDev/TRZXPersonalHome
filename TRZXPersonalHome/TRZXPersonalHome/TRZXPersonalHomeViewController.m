@@ -1216,19 +1216,9 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     //行被选中后，自动变回反选状态的方法
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 5) {
-        NSString *title = @"";
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
-            title = @"交易中心的简介";
-        }else if ([_PersonalMode.userType isEqualToString:@"Gov"]) {//政府
-            title = @"政府的简介";
-        }else{
-            title = @"个人简介";
-        }
-        UIViewController *vc = [];
-        gengduo.PersonalMode = _PersonalMode;
-        gengduo.gongzuoArr = _gongzuoArr;
-        gengduo.jiaoyuArr = _jiaoyuArr;
-        [self.navigationController pushViewController:gengduo animated:YES];
+        //关于我
+        UIViewController *vc = [Target_TRZXPersonalHome Action_PersonalProfileViewControllerTitle:@"" eduArr:_jiaoyuArr workArr:_gongzuoArr userType:_PersonalMode.userType abstract:_PersonalMode.abstractz];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
 }

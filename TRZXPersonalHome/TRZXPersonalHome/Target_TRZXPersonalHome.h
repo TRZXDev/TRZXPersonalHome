@@ -13,12 +13,18 @@
 - (UIViewController *)Action_PersonalHomeViewController:(NSDictionary *)params;
 
 
+
 /**
  关于我
- 
+
+ @param title 标题
+ @param eduArray 教育经历
+ @param workArr 工作经理
+ @param type 用户类型
+ @param abstract 个人简介
  @return //
  */
-+ (UIViewController *)Action_PersonalProfileViewControllerTitle:(NSString *)title eduArr:(NSArray *)eduArray workArr:(NSArray *)workArr model:(id)model;
++ (UIViewController *)Action_PersonalProfileViewControllerTitle:(NSString *)title eduArr:(NSArray *)eduArray workArr:(NSArray *)workArr userType:(NSString *)type abstract:(NSString *)abstract;
 
 
 @end

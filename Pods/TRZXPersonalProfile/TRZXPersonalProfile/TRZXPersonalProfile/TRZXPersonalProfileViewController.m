@@ -26,12 +26,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addUI];
+}
+
+- (void)addUI{
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.title = _titleStr;
+    
+    if ([self.userType isEqualToString:@"TradingCenter"]) {//交易中心
+        self.title = @"交易中心的简介";
+    }else if ([self.userType isEqualToString:@"Gov"]) {//政府
+        self.title = @"政府的简介";
+    }else{
+        self.title = @"个人简介";
+    }
     [self.view addSubview:self.tableView];
     [self.tableView reloadData];
 }
-
 #pragma mark - tableViewDelegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -43,13 +53,13 @@
 {
     
     if (section == 1) {
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]||[_PersonalMode.userType isEqualToString:@"Gov"]) {//交易中心，政府
+        if ([self.userType isEqualToString:@"TradingCenter"]||[self.userType isEqualToString:@"Gov"]) {//交易中心，政府
             return 0;
         }else{
             return 1+ _workArray.count;
         }
     }else if (section == 2){
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]||[_PersonalMode.userType isEqualToString:@"Gov"]) {//交易中心，政府
+        if ([self.userType isEqualToString:@"TradingCenter"]||[self.userType isEqualToString:@"Gov"]) {//交易中心，政府
             return 0;
         }else{
             return 1+_eduArray.count;
@@ -73,7 +83,7 @@
             return 105;
         }
     }else{
-        if (_PersonalMode.abstractz.length == 0) {
+        if (self.abstractz.length == 0) {
             return 53;
         }else{
             return 80 + size.height;
@@ -90,16 +100,16 @@
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        if ([_PersonalMode.userType isEqualToString:@"Brokerage"]) {//券商
+        if ([self.userType isEqualToString:@"Brokerage"]) {//券商
             cell.titleLabel.text = @"券商简介";
-        }else if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
+        }else if ([self.userType isEqualToString:@"TradingCenter"]) {//交易中心
             cell.titleLabel.text = @"交易中心简介";
-        }else if ([_PersonalMode.userType isEqualToString:@"Gov"]) {//政府
+        }else if ([self.userType isEqualToString:@"Gov"]) {//政府
             cell.titleLabel.text = @"政府简介";
         }else{
             cell.titleLabel.text = @"个人简介";
         }
-        cell.jianjieLabel.text = _PersonalMode.abstractz;
+        cell.jianjieLabel.text = self.abstractz;
         size = [cell.jianjieLabel sizeThatFits:CGSizeMake(self.view.frame.size.width-30, MAXFLOAT)];
         return cell;
     }else if (indexPath.section == 1) {

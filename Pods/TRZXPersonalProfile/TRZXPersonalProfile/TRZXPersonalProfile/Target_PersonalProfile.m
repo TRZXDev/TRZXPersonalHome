@@ -13,7 +13,11 @@
 
 - (UIViewController *)Action_PersonalProfile_TRZXPersonalProfileViewController:(NSDictionary *)params{
     TRZXPersonalProfileViewController *vc = [[TRZXPersonalProfileViewController alloc]init];
-    
+    vc.titleStr = params[@"titleStr"];
+    vc.workArray = params[@"workArray"];
+    vc.eduArray =params[@"eduArray"];
+    vc.userType = params[@"type"];
+    vc.abstractz = params[@"abstractz"];
     return vc;
 }
 

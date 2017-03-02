@@ -34,7 +34,7 @@ PODS:
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
-  - TRZXPersonalProfile (0.0.2):
+  - TRZXPersonalProfile (0.0.4):
     - CTMediator
   - TRZXShufflingView (0.0.4):
     - AFNetworking
@@ -66,7 +66,7 @@ SPEC CHECKSUMS:
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
-  TRZXPersonalProfile: 1bb732ffaa736622d87a6c76e921e08cbe4a38e6
+  TRZXPersonalProfile: 81b5532aa00b89930b64a34dd7eca9b934327f81
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
