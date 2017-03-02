@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CTMediator (0.0.3)
   - DVSwitch (1.0.2)
   - FDStackView (1.0)
   - Masonry (1.0.2)
@@ -33,11 +34,14 @@ PODS:
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
-  - TRZXShufflingView (0.0.3):
+  - TRZXPersonalProfile (0.0.2):
+    - CTMediator
+  - TRZXShufflingView (0.0.4):
     - AFNetworking
   - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - CTMediator
   - DVSwitch
   - FDStackView
   - Masonry
@@ -47,10 +51,12 @@ DEPENDENCIES:
   - SDAutoLayout
   - SDWebImage
   - TRZXNetwork
+  - TRZXPersonalProfile
   - TRZXShufflingView
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CTMediator: c9a1203561e2232cb9a72822659159a02ae3cf20
   DVSwitch: cc13ee6ca6244edcb2afa07b6f07978a0b053c1d
   FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -59,10 +65,11 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TRZXNetwork: 971adad8c503f4e1fa21a2a3cfa8b73a7e4f3a13
-  TRZXShufflingView: 97117ad6d49274dec380ec0ba3c44c3f93a79f37
+  TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
+  TRZXPersonalProfile: 1bb732ffaa736622d87a6c76e921e08cbe4a38e6
+  TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: a49771682cd9347b44606f019d093d8414c68366
+PODFILE CHECKSUM: cdd40e2d644a44528435fc6d6278917c6b4c100e
 
 COCOAPODS: 1.2.0

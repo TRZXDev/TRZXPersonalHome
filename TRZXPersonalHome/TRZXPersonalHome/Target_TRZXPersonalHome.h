@@ -12,4 +12,13 @@
 
 - (UIViewController *)Action_PersonalHomeViewController:(NSDictionary *)params;
 
+
+/**
+ 关于我
+ 
+ @return //
+ */
++ (UIViewController *)Action_PersonalProfileViewControllerTitle:(NSString *)title eduArr:(NSArray *)eduArray workArr:(NSArray *)workArr model:(id)model;
+
+
 @end

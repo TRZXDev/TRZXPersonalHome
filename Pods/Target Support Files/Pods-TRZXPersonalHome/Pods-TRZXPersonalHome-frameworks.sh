@@ -90,6 +90,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/CTMediator/CTMediator.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DVSwitch/DVSwitch.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FDStackView/FDStackView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MJExtension/MJExtension.framework"
@@ -99,11 +100,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SDAutoLayout/SDAutoLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TRZXNetwork/TRZXNetwork.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TRZXPersonalProfile/TRZXPersonalProfile.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TRZXShufflingView/TRZXShufflingView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YYCache/YYCache.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/CTMediator/CTMediator.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DVSwitch/DVSwitch.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FDStackView/FDStackView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MJExtension/MJExtension.framework"
@@ -113,6 +116,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SDAutoLayout/SDAutoLayout.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TRZXNetwork/TRZXNetwork.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TRZXPersonalProfile/TRZXPersonalProfile.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TRZXShufflingView/TRZXShufflingView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YYCache/YYCache.framework"
 fi

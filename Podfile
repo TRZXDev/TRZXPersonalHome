@@ -17,7 +17,8 @@ def pods
     pod 'MLLabel'
     pod 'FDStackView'
     pod 'SDAutoLayout'
-
+    pod 'CTMediator'
+    pod 'TRZXPersonalProfile' #关于我
 
 end
 
