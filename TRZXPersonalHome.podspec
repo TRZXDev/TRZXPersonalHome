@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "TRZXPersonalHome"
-    s.version      = "0.1.0"
+    s.version      = "0.1.1"
     s.ios.deployment_target = '8.0'
     s.summary      = "TRZXPersonalHome"
     s.homepage     = "https://github.com/TRZXDev/TRZXPersonalHome"
@@ -19,5 +19,9 @@ Pod::Spec.new do |s|
     s.dependency "MLLabel"
     s.dependency "FDStackView"
     s.dependency "SDAutoLayout"
+    s.dependency "TRZXMyCustomer"
+    s.dependency "TRZXMyWallet"
+    s.dependency "TRZXPersonalProfile"
+
     s.requires_arc = true
 end

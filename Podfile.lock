@@ -33,8 +33,19 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - TRZXDIYRefresh (0.0.1):
+    - MJRefresh
   - TRZXDVSwitch (0.0.6)
   - TRZXKit (0.0.9)
+  - TRZXMyCustomer (0.0.5):
+    - CTMediator
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - TRZXDIYRefresh
+    - TRZXDVSwitch
+    - TRZXKit
+    - TRZXNetwork
   - TRZXMyWallet (0.0.3):
     - CTMediator
     - IQKeyboardManager
@@ -64,6 +75,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - SDAutoLayout
   - SDWebImage
+  - TRZXMyCustomer
   - TRZXMyWallet
   - TRZXNetwork
   - TRZXPersonalProfile
@@ -82,14 +94,16 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  TRZXDIYRefresh: a89e7cf1658ff7d57aad081c596c2a9cf137dcf2
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
+  TRZXMyCustomer: 636d05d6df200709f93d783d66dee707331e8881
   TRZXMyWallet: b1f5d741ebfb50735bfe4a05b98cc7d5da35abb2
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
   TRZXPersonalProfile: 81b5532aa00b89930b64a34dd7eca9b934327f81
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 4b62586c7e984dfcf897ccf0629a8762c6020f9c
+PODFILE CHECKSUM: 9dc1e4a7bf3905e1bb710d8472eb7348d2652b2f
 
 COCOAPODS: 1.2.0

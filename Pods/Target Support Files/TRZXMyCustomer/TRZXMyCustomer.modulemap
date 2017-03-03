@@ -1,0 +1,6 @@
+framework module TRZXMyCustomer {
+  umbrella header "TRZXMyCustomer-umbrella.h"
+
+  export *
+  module * { export * }
+}
