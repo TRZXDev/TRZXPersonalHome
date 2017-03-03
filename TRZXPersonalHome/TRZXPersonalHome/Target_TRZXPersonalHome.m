@@ -9,6 +9,7 @@
 #import "Target_TRZXPersonalHome.h"
 #import "TRZXPersonalHomeViewController.h"
 #import <TRZXPersonalProfile/CTMediator+PersonalProfile.h>
+#import <TRZXMyWallet/CTMediator+Wallet.h>
 
 
 
@@ -44,5 +45,17 @@
                            };
     return [[CTMediator sharedInstance]PersonalProfile_TRZXPersonalProfileViewController:dict];
 }
+
+/**
+ 我的钱包
+ 
+ @param params ..
+ @return ..
+ */
++ (UIViewController *)Action_MyWalletViewController:(NSDictionary *)params{
+    return [[CTMediator sharedInstance]wallet_HomeViewController:params];
+}
+
+
 
 @end

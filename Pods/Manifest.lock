@@ -17,9 +17,11 @@ PODS:
   - CTMediator (0.0.3)
   - DVSwitch (1.0.2)
   - FDStackView (1.0)
+  - IQKeyboardManager (4.0.8)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
-  - MLLabel (1.10.2)
+  - MJRefresh (3.1.12)
+  - MLLabel (1.10.3)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -31,6 +33,18 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - TRZXDVSwitch (0.0.6)
+  - TRZXKit (0.0.9)
+  - TRZXMyWallet (0.0.3):
+    - CTMediator
+    - IQKeyboardManager
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - TRZXDVSwitch
+    - TRZXKit
+    - TRZXNetwork
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
@@ -50,6 +64,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - SDAutoLayout
   - SDWebImage
+  - TRZXMyWallet
   - TRZXNetwork
   - TRZXPersonalProfile
   - TRZXShufflingView
@@ -59,17 +74,22 @@ SPEC CHECKSUMS:
   CTMediator: c9a1203561e2232cb9a72822659159a02ae3cf20
   DVSwitch: cc13ee6ca6244edcb2afa07b6f07978a0b053c1d
   FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  MLLabel: 71315bd11dc45bebba159e07427496ea8bfc2b0a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MLLabel: 3760fb38aeac53b212409b634bc4aa4bf39ab628
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
+  TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
+  TRZXMyWallet: b1f5d741ebfb50735bfe4a05b98cc7d5da35abb2
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
   TRZXPersonalProfile: 81b5532aa00b89930b64a34dd7eca9b934327f81
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: cdd40e2d644a44528435fc6d6278917c6b4c100e
+PODFILE CHECKSUM: 4b62586c7e984dfcf897ccf0629a8762c6020f9c
 
 COCOAPODS: 1.2.0

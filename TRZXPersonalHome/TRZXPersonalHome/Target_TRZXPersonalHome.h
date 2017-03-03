@@ -27,4 +27,12 @@
 + (UIViewController *)Action_PersonalProfileViewControllerTitle:(NSString *)title eduArr:(NSArray *)eduArray workArr:(NSArray *)workArr userType:(NSString *)type abstract:(NSString *)abstract;
 
 
+/**
+ 我的钱包
+
+ @param params ..
+ @return ..
+ */
++ (UIViewController *)Action_MyWalletViewController:(NSDictionary *)params;
+
 @end

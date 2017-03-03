@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '39CF450CDBC11937C7CC4306ECC2CEFB'
+               BlueprintIdentifier = '73ED0C3EDDF986972F04CE80D67A0FDB'
                BlueprintName = 'TRZXShufflingView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TRZXShufflingView.framework'>

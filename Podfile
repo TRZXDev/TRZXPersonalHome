@@ -19,6 +19,7 @@ def pods
     pod 'SDAutoLayout'
     pod 'CTMediator'
     pod 'TRZXPersonalProfile' #关于我
+    pod 'TRZXMyWallet’ #钱包
 
 end
 

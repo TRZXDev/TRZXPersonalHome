@@ -24,7 +24,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -59,6 +69,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TRZXDVSwitch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TRZXKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TRZXMyWallet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TRZXNetwork.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,7 +107,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>136110F394EAD7D836891BDBAE6103EF</key>
+		<key>14E451E7EE8F75CC893822CC8B0974DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1DBC555AB4886BE82E22C5D76111C2C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,27 +122,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39CF450CDBC11937C7CC4306ECC2CEFB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>479385B03BDA2BD7535A685ED7A2AEA3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>5AA17C95E926B760FD08E0B487DAEFA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>680FF6357894153BE29F5068A08BFBBE</key>
+		<key>5E9C0F2D65F89945235B9113B4BF69A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BED2CF7251D6E3A9663F265324061FB</key>
+		<key>658AF3815D850405998923E992547AFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FB8A05B6C1A4D193A60A53C8121AE86</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73ED0C3EDDF986972F04CE80D67A0FDB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BC90508A6CABBD6BFC9710C8E753E8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>89CC48FBDC65C55611EDB635875E0323</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,7 +172,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B904EB6B1726C3F849DA98719BF32BC3</key>
+		<key>BC277589B90F3DC8CFAAE5B187802946</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C36CB2CB977A4E7D954935096D00A1ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C913D0A8C8FF4340F7F87DBDF5BC102C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,12 +197,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB3839793B72C997A8D281727603E88E</key>
+		<key>E14A62900910444707A5504D25EC98DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E75C879B674CEFD495711BC897E5B69C</key>
+		<key>EC3653E8EFDF61B2DE77C1343C5580BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
