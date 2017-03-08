@@ -14,6 +14,16 @@
 		B73D1BE91E6FF10200510C3A /* PersonalGuanZhuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BE71E6FF10200510C3A /* PersonalGuanZhuCell.m */; };
 		B73D1BEA1E6FF10200510C3A /* PersonalGuanZhuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BE81E6FF10200510C3A /* PersonalGuanZhuCell.xib */; };
 		B73D1BEC1E6FF14100510C3A /* 列表无内容@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BEB1E6FF14100510C3A /* 列表无内容@2x.png */; };
+		B73D1BF01E6FFE0B00510C3A /* 播放1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BED1E6FFE0B00510C3A /* 播放1@2x.png */; };
+		B73D1BF11E6FFE0B00510C3A /* 看过@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BEE1E6FFE0B00510C3A /* 看过@2x.png */; };
+		B73D1BF21E6FFE0B00510C3A /* college_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BEF1E6FFE0B00510C3A /* college_home@2x.png */; };
+		B73D1BF91E6FFE2600510C3A /* InvestSeeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BF41E6FFE2600510C3A /* InvestSeeCell.m */; };
+		B73D1BFA1E6FFE2600510C3A /* InvestSeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BF51E6FFE2600510C3A /* InvestSeeCell.xib */; };
+		B73D1BFB1E6FFE2600510C3A /* ZaixianerjiyedeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BF71E6FFE2600510C3A /* ZaixianerjiyedeCell.m */; };
+		B73D1BFC1E6FFE2600510C3A /* ZaixianerjiyedeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BF81E6FFE2600510C3A /* ZaixianerjiyedeCell.xib */; };
+		B73D1BFF1E6FFE4E00510C3A /* TRZXPWatchViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BFE1E6FFE4E00510C3A /* TRZXPWatchViewMode.m */; };
+		B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */; };
+		B73D1C051E6FFE5D00510C3A /* TRZXPersonalWatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */; };
 		B7C0B7361E5D610E0030D138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7351E5D610E0030D138 /* main.m */; };
 		B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7381E5D610E0030D138 /* AppDelegate.m */; };
 		B7C0B73F1E5D610E0030D138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B73D1E5D610E0030D138 /* Main.storyboard */; };
@@ -160,6 +170,21 @@
 		B73D1BE71E6FF10200510C3A /* PersonalGuanZhuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalGuanZhuCell.m; sourceTree = "<group>"; };
 		B73D1BE81E6FF10200510C3A /* PersonalGuanZhuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalGuanZhuCell.xib; sourceTree = "<group>"; };
 		B73D1BEB1E6FF14100510C3A /* 列表无内容@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "列表无内容@2x.png"; sourceTree = "<group>"; };
+		B73D1BED1E6FFE0B00510C3A /* 播放1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放1@2x.png"; sourceTree = "<group>"; };
+		B73D1BEE1E6FFE0B00510C3A /* 看过@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "看过@2x.png"; sourceTree = "<group>"; };
+		B73D1BEF1E6FFE0B00510C3A /* college_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "college_home@2x.png"; sourceTree = "<group>"; };
+		B73D1BF31E6FFE2600510C3A /* InvestSeeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestSeeCell.h; sourceTree = "<group>"; };
+		B73D1BF41E6FFE2600510C3A /* InvestSeeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestSeeCell.m; sourceTree = "<group>"; };
+		B73D1BF51E6FFE2600510C3A /* InvestSeeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestSeeCell.xib; sourceTree = "<group>"; };
+		B73D1BF61E6FFE2600510C3A /* ZaixianerjiyedeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZaixianerjiyedeCell.h; sourceTree = "<group>"; };
+		B73D1BF71E6FFE2600510C3A /* ZaixianerjiyedeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZaixianerjiyedeCell.m; sourceTree = "<group>"; };
+		B73D1BF81E6FFE2600510C3A /* ZaixianerjiyedeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZaixianerjiyedeCell.xib; sourceTree = "<group>"; };
+		B73D1BFD1E6FFE4E00510C3A /* TRZXPWatchViewMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPWatchViewMode.h; sourceTree = "<group>"; };
+		B73D1BFE1E6FFE4E00510C3A /* TRZXPWatchViewMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPWatchViewMode.m; sourceTree = "<group>"; };
+		B73D1C001E6FFE5300510C3A /* TRZXPersonalWatchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalWatchModel.h; sourceTree = "<group>"; };
+		B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalWatchModel.m; sourceTree = "<group>"; };
+		B73D1C031E6FFE5D00510C3A /* TRZXPersonalWatchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalWatchController.h; sourceTree = "<group>"; };
+		B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalWatchController.m; sourceTree = "<group>"; };
 		B7C0B7311E5D610E0030D138 /* TRZXPersonalHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXPersonalHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C0B7351E5D610E0030D138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7C0B7371E5D610E0030D138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -427,6 +452,8 @@
 				B7C0B7691E5D61A90030D138 /* TRZXPersonalHomeViewController.m */,
 				B73D1BE41E6FF0D500510C3A /* TRZXPersonalCareAboutController.h */,
 				B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */,
+				B73D1C031E6FFE5D00510C3A /* TRZXPersonalWatchController.h */,
+				B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */,
 				B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */,
 				B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */,
 			);
@@ -436,6 +463,10 @@
 		B7C0B7A81E5D6A160030D138 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B73D1C001E6FFE5300510C3A /* TRZXPersonalWatchModel.h */,
+				B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */,
+				B73D1BFD1E6FFE4E00510C3A /* TRZXPWatchViewMode.h */,
+				B73D1BFE1E6FFE4E00510C3A /* TRZXPWatchViewMode.m */,
 				B7C0B7A91E5D6A160030D138 /* LatestLiveModel.h */,
 				B7C0B7AA1E5D6A160030D138 /* LatestLiveModel.m */,
 				B7C0B7AB1E5D6A160030D138 /* PersonalLiveVideoModel.h */,
@@ -453,6 +484,12 @@
 		B7C0B7B51E5D6A160030D138 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B73D1BF31E6FFE2600510C3A /* InvestSeeCell.h */,
+				B73D1BF41E6FFE2600510C3A /* InvestSeeCell.m */,
+				B73D1BF51E6FFE2600510C3A /* InvestSeeCell.xib */,
+				B73D1BF61E6FFE2600510C3A /* ZaixianerjiyedeCell.h */,
+				B73D1BF71E6FFE2600510C3A /* ZaixianerjiyedeCell.m */,
+				B73D1BF81E6FFE2600510C3A /* ZaixianerjiyedeCell.xib */,
 				B73D1BE61E6FF10200510C3A /* PersonalGuanZhuCell.h */,
 				B73D1BE71E6FF10200510C3A /* PersonalGuanZhuCell.m */,
 				B73D1BE81E6FF10200510C3A /* PersonalGuanZhuCell.xib */,
@@ -521,6 +558,9 @@
 		B7C0B8941E5D70610030D138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B73D1BED1E6FFE0B00510C3A /* 播放1@2x.png */,
+				B73D1BEE1E6FFE0B00510C3A /* 看过@2x.png */,
+				B73D1BEF1E6FFE0B00510C3A /* college_home@2x.png */,
 				B73D1BEB1E6FF14100510C3A /* 列表无内容@2x.png */,
 				B70D451D1E5EB5C8000E2C4D /* shenniu.gif */,
 				B7C0B9151E5D76AA0030D138 /* 回看.png */,
@@ -709,6 +749,7 @@
 				B7C0B8571E5D6A160030D138 /* CeHuaButtonCell.xib in Resources */,
 				B7C0B8E31E5D70610030D138 /* 官.png in Resources */,
 				B7C0B8D11E5D70610030D138 /* bianjiG.png in Resources */,
+				B73D1BF21E6FFE0B00510C3A /* college_home@2x.png in Resources */,
 				B7C0B7441E5D610E0030D138 /* LaunchScreen.storyboard in Resources */,
 				B7C0B90A1E5D70610030D138 /* 预览商业计划书@2x.png in Resources */,
 				B7C0B8841E5D6A170030D138 /* StudentJianJieCell.xib in Resources */,
@@ -731,6 +772,7 @@
 				B7C0B8F51E5D70610030D138 /* 我的学员@3x.png in Resources */,
 				B7C0B8DD1E5D70610030D138 /* 加好友1@2x.png in Resources */,
 				B7C0B9081E5D70610030D138 /* 钱包@2x.png in Resources */,
+				B73D1BF01E6FFE0B00510C3A /* 播放1@2x.png in Resources */,
 				B7C0B8821E5D6A170030D138 /* presonalNavgationViw.xib in Resources */,
 				B7C0B8DE1E5D70610030D138 /* 发布项目@2x.png in Resources */,
 				B7C0B8EE1E5D70610030D138 /* 我的专家@3x.png in Resources */,
@@ -766,6 +808,7 @@
 				B73D1BEC1E6FF14100510C3A /* 列表无内容@2x.png in Resources */,
 				B7C0B8E41E5D70610030D138 /* 客服中心@2x.png in Resources */,
 				B7C0B90C1E5D70610030D138 /* 首页头像.png in Resources */,
+				B73D1BFC1E6FFE2600510C3A /* ZaixianerjiyedeCell.xib in Resources */,
 				B7C0B9051E5D70610030D138 /* 私信2@2x.png in Resources */,
 				B7C0B88E1E5D6A170030D138 /* xiaoxiCell.xib in Resources */,
 				B7C0B8901E5D6A170030D138 /* xihuanTableViewCell.xib in Resources */,
@@ -783,11 +826,13 @@
 				B7C0B9031E5D70610030D138 /* 收藏@3x.png in Resources */,
 				B7C0B9061E5D70610030D138 /* 返回.png in Resources */,
 				B7C0B8FE1E5D70610030D138 /* 我要讲课@2x.png in Resources */,
+				B73D1BFA1E6FFE2600510C3A /* InvestSeeCell.xib in Resources */,
 				B7C0B9121E5D76130030D138 /* xlb02.png in Resources */,
 				B7C0B8FC1E5D70610030D138 /* 我的项目@2x.png in Resources */,
 				B7C0B8F21E5D70610030D138 /* 我的发布@3x.png in Resources */,
 				B7C0B9011E5D70610030D138 /* 指南@3x.png in Resources */,
 				B7C0B8F01E5D70610030D138 /* 我的主题@2x.png in Resources */,
+				B73D1BF11E6FFE0B00510C3A /* 看过@2x.png in Resources */,
 				B7C0B9021E5D70610030D138 /* 收藏@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,6 +906,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73D1BF91E6FFE2600510C3A /* InvestSeeCell.m in Sources */,
 				B7C0B8931E5D6A170030D138 /* TRZXZHScrollViewLB.m in Sources */,
 				B7C0B8851E5D6A170030D138 /* StudentJingLiBTCell.m in Sources */,
 				B7C0B8521E5D6A160030D138 /* PersonalModell.m in Sources */,
@@ -868,7 +914,9 @@
 				B7C0B88D1E5D6A170030D138 /* xiaoxiCell.m in Sources */,
 				B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */,
 				B70E98F41E64097E00FA3145 /* Target_TRZXPersonalHome.m in Sources */,
+				B73D1BFF1E6FFE4E00510C3A /* TRZXPWatchViewMode.m in Sources */,
 				B7C0B88B1E5D6A170030D138 /* xiaoxi2Cell.m in Sources */,
+				B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */,
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
 				B7C0B85A1E5D6A160030D138 /* CeHuaTableView2Cell.m in Sources */,
 				B7C0B8771E5D6A170030D138 /* PersonalJiaoYiTabCell.m in Sources */,
@@ -877,6 +925,7 @@
 				B7C0B8511E5D6A160030D138 /* PersonalLiveVideoModel.m in Sources */,
 				B7C0B8531E5D6A160030D138 /* TRZXPCourse.m in Sources */,
 				B7C0B85C1E5D6A160030D138 /* CeHuaTableViewCell.m in Sources */,
+				B73D1BFB1E6FFE2600510C3A /* ZaixianerjiyedeCell.m in Sources */,
 				B7C0B8501E5D6A160030D138 /* LatestLiveModel.m in Sources */,
 				B7C0B8811E5D6A170030D138 /* presonalNavgationViw.m in Sources */,
 				B7C0B8551E5D6A160030D138 /* UIButton+Extension.m in Sources */,
@@ -892,6 +941,7 @@
 				B7C0B8731E5D6A170030D138 /* PersonalJianJieCell.m in Sources */,
 				B73D1BE51E6FF0D500510C3A /* TRZXPersonalCareAboutController.m in Sources */,
 				B7C0B87F1E5D6A170030D138 /* PhotoDTableViewCell.m in Sources */,
+				B73D1C051E6FFE5D00510C3A /* TRZXPersonalWatchController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

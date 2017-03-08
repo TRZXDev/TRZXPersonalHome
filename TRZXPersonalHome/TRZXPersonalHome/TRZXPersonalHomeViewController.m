@@ -40,7 +40,7 @@
 
 
 #import "TRZXPersonalCareAboutController.h"//关注（自己）
-
+#import "TRZXPersonalWatchController.h"//观看课程
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
@@ -68,8 +68,8 @@
 // 关注点击 同时改变
 NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
-@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate>
-//,gengduoDelegate,UMSocialUIDelegate,AllSettingDelegate,yysDelegate,PhotoDelegate,GuanKanDelegate,VideoDelegate>
+@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate,GuanKanDelegate>
+//,gengduoDelegate,UMSocialUIDelegate,AllSettingDelegate,yysDelegate,PhotoDelegate,VideoDelegate>
 
 
 @property (strong, nonatomic) NSDictionary *dataDic;
@@ -1333,19 +1333,17 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         }
         
     }else if([sender.titleLabel.text isEqualToString:@"观看课程(集)"]){
-//        GuanKanViewController * sanjiVC = [[GuanKanViewController alloc] init];
-//        sanjiVC.title1Str = @"观看课程";
-//        sanjiVC.MID = _midStrr;
-//        sanjiVC.panduanStr = @"课程";
-//        sanjiVC.delegate = self;
-//        [self.navigationController pushViewController:sanjiVC animated:YES];
+        TRZXPersonalWatchController * sanjiVC = [[TRZXPersonalWatchController alloc] init];
+        sanjiVC.MID = _midStrr;
+        sanjiVC.panduanStr = @"观看课程";
+        sanjiVC.delegate = self;
+        [self.navigationController pushViewController:sanjiVC animated:YES];
     }else if([sender.titleLabel.text isEqualToString:@"观看路演(次)"]){
-//        GuanKanViewController * sanjiVC = [[GuanKanViewController alloc] init];
-//        sanjiVC.title1Str = @"观看路演";
-//        sanjiVC.MID = _midStrr;
-//        sanjiVC.panduanStr = @"路演";
-//        sanjiVC.delegate = self;
-//        [self.navigationController pushViewController:sanjiVC animated:YES];
+        TRZXPersonalWatchController * sanjiVC = [[TRZXPersonalWatchController alloc] init];
+        sanjiVC.MID = _midStrr;
+        sanjiVC.panduanStr = @"观看路演";
+        sanjiVC.delegate = self;
+        [self.navigationController pushViewController:sanjiVC animated:YES];
     }
 }
 //加关注
