@@ -14,7 +14,7 @@
 #import "TRZXNetwork.h"
 #import "UIImageView+WebCache.h"
 
-
+#define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define  zjself __weak __typeof(self) sfself = self
 #define backColor [UIColor colorWithRed:240.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1]
 
@@ -77,7 +77,7 @@
                 _noLabelView.text = @"— 没有更多了 —";
                 _noLabelView.textAlignment = NSTextAlignmentCenter;
                 _noLabelView.textColor = zideColor;
-                _guanzhuTableView.tableFooterView = _noLabelView;
+                _myTableView.tableFooterView = _noLabelView;
             }
             _noLabelView.hidden = NO;
             _myTableView.mj_footer.hidden = YES;
@@ -114,7 +114,7 @@
                                 _noLabelView.text = @"— 没有更多了 —";
                                 _noLabelView.textAlignment = NSTextAlignmentCenter;
                                 _noLabelView.textColor = zideColor;
-                                _guanzhuTableView.tableFooterView = _noLabelView;
+                                _myTableView.tableFooterView = _noLabelView;
                             }
                             _noLabelView.hidden = NO;
                             _myTableView.mj_footer.hidden = YES;
