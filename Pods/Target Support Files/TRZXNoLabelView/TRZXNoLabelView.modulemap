@@ -1,0 +1,6 @@
+framework module TRZXNoLabelView {
+  umbrella header "TRZXNoLabelView-umbrella.h"
+
+  export *
+  module * { export * }
+}
