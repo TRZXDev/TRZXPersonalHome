@@ -41,6 +41,7 @@
 
 #import "TRZXPersonalCareAboutController.h"//关注（自己）
 #import "TRZXPersonalWatchController.h"//观看课程
+#import "TRZXPersonalTopButtonController.h"//关注、粉丝、路演观众等
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
@@ -1230,8 +1231,10 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 }
 //关注的跳转
 - (void)topGuanzhuClick:(UIButton *)sender{
-    
-    
+    TRZXPersonalTopButtonController * guanzhu = [[TRZXPersonalTopButtonController alloc] init];
+    guanzhu.midStrr = _midStrr;
+    guanzhu.titleStrr = @"关注";
+    [self.navigationController pushViewController:guanzhu animated:YES];
 }
 #pragma 直播股所
 - (void)BzhiboClick:(UITapGestureRecognizer *)tap
@@ -1321,10 +1324,10 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     //顶部的按钮跳转
     if([sender.titleLabel.text isEqualToString:@"关注(人)"]){
         if ([_otherTwoStr isEqualToString:@"2"]) {
-//            StudentGuanZhuVC * guanzhu = [[StudentGuanZhuVC alloc] init];
-//            guanzhu.midStrr = _midStrr;
-//            guanzhu.titleStrr = @"关注";
-//            [self.navigationController pushViewController:guanzhu animated:YES];
+            TRZXPersonalTopButtonController * guanzhu = [[TRZXPersonalTopButtonController alloc] init];
+            guanzhu.midStrr = _midStrr;
+            guanzhu.titleStrr = @"关注";
+            [self.navigationController pushViewController:guanzhu animated:YES];
         }else{
             TRZXPersonalCareAboutController * guanzhu = [[TRZXPersonalCareAboutController alloc] init];
             guanzhu.midStr = _midStrr;

@@ -9,7 +9,7 @@
 #import "PersonalTopView.h"
 #import "UIImageView+WebCache.h"
 #import "Masonry.h"
-
+#import "TRZXPersonalTopButtonController.h"
 
 //跳转暂时注销
 //#import "StudentGuanZhuVC.h"
@@ -144,10 +144,10 @@
 //按钮跳转
 -(void)pushBtnClick:(UIButton *)sender{
     //跳转暂时注销
-//    StudentGuanZhuVC * guanzhu = [[StudentGuanZhuVC alloc] init];
-//    guanzhu.midStrr = _midStrr;
-//    guanzhu.titleStrr = sender.titleLabel.text;
-//    [self personalDelegateMethod:guanzhu];
+    TRZXPersonalTopButtonController * guanzhu = [[TRZXPersonalTopButtonController alloc] init];
+    guanzhu.midStrr = _midStrr;
+    guanzhu.titleStrr = sender.titleLabel.text;
+    [self personalDelegateMethod:guanzhu];
 }
 
 

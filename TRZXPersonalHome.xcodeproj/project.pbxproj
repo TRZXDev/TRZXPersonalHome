@@ -24,6 +24,7 @@
 		B73D1BFF1E6FFE4E00510C3A /* TRZXPWatchViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BFE1E6FFE4E00510C3A /* TRZXPWatchViewMode.m */; };
 		B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */; };
 		B73D1C051E6FFE5D00510C3A /* TRZXPersonalWatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */; };
+		B73D1C081E70033900510C3A /* TRZXPersonalTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C071E70033900510C3A /* TRZXPersonalTopButtonController.m */; };
 		B7C0B7361E5D610E0030D138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7351E5D610E0030D138 /* main.m */; };
 		B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7381E5D610E0030D138 /* AppDelegate.m */; };
 		B7C0B73F1E5D610E0030D138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B73D1E5D610E0030D138 /* Main.storyboard */; };
@@ -185,6 +186,8 @@
 		B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalWatchModel.m; sourceTree = "<group>"; };
 		B73D1C031E6FFE5D00510C3A /* TRZXPersonalWatchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalWatchController.h; sourceTree = "<group>"; };
 		B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalWatchController.m; sourceTree = "<group>"; };
+		B73D1C061E70033900510C3A /* TRZXPersonalTopButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalTopButtonController.h; sourceTree = "<group>"; };
+		B73D1C071E70033900510C3A /* TRZXPersonalTopButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalTopButtonController.m; sourceTree = "<group>"; };
 		B7C0B7311E5D610E0030D138 /* TRZXPersonalHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXPersonalHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C0B7351E5D610E0030D138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7C0B7371E5D610E0030D138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -454,6 +457,8 @@
 				B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */,
 				B73D1C031E6FFE5D00510C3A /* TRZXPersonalWatchController.h */,
 				B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */,
+				B73D1C061E70033900510C3A /* TRZXPersonalTopButtonController.h */,
+				B73D1C071E70033900510C3A /* TRZXPersonalTopButtonController.m */,
 				B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */,
 				B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */,
 			);
@@ -932,6 +937,7 @@
 				B7C0B86F1E5D6A160030D138 /* PersonalCollectionView.m in Sources */,
 				B7C0B8561E5D6A160030D138 /* CeHuaButtonCell.m in Sources */,
 				B7C0B7361E5D610E0030D138 /* main.m in Sources */,
+				B73D1C081E70033900510C3A /* TRZXPersonalTopButtonController.m in Sources */,
 				B7C0B8791E5D6A170030D138 /* PersonalTopView.m in Sources */,
 				B7C0B8581E5D6A160030D138 /* CeHuaCollectionViewCell.m in Sources */,
 				B7C0B85E1E5D6A160030D138 /* GifView.m in Sources */,
