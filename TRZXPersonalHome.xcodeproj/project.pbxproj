@@ -10,6 +10,10 @@
 		A4224661D621D3B618CFB811 /* Pods_TRZXPersonalHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DC5E20D1DDAAB4BF3EAD7C /* Pods_TRZXPersonalHome.framework */; };
 		B70D451E1E5EB5C8000E2C4D /* shenniu.gif in Resources */ = {isa = PBXBuildFile; fileRef = B70D451D1E5EB5C8000E2C4D /* shenniu.gif */; };
 		B70E98F41E64097E00FA3145 /* Target_TRZXPersonalHome.m in Sources */ = {isa = PBXBuildFile; fileRef = B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */; };
+		B73D1BE51E6FF0D500510C3A /* TRZXPersonalCareAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */; };
+		B73D1BE91E6FF10200510C3A /* PersonalGuanZhuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BE71E6FF10200510C3A /* PersonalGuanZhuCell.m */; };
+		B73D1BEA1E6FF10200510C3A /* PersonalGuanZhuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BE81E6FF10200510C3A /* PersonalGuanZhuCell.xib */; };
+		B73D1BEC1E6FF14100510C3A /* 列表无内容@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BEB1E6FF14100510C3A /* 列表无内容@2x.png */; };
 		B7C0B7361E5D610E0030D138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7351E5D610E0030D138 /* main.m */; };
 		B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7381E5D610E0030D138 /* AppDelegate.m */; };
 		B7C0B73F1E5D610E0030D138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B73D1E5D610E0030D138 /* Main.storyboard */; };
@@ -150,6 +154,12 @@
 		B70D451D1E5EB5C8000E2C4D /* shenniu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shenniu.gif; sourceTree = "<group>"; };
 		B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TRZXPersonalHome.h; sourceTree = "<group>"; };
 		B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TRZXPersonalHome.m; sourceTree = "<group>"; };
+		B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalCareAboutController.m; sourceTree = "<group>"; };
+		B73D1BE41E6FF0D500510C3A /* TRZXPersonalCareAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalCareAboutController.h; sourceTree = "<group>"; };
+		B73D1BE61E6FF10200510C3A /* PersonalGuanZhuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalGuanZhuCell.h; sourceTree = "<group>"; };
+		B73D1BE71E6FF10200510C3A /* PersonalGuanZhuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalGuanZhuCell.m; sourceTree = "<group>"; };
+		B73D1BE81E6FF10200510C3A /* PersonalGuanZhuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalGuanZhuCell.xib; sourceTree = "<group>"; };
+		B73D1BEB1E6FF14100510C3A /* 列表无内容@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "列表无内容@2x.png"; sourceTree = "<group>"; };
 		B7C0B7311E5D610E0030D138 /* TRZXPersonalHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXPersonalHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C0B7351E5D610E0030D138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7C0B7371E5D610E0030D138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -415,6 +425,8 @@
 				B7C0B7B51E5D6A160030D138 /* View */,
 				B7C0B7681E5D61A90030D138 /* TRZXPersonalHomeViewController.h */,
 				B7C0B7691E5D61A90030D138 /* TRZXPersonalHomeViewController.m */,
+				B73D1BE41E6FF0D500510C3A /* TRZXPersonalCareAboutController.h */,
+				B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */,
 				B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */,
 				B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */,
 			);
@@ -441,6 +453,9 @@
 		B7C0B7B51E5D6A160030D138 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B73D1BE61E6FF10200510C3A /* PersonalGuanZhuCell.h */,
+				B73D1BE71E6FF10200510C3A /* PersonalGuanZhuCell.m */,
+				B73D1BE81E6FF10200510C3A /* PersonalGuanZhuCell.xib */,
 				B7C0B7B61E5D6A160030D138 /* CeHuaButtonCell.h */,
 				B7C0B7B71E5D6A160030D138 /* CeHuaButtonCell.m */,
 				B7C0B7B81E5D6A160030D138 /* CeHuaButtonCell.xib */,
@@ -506,6 +521,7 @@
 		B7C0B8941E5D70610030D138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B73D1BEB1E6FF14100510C3A /* 列表无内容@2x.png */,
 				B70D451D1E5EB5C8000E2C4D /* shenniu.gif */,
 				B7C0B9151E5D76AA0030D138 /* 回看.png */,
 				B7C0B9131E5D76610030D138 /* 个人介绍.png */,
@@ -685,6 +701,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73D1BEA1E6FF10200510C3A /* PersonalGuanZhuCell.xib in Resources */,
 				B7C0B8EF1E5D70610030D138 /* 我的业绩@2x.png in Resources */,
 				B7C0B8D61E5D70610030D138 /* shareW.png in Resources */,
 				B7C0B87E1E5D6A170030D138 /* PersonalZhiBoCollectionViewCell.xib in Resources */,
@@ -746,6 +763,7 @@
 				B7C0B8FF1E5D70610030D138 /* 我需要的资源.png in Resources */,
 				B7C0B8E21E5D70610030D138 /* 孵化会员.png in Resources */,
 				B7C0B90B1E5D70610030D138 /* 首页g.png in Resources */,
+				B73D1BEC1E6FF14100510C3A /* 列表无内容@2x.png in Resources */,
 				B7C0B8E41E5D70610030D138 /* 客服中心@2x.png in Resources */,
 				B7C0B90C1E5D70610030D138 /* 首页头像.png in Resources */,
 				B7C0B9051E5D70610030D138 /* 私信2@2x.png in Resources */,
@@ -868,9 +886,11 @@
 				B7C0B8791E5D6A170030D138 /* PersonalTopView.m in Sources */,
 				B7C0B8581E5D6A160030D138 /* CeHuaCollectionViewCell.m in Sources */,
 				B7C0B85E1E5D6A160030D138 /* GifView.m in Sources */,
+				B73D1BE91E6FF10200510C3A /* PersonalGuanZhuCell.m in Sources */,
 				B7C0B8831E5D6A170030D138 /* StudentJianJieCell.m in Sources */,
 				B7C0B8691E5D6A160030D138 /* PersonalBottomView.m in Sources */,
 				B7C0B8731E5D6A170030D138 /* PersonalJianJieCell.m in Sources */,
+				B73D1BE51E6FF0D500510C3A /* TRZXPersonalCareAboutController.m in Sources */,
 				B7C0B87F1E5D6A170030D138 /* PhotoDTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,8 +19,9 @@ def pods
     pod 'SDAutoLayout'
     pod 'CTMediator'
     pod 'TRZXPersonalProfile' #关于我
-    pod 'TRZXMyWallet’ #钱包
-    pod ‘TRZXMyCustomer’#我的客户
+    pod 'TRZXMyWallet' #钱包
+    pod 'TRZXMyCustomer'#我的客户
+    pod 'TRZXNoLabelView'
 end
 
 target 'TRZXPersonalHome' do

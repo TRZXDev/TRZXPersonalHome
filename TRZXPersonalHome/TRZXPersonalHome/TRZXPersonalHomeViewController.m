@@ -38,6 +38,10 @@
 
 #import "Target_TRZXPersonalHome.h"
 
+
+#import "TRZXPersonalCareAboutController.h"//关注（自己）
+
+
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
 #define kBlackColor         [UIColor blackColor]
@@ -64,8 +68,8 @@
 // 关注点击 同时改变
 NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
-@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate>
-//,gengduoDelegate,UMSocialUIDelegate,AllSettingDelegate,yysDelegate,GuanZhuDelegate,PhotoDelegate,GuanKanDelegate,VideoDelegate>
+@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate>
+//,gengduoDelegate,UMSocialUIDelegate,AllSettingDelegate,yysDelegate,PhotoDelegate,GuanKanDelegate,VideoDelegate>
 
 
 @property (strong, nonatomic) NSDictionary *dataDic;
@@ -176,6 +180,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _otherStr = @"1";
+    _midStrr = @"aea1feeb14e24a7291ab1a99f3c89690";
     [self bgTableview];
 }
 
@@ -432,13 +438,13 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)bgTableview
 {
     if ([_otherStr isEqualToString:@"1"]){
-        if ([_midStrr isEqualToString:@"f6a09320ee87449ba8669f9868e05df6"]) {//其他方式自己看自己（默认的id）
+        if ([_midStrr isEqualToString:@"aea1feeb14e24a7291ab1a99f3c89690"]) {//其他方式自己看自己（默认的id）
             _otherTwoStr = @"1";
         }else{//看其他人
             _otherTwoStr = @"2";
         }
     }else{//自己看自己
-        _midStrr = @"f6a09320ee87449ba8669f9868e05df6";//默认的id
+        _midStrr = @"aea1feeb14e24a7291ab1a99f3c89690";//默认的id
         _otherTwoStr = @"0";
     }
     
@@ -501,7 +507,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     //    [self.tableView reloadData];
     //    [self.collectionView reloadData];
     if(_midStrr == nil){
-        _midStrr = @"f6a09320ee87449ba8669f9868e05df6";//默认的id
+        _midStrr = @"aea1feeb14e24a7291ab1a99f3c89690";//默认的id
         [self bgTableview];
     }
     
@@ -1313,52 +1319,64 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 //按钮的跳转
 - (void)BtnPushClick:(UIButton *)sender{
     //顶部的按钮跳转
+    if([sender.titleLabel.text isEqualToString:@"关注(人)"]){
+        if ([_otherTwoStr isEqualToString:@"2"]) {
+//            StudentGuanZhuVC * guanzhu = [[StudentGuanZhuVC alloc] init];
+//            guanzhu.midStrr = _midStrr;
+//            guanzhu.titleStrr = @"关注";
+//            [self.navigationController pushViewController:guanzhu animated:YES];
+        }else{
+            TRZXPersonalCareAboutController * guanzhu = [[TRZXPersonalCareAboutController alloc] init];
+            guanzhu.midStr = _midStrr;
+            guanzhu.delegate = self;
+            [self.navigationController pushViewController:guanzhu animated:YES];
+        }
+        
+    }else if([sender.titleLabel.text isEqualToString:@"观看课程(集)"]){
+//        GuanKanViewController * sanjiVC = [[GuanKanViewController alloc] init];
+//        sanjiVC.title1Str = @"观看课程";
+//        sanjiVC.MID = _midStrr;
+//        sanjiVC.panduanStr = @"课程";
+//        sanjiVC.delegate = self;
+//        [self.navigationController pushViewController:sanjiVC animated:YES];
+    }else if([sender.titleLabel.text isEqualToString:@"观看路演(次)"]){
+//        GuanKanViewController * sanjiVC = [[GuanKanViewController alloc] init];
+//        sanjiVC.title1Str = @"观看路演";
+//        sanjiVC.MID = _midStrr;
+//        sanjiVC.panduanStr = @"路演";
+//        sanjiVC.delegate = self;
+//        [self.navigationController pushViewController:sanjiVC animated:YES];
+    }
 }
 //加关注
 - (void)bottomGuanzhuClick:(UIButton *)sender{
     sender.userInteractionEnabled = NO;
-    //    _quxiaoStr = @"1";
-    //    if ([_PersonalMode.userType isEqualToString:@"Tourist"]||[_PersonalMode.userType isEqualToString:@"User"]||[_dangqianStr isEqualToString:@"1"]) {//游客和普通用户
-    //        [CollegeViewModel getWatch:_midStrr success:^(id json) {
-    //            if ([json[@"status_code"] isEqualToString:@"200"]) {
-    //
-    //                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"关注成功" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    //                [alert show];
-    //                _guanzhuStr = @"1";
-    //                [self caidanShuJu];
-    //            }else{
-    //                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"关注失败" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    //                [alert show];
-    //            }
-    //            sender.userInteractionEnabled = YES;
-    //        } failure:^(NSError *error) {
-    //
-    //        }];
-    //
-    //    }else{
-    //        [CollegeViewModel getWatch:_midStrr success:^(id json) {
-    //            if ([json[@"status_code"] isEqualToString:@"200"]) {
-    //                UIAlertView *alert = [[UIAlertView alloc]
-    //                                      initWithTitle:@"关注成功" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    //                [alert show];
-    //                _guanzhuStr = @"1";
-    //                [self caidanShuJu];
-    //
-    //            } else{
-    //                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"关注失败" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    //                [alert show];
-    //            }
-    //            sender.userInteractionEnabled = YES;
-    //        } failure:^(NSError *error) {
-    //
-    //        }];
-    //    }
+        _quxiaoStr = @"1";
+    NSDictionary *params = @{@"requestType":@"OnlineSchool_Api",
+                            @"watchId":_midStrr,
+                            @"apiType":@"watch"};
+    
+     [TRZXNetwork requestWithUrl:nil params:params method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id data, NSError *error) {
+         
+        if ([data[@"status_code"] isEqualToString:@"200"]) {
+
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"关注成功" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert show];
+            _guanzhuStr = @"1";
+            [self caidanShuJu];
+        }else{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"关注失败" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+        sender.userInteractionEnabled = YES;
+    }];
+    
 }
 
-//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-//    [self.PersonalBottomView guanzhuBtnStatusChange];
-//    [[NSNotificationCenter defaultCenter] postNotificationName:collectionStasusChangeKey object:nil];
-//}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    [self.PersonalBottomView guanzhuBtnStatusChange];
+    [[NSNotificationCenter defaultCenter] postNotificationName:collectionStasusChangeKey object:nil];
+}
 
 
 //投递BP事件
