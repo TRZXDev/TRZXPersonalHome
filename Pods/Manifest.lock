@@ -59,7 +59,6 @@ PODS:
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
-  - TRZXNoLabelView (0.0.1)
   - TRZXPersonalProfile (0.0.4):
     - CTMediator
   - TRZXShufflingView (0.0.4):
@@ -79,7 +78,6 @@ DEPENDENCIES:
   - TRZXMyCustomer
   - TRZXMyWallet
   - TRZXNetwork
-  - TRZXNoLabelView
   - TRZXPersonalProfile
   - TRZXShufflingView
 
@@ -102,11 +100,10 @@ SPEC CHECKSUMS:
   TRZXMyCustomer: 636d05d6df200709f93d783d66dee707331e8881
   TRZXMyWallet: b1f5d741ebfb50735bfe4a05b98cc7d5da35abb2
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
-  TRZXNoLabelView: 5ba0d7f4b5be9f3e5b551f59dc0c7483bc12b446
   TRZXPersonalProfile: 81b5532aa00b89930b64a34dd7eca9b934327f81
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: a5e219bcf1a8e7057ec166ef2df99be159e29748
+PODFILE CHECKSUM: 80ab277658918fcaaaa99ac62b5e3f4e8f70e87a
 
 COCOAPODS: 1.2.0

@@ -9,7 +9,6 @@
 #import "TRZXPersonalWatchController.h"
 #import "TRZXPersonalWatchModel.h"
 #import "ZaixianerjiyedeCell.h"
-#import "NoLabelView.h"
 #import "InvestSeeCell.h"
 #import "TRZXDIYRefresh.h"
 #import "MJExtension.h"

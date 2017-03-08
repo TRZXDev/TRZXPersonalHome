@@ -9,7 +9,6 @@
 #import "TRZXPersonalCareAboutController.h"
 #import "PersonalGuanZhuCell.h"
 #import "PersonalModell.h"
-#import "NoLabelView.h"
 #import "MJRefresh.h"
 #import "MJExtension.h"
 #import "TRZXNetwork.h"
@@ -28,7 +27,7 @@
 @property (strong, nonatomic) NSMutableArray * personalArr;
 @property (nonatomic) NSInteger pageNo;
 @property (nonatomic) NSInteger totalPage;
-@property (strong, nonatomic) NoLabelView *noLabelView;
+@property (strong, nonatomic) UILabel *noLabelView;
 @property (strong, nonatomic) NSString * refreshStr;
 @property (nonatomic, strong) UIImageView * bgdImage;
 
@@ -73,12 +72,13 @@
             
         }else{
             [_myTableView.mj_footer endRefreshing];
-//            if (!_noLabelView) {
-//                _noLabelView = [[[NSBundle mainBundle]loadNibNamed:@"NoLabelView" owner:self options:nil] objectAtIndex:0];
-//                _noLabelView.backgroundColor = backColor;
-//                _noLabelView.frame = CGRectMake(0, 0, self.view.frame.size.width, 40);
-//                self.myTableView.tableFooterView = _noLabelView;
-//            }
+            if (!_noLabelView) {
+                _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+                _noLabelView.text = @"— 没有更多了 —";
+                _noLabelView.textAlignment = NSTextAlignmentCenter;
+                _noLabelView.textColor = zideColor;
+                _guanzhuTableView.tableFooterView = _noLabelView;
+            }
             _noLabelView.hidden = NO;
             _myTableView.mj_footer.hidden = YES;
         }
@@ -109,13 +109,13 @@
                         _myTableView.backgroundColor = backColor;
                         self.bgdImage.hidden = YES;
                         if(_totalPage<=1){
-//                            if (!_noLabelView) {
-//                                _noLabelView = [[[NSBundle mainBundle]loadNibNamed:@"NoLabelView" owner:self options:nil] objectAtIndex:0];
-//                                
-//                                _noLabelView.backgroundColor = backColor;
-//                                _noLabelView.frame = CGRectMake(0, 0, self.view.frame.size.width, 40);
-//                                self.myTableView.tableFooterView = _noLabelView;
-//                            }
+                            if (!_noLabelView) {
+                                _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+                                _noLabelView.text = @"— 没有更多了 —";
+                                _noLabelView.textAlignment = NSTextAlignmentCenter;
+                                _noLabelView.textColor = zideColor;
+                                _guanzhuTableView.tableFooterView = _noLabelView;
+                            }
                             _noLabelView.hidden = NO;
                             _myTableView.mj_footer.hidden = YES;
                         }else{
