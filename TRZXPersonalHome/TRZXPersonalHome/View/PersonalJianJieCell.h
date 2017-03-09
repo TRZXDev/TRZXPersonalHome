@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "PersonalModell.h"
+#import "TRZPersonalModell.h"
 #import "PersonalCollectionView.h"
 #import "PersonalZBCollectionView.h"
 #import "LatestLiveModel.h"

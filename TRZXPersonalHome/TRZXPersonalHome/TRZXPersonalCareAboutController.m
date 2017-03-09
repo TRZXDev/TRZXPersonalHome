@@ -8,7 +8,7 @@
 
 #import "TRZXPersonalCareAboutController.h"
 #import "PersonalGuanZhuCell.h"
-#import "PersonalModell.h"
+#import "TRZPersonalModell.h"
 #import "MJRefresh.h"
 #import "MJExtension.h"
 #import "TRZXNetwork.h"
@@ -102,7 +102,7 @@
                 
                 if(refreshIndex==0){
                     _refreshStr = @"0";
-                    _personalArr = [[NSMutableArray alloc]initWithArray:[PersonalModell mj_objectArrayWithKeyValuesArray:personalArr]];
+                    _personalArr = [[NSMutableArray alloc]initWithArray:[TRZPersonalModell mj_objectArrayWithKeyValuesArray:personalArr]];
                     if (_personalArr.count>0) {
                         _myTableView.tableFooterView = [[UIView alloc]init];
                         _myTableView.mj_footer.hidden = NO;
@@ -130,7 +130,7 @@
                     [_myTableView.mj_header endRefreshing];
                 }else{
                     _refreshStr = @"1";
-                    NSArray *array = [PersonalModell mj_objectArrayWithKeyValuesArray:personalArr];
+                    NSArray *array = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:personalArr];
                     if (array.count>0) {
                         [_personalArr addObjectsFromArray:array];
                         [_myTableView.mj_footer endRefreshing];
@@ -188,7 +188,7 @@
     NO;
     
     cell.backgroundColor = [UIColor whiteColor];
-    PersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
+    TRZPersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
     [cell.icmImage sd_setImageWithURL:[NSURL URLWithString:model.photo]placeholderImage:[UIImage imageNamed:@"展位图"]];
     cell.nameLabel.text = model.name;
     cell.gongsiLabel.text = [NSString stringWithFormat:@"%@,%@",model.company,model.position];
@@ -227,7 +227,7 @@
     [tableView setEditing:NO animated:YES];
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        PersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
+        TRZPersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
         
         NSDictionary *params = @{@"requestType":@"Collection_Tools_List",
                                  @"apiType":@"cancelFollow",

@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PersonalModell.h"
+#import "TRZPersonalModell.h"
 
 @interface CeHuaCollectionViewCell : UICollectionViewCell
 
 
-@property (strong, nonatomic)PersonalModell *model;
+@property (strong, nonatomic)TRZPersonalModell *model;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *midLab;

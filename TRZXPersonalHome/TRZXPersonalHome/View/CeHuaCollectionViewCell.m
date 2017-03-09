@@ -22,7 +22,7 @@
     self.hongdian.backgroundColor = TRZXMainColor;
     self.hongdian.hidden = YES;
 }
--(void)setModel:(PersonalModell *)model{
+-(void)setModel:(TRZPersonalModell *)model{
     
     if (_model!=model) {
         _model = model;

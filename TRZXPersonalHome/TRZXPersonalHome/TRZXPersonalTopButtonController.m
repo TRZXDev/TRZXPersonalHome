@@ -8,7 +8,7 @@
 
 #import "TRZXPersonalTopButtonController.h"
 #import "PersonalGuanZhuCell.h"
-#import "PersonalModell.h"
+#import "TRZPersonalModell.h"
 #import "MJRefresh.h"
 #import "MJExtension.h"
 #import "TRZXNetwork.h"
@@ -22,7 +22,7 @@
 @interface TRZXPersonalTopButtonController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *guanzhuTableView;
-@property (strong, nonatomic) PersonalModell *PersonalMode;
+@property (strong, nonatomic) TRZPersonalModell *PersonalMode;
 @property (strong, nonatomic) NSMutableArray * personalArr;
 
 @property (strong, nonatomic) NSString * requestTypeStr;
@@ -129,7 +129,7 @@
                 NSDictionary *personalArr = object[@"data"];
                 _totalPage = [object[@"totalPage"] integerValue];
                 if(refreshIndex==0){
-                    _personalArr = [[NSMutableArray alloc]initWithArray:[PersonalModell mj_objectArrayWithKeyValuesArray:personalArr]];
+                    _personalArr = [[NSMutableArray alloc]initWithArray:[TRZPersonalModell mj_objectArrayWithKeyValuesArray:personalArr]];
                     if (_personalArr.count>0) {
                         _guanzhuTableView.tableFooterView = [[UIView alloc]init];
                         _guanzhuTableView.backgroundColor = backColor;
@@ -155,7 +155,7 @@
                     }
                     [_guanzhuTableView.mj_header endRefreshing];
                 }else{
-                    NSArray *array = [PersonalModell mj_objectArrayWithKeyValuesArray:personalArr];
+                    NSArray *array = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:personalArr];
                     if (array.count>0) {
                         [_personalArr addObjectsFromArray:array];
                         [_guanzhuTableView.mj_footer endRefreshing];
@@ -209,7 +209,7 @@
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.backgroundColor = [UIColor whiteColor];
-    PersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
+    TRZPersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
     if ([_titleStrr isEqualToString:@"粉丝"]||[_titleStrr isEqualToString:@"关注"]){
         [cell.icmImage sd_setImageWithURL:[NSURL URLWithString:model.photo]placeholderImage:[UIImage imageNamed:@"展位图"]];
     }else {

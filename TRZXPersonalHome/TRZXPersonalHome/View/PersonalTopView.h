@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PersonalModell.h"
+#import "TRZPersonalModell.h"
 
 
 @protocol PersonalDelegate <NSObject>
@@ -23,7 +23,7 @@
 //@property (weak, nonatomic) IBOutlet UIView *btnView;
 
 @property (weak, nonatomic) IBOutlet UILabel *zhiweiLabel;
-@property (strong, nonatomic)PersonalModell *model;
+@property (strong, nonatomic)TRZPersonalModell *model;
 
 @property(nonatomic,weak)id<PersonalDelegate>delegatee;
 @property (weak, nonatomic) IBOutlet UIImageView *proxyImage;

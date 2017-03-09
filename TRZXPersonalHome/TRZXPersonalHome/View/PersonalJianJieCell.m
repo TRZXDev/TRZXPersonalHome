@@ -48,7 +48,7 @@
             _PersonalCollectionView = [[[NSBundle mainBundle]loadNibNamed:@"PersonalCollectionView" owner:self options:nil] objectAtIndex:0];
             _PersonalCollectionView.logoImage.layer.cornerRadius = 6;
             _PersonalCollectionView.logoImage.layer.masksToBounds = YES;
-            PersonalModell *mode = [_chengjiuArr objectAtIndex:i];
+            TRZPersonalModell *mode = [_chengjiuArr objectAtIndex:i];
 
             [self.gengduoBtn setTitle:@"更多成果" forState:UIControlStateNormal];
             

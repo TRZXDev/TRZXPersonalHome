@@ -29,7 +29,7 @@
 //    self.nameLabel.text = [KPOUserDefaults name];
     
 }
--(void)setModel:(PersonalModell *)model{
+-(void)setModel:(TRZPersonalModell *)model{
     
     if (_model!=model) {
         _model = model;
