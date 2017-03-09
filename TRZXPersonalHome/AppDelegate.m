@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "TRZXNetwork.h"
 
+#import "Login.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,8 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSMutableDictionary *headers = [[NSMutableDictionary alloc]init];
-    [headers setValue:@"83a7fdf188eb4f4270cb05839d15e881" forKey:@"token"];
-    [headers setValue:@"aea1feeb14e24a7291ab1a99f3c89690" forKey:@"userId"];
+    [headers setValue:[Login curLoginUser].token forKey:@"token"];
+    [headers setValue:[Login curLoginUser].userId forKey:@"userId"];
     [headers setValue:@"iOS" forKey:@"equipment"];
     
     

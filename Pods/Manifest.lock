@@ -17,6 +17,9 @@ PODS:
   - CTMediator (0.0.3)
   - DVSwitch (1.0.2)
   - FDStackView (1.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - IQKeyboardManager (4.0.8)
   - LCActionSheet (2.7.2):
     - Masonry (~> 1.0.1)
@@ -45,6 +48,12 @@ PODS:
     - MJRefresh
   - TRZXDVSwitch (0.0.6)
   - TRZXKit (0.0.9)
+  - TRZXLogin (0.0.2):
+    - MJExtension
+    - ReactiveCocoa (~> 2.5)
+    - TRZXKit
+    - TRZXNetwork
+    - YTKKeyValueStore
   - TRZXMyCustomer (0.0.5):
     - CTMediator
     - MJExtension
@@ -79,6 +88,8 @@ PODS:
   - TRZXShufflingView (0.0.4):
     - AFNetworking
   - TZImagePickerController (1.7.8)
+  - YTKKeyValueStore (0.1.2):
+    - FMDB (~> 2.0)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
@@ -91,6 +102,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - SDAutoLayout
   - SDWebImage
+  - TRZXLogin
   - TRZXMyCustomer
   - TRZXMyWallet
   - TRZXNetwork
@@ -103,6 +115,7 @@ SPEC CHECKSUMS:
   CTMediator: c9a1203561e2232cb9a72822659159a02ae3cf20
   DVSwitch: cc13ee6ca6244edcb2afa07b6f07978a0b053c1d
   FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
   LCActionSheet: 2071dfc1834585cd7f57a234890cd0a96e4b6682
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -116,6 +129,7 @@ SPEC CHECKSUMS:
   TRZXDIYRefresh: a89e7cf1658ff7d57aad081c596c2a9cf137dcf2
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
+  TRZXLogin: 1bd768836091bbdb3da4d4520c3bfb144e10e2b2
   TRZXMyCustomer: 636d05d6df200709f93d783d66dee707331e8881
   TRZXMyWallet: b1f5d741ebfb50735bfe4a05b98cc7d5da35abb2
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
@@ -123,8 +137,9 @@ SPEC CHECKSUMS:
   TRZXPersonalProfile: d5690dc67a1215d979bda30ef1e89ef0e1bc1155
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
+  YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 22c61862643535b65684112d88fd82856d5b97dd
+PODFILE CHECKSUM: c5d1cc7625ca020f4d1e57d0998ebf2a67f8bd10
 
 COCOAPODS: 1.2.0
