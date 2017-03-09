@@ -308,7 +308,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
             if (_personalArr.count) {
                 
                 _PersonalMode = [PersonalModell mj_objectWithKeyValues:_personalArr];
-                _PersonalMode.sessionUserTypeStr = data[@"sessionUserTypeStr"];
+                _PersonalMode.userTypeStr = data[@"userTypeStr"];
                 _PersonalMode.isAlso = data[@"isAlso"];
                 if ([_otherTwoStr isEqualToString:@"2"]&&([_PersonalMode.userType isEqualToString:@"Tourist"]||[_PersonalMode.userType isEqualToString:@"User"]||[_PersonalMode.userType isEqualToString:@"Proxy"])) {
                     _ckptyhStr = @"1";
@@ -329,7 +329,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                         [_PersonalMode.userType isEqualToString:@"TradingCenter"]||
                         [_PersonalMode.userType isEqualToString:@"Tourist"]) {
                         _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-                    }else if ((![_PersonalMode.userType isEqualToString:@"Proxy"])&&[_PersonalMode.sessionUserTypeStr isEqualToString:@"Proxy"]) {
+                    }else if ((![_PersonalMode.userType isEqualToString:@"Proxy"])&&[_PersonalMode.userTypeStr isEqualToString:@"Proxy"]) {
                         _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
                     }else{
                         _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-49);
@@ -340,8 +340,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 
                 _PersonalTopView.frame = CGRectMake(0, 0, self.view.frame.size.width, 180);
                 if ([_otherTwoStr isEqualToString:@"2"]&&
-                    ![_PersonalMode.sessionUserTypeStr isEqualToString:@"User"] &&
-                    ![_PersonalMode.sessionUserTypeStr isEqualToString:@"Tourist"] &&
+                    ![_PersonalMode.userTypeStr isEqualToString:@"User"] &&
+                    ![_PersonalMode.userTypeStr isEqualToString:@"Tourist"] &&
                     ![_PersonalMode.userType isEqualToString:@"User"] &&
                     ![_PersonalMode.userType isEqualToString:@"Tourist"] &&
                     ![_PersonalMode.userType isEqualToString:@"TradingCenter"] &&
@@ -350,7 +350,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                     [self.view addSubview:self.PersonalBottomView];
                     self.PersonalBottomView.model = _PersonalMode;
                 }
-                if (![_PersonalMode.userType isEqualToString:@"Proxy"]&&[_PersonalMode.sessionUserTypeStr isEqualToString:@"Proxy"]){
+                if (![_PersonalMode.userType isEqualToString:@"Proxy"]&&[_PersonalMode.userTypeStr isEqualToString:@"Proxy"]){
                     self.PersonalBottomView.hidden = YES;
                 }
                 //先注销了
@@ -536,7 +536,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     [_presonalNavgationViw.fenxiangBtn addTarget:self action:@selector(fenxiangClick:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:_presonalNavgationViw];
-    if ([_PersonalMode.sessionUserTypeStr isEqualToString:@"TradingCenter"]){//交易中心
+    if ([_PersonalMode.userTypeStr isEqualToString:@"TradingCenter"]){//交易中心
         _presonalNavgationViw.biaotiLabel.text = @"交易中心的主页";
     }else{
         if ([_otherTwoStr isEqualToString:@"2"]) {

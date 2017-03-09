@@ -69,19 +69,19 @@
     }
     //判断聊天身份
     //    未成为好友能聊天 : 专家,股东   投资人，股东
-    if(([model.sessionUserTypeStr isEqualToString:@"Share"]||[model.sessionUserTypeStr isEqualToString:@"ShareProxy"]) && ([model.userType isEqualToString:@"Expert"]||[model.userType isEqualToString:@"ExpertProxy"])){//股东和专家
+    if(([model.userTypeStr isEqualToString:@"Share"]||[model.userTypeStr isEqualToString:@"ShareProxy"]) && ([model.userType isEqualToString:@"Expert"]||[model.userType isEqualToString:@"ExpertProxy"])){//股东和专家
         [self.sixinBtn setTitle:@"私聊" forState:UIControlStateNormal];
         [self.sixinBtn addTarget:self action:@selector(chat) forControlEvents:UIControlEventTouchUpInside];
-    }else if(([model.sessionUserTypeStr isEqualToString:@"Expert"]||[model.sessionUserTypeStr isEqualToString:@"ExpertProxy"]) && ([model.userType isEqualToString:@"Share"]||[model.userType isEqualToString:@"ShareProxy"])){//专家和股东
+    }else if(([model.userTypeStr isEqualToString:@"Expert"]||[model.userTypeStr isEqualToString:@"ExpertProxy"]) && ([model.userType isEqualToString:@"Share"]||[model.userType isEqualToString:@"ShareProxy"])){//专家和股东
         [self.sixinBtn setTitle:@"私聊" forState:UIControlStateNormal];
         [self.sixinBtn addTarget:self action:@selector(chat) forControlEvents:UIControlEventTouchUpInside];
-    }else if(([model.sessionUserTypeStr isEqualToString:@"OrgInvestor"]||[model.sessionUserTypeStr isEqualToString:@"OrgInvestorProxy"]) && ([model.userType isEqualToString:@"Share"]||[model.userType isEqualToString:@"ShareProxy"])){//投资人和股东
+    }else if(([model.userTypeStr isEqualToString:@"OrgInvestor"]||[model.userTypeStr isEqualToString:@"OrgInvestorProxy"]) && ([model.userType isEqualToString:@"Share"]||[model.userType isEqualToString:@"ShareProxy"])){//投资人和股东
         [self.sixinBtn setTitle:@"私聊" forState:UIControlStateNormal];
         [self.sixinBtn addTarget:self action:@selector(chat) forControlEvents:UIControlEventTouchUpInside];
-    }else if(([model.sessionUserTypeStr isEqualToString:@"Share"]||[model.sessionUserTypeStr isEqualToString:@"ShareProxy"]) && ([model.userType isEqualToString:@"OrgInvestor"]||[model.userType isEqualToString:@"OrgInvestorProxy"])){//投资人和股东
+    }else if(([model.userTypeStr isEqualToString:@"Share"]||[model.userTypeStr isEqualToString:@"ShareProxy"]) && ([model.userType isEqualToString:@"OrgInvestor"]||[model.userType isEqualToString:@"OrgInvestorProxy"])){//投资人和股东
         [self.sixinBtn setTitle:@"私聊" forState:UIControlStateNormal];
         [self.sixinBtn addTarget:self action:@selector(chat) forControlEvents:UIControlEventTouchUpInside];
-    }else if([model.sessionUserTypeStr isEqualToString:@"Proxy"] && ([model.userType isEqualToString:@"Proxy"])){//运营商和运营商
+    }else if([model.userTypeStr isEqualToString:@"Proxy"] && ([model.userType isEqualToString:@"Proxy"])){//运营商和运营商
         //判断是否是好友
          if ([model.isAlso isEqualToString:@"Complete"]) {
              [self.sixinBtn setTitle:@"私聊" forState:UIControlStateNormal];
@@ -100,7 +100,7 @@
     //是否显示BP
     if (([model.userType isEqualToString:@"ShareProxy"] ||
          [model.userType isEqualToString:@"Share"] ) &&
-        ([model.sessionUserTypeStr isEqualToString:@"OrgInvestor"]||[model.sessionUserTypeStr isEqualToString:@"OrgInvestorProxy"]) &&
+        ([model.userTypeStr isEqualToString:@"OrgInvestor"]||[model.userTypeStr isEqualToString:@"OrgInvestorProxy"]) &&
         model.bpFlag.integerValue == 1) {
         
         switch (model.d4aFlag.intValue) {
@@ -126,7 +126,7 @@
         }
         
     }else if (([model.userType isEqualToString:@"OrgInvestor"] || [model.userType isEqualToString:@"OrgInvestorProxy"] ) &&
-        ([model.sessionUserTypeStr isEqualToString:@"Share"]||[model.sessionUserTypeStr isEqualToString:@"ShareProxy"]) &&
+        ([model.userTypeStr isEqualToString:@"Share"]||[model.userTypeStr isEqualToString:@"ShareProxy"]) &&
               model.bpFlag.integerValue == 1) {
         
         switch (model.d4aFlag.intValue) {

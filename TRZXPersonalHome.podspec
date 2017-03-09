@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "TRZXPersonalHome"
-    s.version      = "0.1.5"
+    s.version      = "0.1.7"
     s.ios.deployment_target = '8.0'
     s.summary      = "TRZXPersonalHome"
     s.homepage     = "https://github.com/TRZXDev/TRZXPersonalHome"
@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
     s.dependency "TRZXMyWallet"
     s.dependency "TRZXPersonalProfile"
     s.dependency "TRZXPersonalCustomerCenter"
+    s.dependency "TRZXLogin"
 
 
     s.requires_arc = true
