@@ -24,7 +24,7 @@
 @property (copy, nonatomic) NSString *companyName;
 @property (copy, nonatomic) NSString *ecAbstractz;
 
-@property (copy, nonatomic) NSString *userTypeStr;//登录用户的身份
+@property (copy, nonatomic) NSString *currentUser;//登录用户的身份
 
 @property (copy, nonatomic) NSString *ccompany;
 @property (copy, nonatomic) NSString *ccAbstractz;
