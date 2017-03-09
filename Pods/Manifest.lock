@@ -35,7 +35,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TRZXComplaint (0.0.3):
+  - TRZXComplaint (0.0.4):
     - CTMediator
     - LCActionSheet
     - TRZXKit
@@ -67,14 +67,14 @@ PODS:
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
-  - TRZXPersonalCustomerCenter (0.0.5):
+  - TRZXPersonalCustomerCenter (0.0.6):
     - CTMediator
     - MJExtension
     - SDWebImage
     - TRZXComplaint
     - TRZXKit
     - TRZXNetwork
-  - TRZXPersonalProfile (0.0.4):
+  - TRZXPersonalProfile (0.0.5):
     - CTMediator
   - TRZXShufflingView (0.0.4):
     - AFNetworking
@@ -112,15 +112,15 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TRZXComplaint: 5776acd0c7ca7118c16f71c5dbd771350014e3ca
+  TRZXComplaint: 8310057ee979009f52d7c7632c84d0f8468d8454
   TRZXDIYRefresh: a89e7cf1658ff7d57aad081c596c2a9cf137dcf2
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
   TRZXMyCustomer: 636d05d6df200709f93d783d66dee707331e8881
   TRZXMyWallet: b1f5d741ebfb50735bfe4a05b98cc7d5da35abb2
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
-  TRZXPersonalCustomerCenter: 4c04d14ac86902f0c49a1c22a09f2db91d6038fc
-  TRZXPersonalProfile: 81b5532aa00b89930b64a34dd7eca9b934327f81
+  TRZXPersonalCustomerCenter: 9822a34b41ee77454b70e206346744f0d53b92c8
+  TRZXPersonalProfile: d5690dc67a1215d979bda30ef1e89ef0e1bc1155
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952

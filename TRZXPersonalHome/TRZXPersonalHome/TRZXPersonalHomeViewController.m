@@ -476,7 +476,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     [self.view addSubview:_tableView];
     
     
-    _PersonalTopView = [[[NSBundle mainBundle]loadNibNamed:@"PersonalTopView" owner:self options:nil] objectAtIndex:0];
+    _PersonalTopView = [[[NSBundle bundleForClass:[self class]]loadNibNamed:@"PersonalTopView" owner:self options:nil] objectAtIndex:0];
     
     if ([_otherTwoStr isEqualToString:@"2"]) {
         _PersonalTopView.tiaozhaunView.hidden = YES;
@@ -518,7 +518,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 }
 
 -(void)createUI{
-    _presonalNavgationViw = [[[NSBundle mainBundle]loadNibNamed:@"presonalNavgationViw" owner:self options:nil] objectAtIndex:0];
+    _presonalNavgationViw = [[[NSBundle bundleForClass:[self class]]loadNibNamed:@"presonalNavgationViw" owner:self options:nil] objectAtIndex:0];
     _presonalNavgationViw.frame = CGRectMake(0, 0, self.view.frame.size.width, 64);
     _titleLab = [[UILabel alloc]init];
     _titleLab.backgroundColor = [UIColor colorWithRed:224.0/255.0 green:224.0/255.0 blue:224.0/255.0 alpha:1];
@@ -952,7 +952,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     if (indexPath.section == 0) {
         xihuanTableViewCell*cell = [tableView dequeueReusableCellWithIdentifier:@"xihuanTableViewCell"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"xihuanTableViewCell" owner:self options:nil] lastObject];
+            cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"xihuanTableViewCell" owner:self options:nil] lastObject];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -1007,23 +1007,23 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         if ([_otherTwoStr isEqualToString:@"2"]) {
             CeHuaTableView2Cell*cell = [tableView dequeueReusableCellWithIdentifier:@"CeHuaTableView2Cell"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle] loadNibNamed:@"CeHuaTableView2Cell" owner:self options:nil] lastObject];
+                cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"CeHuaTableView2Cell" owner:self options:nil] lastObject];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
             cell.backgroundColor = backColor;
-            GifView *pathView =[[GifView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-233)/2, 0, 233, 58) filePath:[[NSBundle mainBundle] pathForResource:@"shenniu" ofType:@"gif"]];
+            GifView *pathView =[[GifView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-233)/2, 0, 233, 58) filePath:[[NSBundle bundleForClass:[self class]] pathForResource:@"shenniu" ofType:@"gif"]];
             [cell addSubview:pathView];
             return cell;
         }else{
             CeHuaTableViewCell*cell = [tableView dequeueReusableCellWithIdentifier:@"CeHuaTableViewCell"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle] loadNibNamed:@"CeHuaTableViewCell" owner:self options:nil] lastObject];
+                cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"CeHuaTableViewCell" owner:self options:nil] lastObject];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
             UIButton * tiaozhuan = [UIButton buttonWithType:UIButtonTypeCustom];
-            GifView *pathView =[[GifView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-233)/2, 0, 233, 58) filePath:[[NSBundle mainBundle] pathForResource:@"shenniu" ofType:@"gif"]];
+            GifView *pathView =[[GifView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-233)/2, 0, 233, 58) filePath:[[NSBundle bundleForClass:[self class]] pathForResource:@"shenniu" ofType:@"gif"]];
             [cell addSubview:pathView];
             tiaozhuan.frame = CGRectMake((self.view.frame.size.width-233)/2, 0, 233, 58);
             [tiaozhuan addTarget:self action:@selector(gengduorenClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -1041,7 +1041,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     }else if (indexPath.section == 2) {
         PhotoDTableViewCell*cell = [tableView dequeueReusableCellWithIdentifier:@"PhotoDTableViewCell"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"PhotoDTableViewCell" owner:self options:nil] lastObject];
+            cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"PhotoDTableViewCell" owner:self options:nil] lastObject];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -1086,7 +1086,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     }else if (indexPath.section == 3) {
         PersonalJianJieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonalJianJieCell"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"PersonalJianJieCell" owner:self options:nil] lastObject];
+            cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"PersonalJianJieCell" owner:self options:nil] lastObject];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -1128,7 +1128,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     }else if (indexPath.section == 4||indexPath.section == 5)  {
         StudentJingLiBTCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StudentJingLiBTCell"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"StudentJingLiBTCell" owner:self options:nil] lastObject];
+            cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"StudentJingLiBTCell" owner:self options:nil] lastObject];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = backColor;
@@ -1217,7 +1217,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         if ([_HDGGStr isEqualToString:@"notice"]) {
             xiaoxiCell *cell = [tableView dequeueReusableCellWithIdentifier:@"xiaoxiCell"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle] loadNibNamed:@"xiaoxiCell" owner:self options:nil] lastObject];
+                cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"xiaoxiCell" owner:self options:nil] lastObject];
             }
             cell.line1Image.backgroundColor = backColor;
             PersonalModell *mode = [_gonggaoArr objectAtIndex:indexPath.row];
@@ -1227,7 +1227,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         }else{
             xiaoxi2Cell *cell = [tableView dequeueReusableCellWithIdentifier:@"xiaoxi2Cell"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle] loadNibNamed:@"xiaoxi2Cell" owner:self options:nil] lastObject];
+                cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"xiaoxi2Cell" owner:self options:nil] lastObject];
             }
             cell.backgroundColor = backColor;
             PersonalModell *mode = [_huodongArr objectAtIndex:indexPath.row];

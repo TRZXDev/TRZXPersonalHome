@@ -12,6 +12,7 @@
 #import "TRZXPersonalExperCell.h"
 
 #define PersonalProfilrColor [UIColor colorWithRed:240.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1]
+#define PPPhotoBrowserBundle [NSBundle bundleForClass:[self class]]
 
 
 @interface TRZXPersonalProfileViewController ()<UITableViewDataSource,UITableViewDelegate>{
@@ -116,7 +117,7 @@
         if (indexPath.row == 0){
             TRZXPersonalExperCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXPersonalExperCell"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle] loadNibNamed:@"TRZXPersonalExperCell" owner:self options:nil] lastObject];
+                cell = [[PPPhotoBrowserBundle loadNibNamed:@"TRZXPersonalExperCell" owner:self options:nil] lastObject];
             }
             cell.jingliLabel.text = @"工作经历";
             cell.jingliImage.image = [UIImage imageNamed:@"personalWork"];
@@ -129,7 +130,7 @@
             TRZXProfileUserModel *mode = [_workArray objectAtIndex:indexPath.row-1];
             TRZXPersonalWorkCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXPersonalWorkCell"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle] loadNibNamed:@"TRZXPersonalWorkCell" owner:self options:nil] lastObject];
+                cell = [[PPPhotoBrowserBundle loadNibNamed:@"TRZXPersonalWorkCell" owner:self options:nil] lastObject];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -148,7 +149,7 @@
             
             TRZXPersonalExperCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXPersonalExperCell"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle] loadNibNamed:@"TRZXPersonalExperCell" owner:self options:nil] lastObject];
+                cell = [[PPPhotoBrowserBundle loadNibNamed:@"TRZXPersonalExperCell" owner:self options:nil] lastObject];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.jingliImage.image = [UIImage imageNamed:@"personalEdu"];
@@ -159,7 +160,7 @@
             TRZXProfileUserModel *mode = [_eduArray objectAtIndex:indexPath.row-1];
             TRZXPersonalWorkCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXPersonalWorkCell"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle] loadNibNamed:@"TRZXPersonalWorkCell" owner:self options:nil] lastObject];
+                cell = [[PPPhotoBrowserBundle loadNibNamed:@"TRZXPersonalWorkCell" owner:self options:nil] lastObject];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

@@ -164,7 +164,7 @@
     if ([_panduanStr isEqualToString:@"观看课程"]) {
         ZaixianerjiyedeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZaixianerjiyedeCell"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"ZaixianerjiyedeCell" owner:self options:nil] lastObject];
+            cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"ZaixianerjiyedeCell" owner:self options:nil] lastObject];
         }
         self.tableView.showsVerticalScrollIndicator =
         NO;
@@ -189,7 +189,7 @@
         
         InvestSeeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InvestSeeCell"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle]loadNibNamed:@"InvestSeeCell" owner:nil options:nil]lastObject];
+            cell = [[[NSBundle bundleForClass:[self class]]loadNibNamed:@"InvestSeeCell" owner:nil options:nil]lastObject];
         }
         _tableView.showsVerticalScrollIndicator =
         NO;

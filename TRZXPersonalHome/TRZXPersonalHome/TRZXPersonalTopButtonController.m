@@ -204,7 +204,7 @@
     
     PersonalGuanZhuCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PersonalGuanZhuCell"];
     if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"PersonalGuanZhuCell" owner:self options:nil] lastObject];
+        cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"PersonalGuanZhuCell" owner:self options:nil] lastObject];
     }
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
