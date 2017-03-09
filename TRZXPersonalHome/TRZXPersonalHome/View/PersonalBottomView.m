@@ -8,7 +8,7 @@
 
 #import "PersonalBottomView.h"
 #import <FDStackView/FDStackView.h>
-#import "PersonalModell.h"
+#import "TRZPersonalModell.h"
 #import "Masonry.h"
 #import "UIButton+Extension.h"
 
@@ -57,7 +57,7 @@
 }
 
 #pragma mark - setter
--(void)setModel:(PersonalModell *)model{
+-(void)setModel:(TRZPersonalModell *)model{
     _model = model;
     
     self.hidden = NO;

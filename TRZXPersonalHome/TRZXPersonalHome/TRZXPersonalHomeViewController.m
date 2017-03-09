@@ -16,7 +16,7 @@
 #import "StudentJingLiBTCell.h"
 #import "PersonalJianJieCell.h"
 #import "PersonalCollectionView.h"
-#import "PersonalModell.h"
+#import "TRZPersonalModell.h"
 #import "presonalNavgationViw.h"
 #import "CeHuaTableViewCell.h"
 #import "CeHuaCollectionViewCell.h"
@@ -96,7 +96,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 @property (strong, nonatomic) PersonalTopView *PersonalTopView;
 @property (strong, nonatomic) PersonalCollectionView *PersonalCollectionView;
 @property (strong, nonatomic) PersonalZBCollectionView*PersonalZBCollectionView;
-@property (strong, nonatomic) PersonalModell *PersonalMode;
+@property (strong, nonatomic) TRZPersonalModell *PersonalMode;
 
 
 @property (strong, nonatomic) presonalNavgationViw *presonalNavgationViw;
@@ -122,8 +122,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 @property (copy, nonatomic)NSArray * personalArr;
 
 
-@property (strong, nonatomic) PersonalModell * menuModel;
-@property (strong, nonatomic) PersonalModell * proxyModel;
+@property (strong, nonatomic) TRZPersonalModell * menuModel;
+@property (strong, nonatomic) TRZPersonalModell * proxyModel;
 
 
 @property (nonatomic, strong) NSMutableArray * gonggaoArr;
@@ -266,7 +266,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
             [_menuArr removeAllObjects];
             [_proxyArr removeAllObjects];
             for (int i = 0; i<_omenuArr.count; i++) {
-                PersonalModell * mode = [_omenuArr objectAtIndex:i];
+                TRZPersonalModell * mode = [_omenuArr objectAtIndex:i];
                 if ([mode.mid isEqualToString:@"y129"]||
                     [mode.mid isEqualToString:@"y130"]||
                     [mode.mid isEqualToString:@"y131"]) {
@@ -276,7 +276,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 }
             }
             for (int i = 0; i<_omenuArr.count; i++) {
-                PersonalModell * mode = [_omenuArr objectAtIndex:i];
+                TRZPersonalModell * mode = [_omenuArr objectAtIndex:i];
                 if (!([mode.mid isEqualToString:@"y129"]||[mode.mid isEqualToString:@"y130"]||[mode.mid isEqualToString:@"y131"])) {
                     NSDictionary *dict = @{@"mid":mode.mid,@"name":mode.name};
                     [_menuArr addObject:dict];
@@ -307,7 +307,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
             
             if (_personalArr.count) {
                 
-                _PersonalMode = [PersonalModell mj_objectWithKeyValues:_personalArr];
+                _PersonalMode = [TRZPersonalModell mj_objectWithKeyValues:_personalArr];
                 _PersonalMode.currentUser = data[@"currentUser"];
                 _PersonalMode.isAlso = data[@"isAlso"];
                 if ([_otherTwoStr isEqualToString:@"2"]&&([_PersonalMode.userType isEqualToString:@"Tourist"]||[_PersonalMode.userType isEqualToString:@"User"]||[_PersonalMode.userType isEqualToString:@"Proxy"])) {
@@ -358,7 +358,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 _PersonalTopView.hidden = NO;
                 [_PersonalTopView.icmBtn addTarget:self action:@selector(touxiangClick:) forControlEvents:UIControlEventTouchUpInside];
                 
-                _chengjiuArr = [PersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"achievements"]];
+                _chengjiuArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"achievements"]];
                 _PersonalTopView.AmplifyImageView = [[UIImageView alloc]init];
                 [_PersonalTopView.AmplifyImageView sd_setImageWithURL:[NSURL URLWithString:_PersonalMode.maxPhoto] placeholderImage:[UIImage imageNamed:@"展位图1"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                     
@@ -373,7 +373,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 _PersonalTopView.vipStr = _vipStr;
                 _PersonalTopView.midStrr = _midStrr;
                 _PersonalTopView.model = _PersonalMode;
-                _jiaoyuArr = [PersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"userEducationExperiences"]];//教育
+                _jiaoyuArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"userEducationExperiences"]];//教育
                 //                NSData *datae = [[NSUserDefaults standardUserDefaults] objectForKey:@"BackBJImage"];
                 //                if (datae) {
                 //                    UIImage *image = [UIImage imageWithData:datae];
@@ -381,7 +381,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 //                }else{
                 [self.PersonalTopView.beijiagImage sd_setImageWithURL:[NSURL URLWithString:_PersonalMode.bgImage] placeholderImage:[UIImage imageNamed:@"个人主页图"]];
                 //                }
-                _gongzuoArr = [PersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"userWorkExperience"]];//工作
+                _gongzuoArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"userWorkExperience"]];//工作
                 
                 if ([_PersonalMode.userType isEqualToString:@"ShareProxy"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]){
                     
@@ -1220,7 +1220,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"xiaoxiCell" owner:self options:nil] lastObject];
             }
             cell.line1Image.backgroundColor = backColor;
-            PersonalModell *mode = [_gonggaoArr objectAtIndex:indexPath.row];
+            TRZPersonalModell *mode = [_gonggaoArr objectAtIndex:indexPath.row];
             cell.biaotiLabel.text = mode.msgTitle;
             cell.shijianLabel.text = mode.date;
             return cell;
@@ -1230,7 +1230,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"xiaoxi2Cell" owner:self options:nil] lastObject];
             }
             cell.backgroundColor = backColor;
-            PersonalModell *mode = [_huodongArr objectAtIndex:indexPath.row];
+            TRZPersonalModell *mode = [_huodongArr objectAtIndex:indexPath.row];
             
             [cell.topImage sd_setImageWithURL:[NSURL URLWithString:mode.msgzPic]placeholderImage:[UIImage imageNamed:@"展位图"]];
             cell.timeLabel.text = mode.date;

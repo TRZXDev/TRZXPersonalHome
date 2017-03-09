@@ -1,5 +1,5 @@
 //
-//  PersonalModell.h
+//  TRZPersonalModell.h
 //  tourongzhuanjia
 //
 //  Created by 移动微世界 on 16/4/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PersonalModell : NSObject
+@interface TRZPersonalModell : NSObject
 
 @property (copy, nonatomic) NSString *isAlso;
 @property (copy, nonatomic) NSString *myBusinessPlan;

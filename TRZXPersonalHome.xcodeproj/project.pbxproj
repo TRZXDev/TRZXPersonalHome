@@ -37,7 +37,7 @@
 		B7C0B76A1E5D61A90030D138 /* TRZXPersonalHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7691E5D61A90030D138 /* TRZXPersonalHomeViewController.m */; };
 		B7C0B8501E5D6A160030D138 /* LatestLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7AA1E5D6A160030D138 /* LatestLiveModel.m */; };
 		B7C0B8511E5D6A160030D138 /* PersonalLiveVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7AC1E5D6A160030D138 /* PersonalLiveVideoModel.m */; };
-		B7C0B8521E5D6A160030D138 /* PersonalModell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7AE1E5D6A160030D138 /* PersonalModell.m */; };
+		B7C0B8521E5D6A160030D138 /* TRZPersonalModell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7AE1E5D6A160030D138 /* TRZPersonalModell.m */; };
 		B7C0B8531E5D6A160030D138 /* TRZXPCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7B01E5D6A160030D138 /* TRZXPCourse.m */; };
 		B7C0B8551E5D6A160030D138 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7B41E5D6A160030D138 /* UIButton+Extension.m */; };
 		B7C0B8561E5D6A160030D138 /* CeHuaButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7B71E5D6A160030D138 /* CeHuaButtonCell.m */; };
@@ -214,8 +214,8 @@
 		B7C0B7AA1E5D6A160030D138 /* LatestLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestLiveModel.m; sourceTree = "<group>"; };
 		B7C0B7AB1E5D6A160030D138 /* PersonalLiveVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalLiveVideoModel.h; sourceTree = "<group>"; };
 		B7C0B7AC1E5D6A160030D138 /* PersonalLiveVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalLiveVideoModel.m; sourceTree = "<group>"; };
-		B7C0B7AD1E5D6A160030D138 /* PersonalModell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalModell.h; sourceTree = "<group>"; };
-		B7C0B7AE1E5D6A160030D138 /* PersonalModell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalModell.m; sourceTree = "<group>"; };
+		B7C0B7AD1E5D6A160030D138 /* TRZPersonalModell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZPersonalModell.h; sourceTree = "<group>"; };
+		B7C0B7AE1E5D6A160030D138 /* TRZPersonalModell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZPersonalModell.m; sourceTree = "<group>"; };
 		B7C0B7AF1E5D6A160030D138 /* TRZXPCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPCourse.h; sourceTree = "<group>"; };
 		B7C0B7B01E5D6A160030D138 /* TRZXPCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPCourse.m; sourceTree = "<group>"; };
 		B7C0B7B31E5D6A160030D138 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
@@ -486,8 +486,8 @@
 				B7C0B7AA1E5D6A160030D138 /* LatestLiveModel.m */,
 				B7C0B7AB1E5D6A160030D138 /* PersonalLiveVideoModel.h */,
 				B7C0B7AC1E5D6A160030D138 /* PersonalLiveVideoModel.m */,
-				B7C0B7AD1E5D6A160030D138 /* PersonalModell.h */,
-				B7C0B7AE1E5D6A160030D138 /* PersonalModell.m */,
+				B7C0B7AD1E5D6A160030D138 /* TRZPersonalModell.h */,
+				B7C0B7AE1E5D6A160030D138 /* TRZPersonalModell.m */,
 				B7C0B7AF1E5D6A160030D138 /* TRZXPCourse.h */,
 				B7C0B7B01E5D6A160030D138 /* TRZXPCourse.m */,
 				B7C0B7B31E5D6A160030D138 /* UIButton+Extension.h */,
@@ -925,7 +925,7 @@
 				B7C0B8931E5D6A170030D138 /* TRZXZHScrollViewLB.m in Sources */,
 				B7C0B8851E5D6A170030D138 /* StudentJingLiBTCell.m in Sources */,
 				B71CFF741E710C8B00778A37 /* ZXShouMode.m in Sources */,
-				B7C0B8521E5D6A160030D138 /* PersonalModell.m in Sources */,
+				B7C0B8521E5D6A160030D138 /* TRZPersonalModell.m in Sources */,
 				B7C0B87B1E5D6A170030D138 /* PersonalZBCollectionView.m in Sources */,
 				B7C0B88D1E5D6A170030D138 /* xiaoxiCell.m in Sources */,
 				B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */,
