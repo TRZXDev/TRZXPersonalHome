@@ -48,7 +48,7 @@
     
     
     self.title = @"我的购买";
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, (self.view.frame.size.height)) style:UITableViewStyleGrouped];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, (self.view.frame.size.height)-64) style:UITableViewStyleGrouped];
     _tableView.separatorStyle = NO;
     _tableView.delegate = self;
     _tableView.dataSource = self;
