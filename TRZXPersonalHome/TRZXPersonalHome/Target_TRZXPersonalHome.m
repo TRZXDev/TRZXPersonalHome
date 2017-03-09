@@ -11,6 +11,7 @@
 #import <TRZXPersonalProfile/CTMediator+PersonalProfile.h>
 #import <TRZXMyWallet/CTMediator+Wallet.h>
 #import <TRZXMyCustomer/CTMediator+MyCustomer.h>
+#import <TRZXPersonalCustomerCenter/CTMediator+TRZXCustomerCenterController.h>
 
 
 
@@ -68,6 +69,13 @@
     return [[CTMediator sharedInstance]rh_MyCustomer_TRZXMyCustomerViewController:params];
 }
 
-
+/**
+ 客服中心
+ 
+ @return ..
+ */
++ (UIViewController *)Action_TRZXCustomerCenterController{
+    return [[CTMediator sharedInstance]TRZXCustomerCenterController_TRZXCustomerCenterController];
+}
 
 @end

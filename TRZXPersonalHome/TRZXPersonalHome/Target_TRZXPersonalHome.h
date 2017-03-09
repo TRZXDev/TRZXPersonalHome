@@ -44,5 +44,11 @@
  */
 + (UIViewController *)Action_MyCustomerViewController:(NSDictionary *)params;
 
+/**
+ 客服中心
+ 
+ @return ..
+ */
++ (UIViewController *)Action_TRZXCustomerCenterController;
 
 @end

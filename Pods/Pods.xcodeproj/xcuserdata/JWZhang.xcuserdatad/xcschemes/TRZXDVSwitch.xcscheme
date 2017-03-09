@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D0006A30306346E960A88017FF32BBCF'
+               BlueprintIdentifier = '9A29D245855E0E5D558792AC61494438'
                BlueprintName = 'TRZXDVSwitch'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TRZXDVSwitch.framework'>

@@ -42,6 +42,8 @@
 #import "TRZXPersonalCareAboutController.h"//关注（自己）
 #import "TRZXPersonalWatchController.h"//观看课程
 #import "TRZXPersonalTopButtonController.h"//关注、粉丝、路演观众等
+#import "TRZXPersonalMyBuyController.h"//我的购买
+
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
@@ -767,7 +769,64 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    CeHuaCollectionViewCell *cell = (CeHuaCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.hongdian.hidden = YES;
+    if ([cell.titleLabel.text isEqualToString:@"收藏"]){
+        
+    }else if ([cell.titleLabel.text isEqualToString:@"客服中心"]){
+        UIViewController *vc = [Target_TRZXPersonalHome Action_TRZXCustomerCenterController];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([cell.titleLabel.text isEqualToString:@"我的购买"]&&[_PersonalMode.userType isEqualToString:@"Proxy"]){
+        
+    }else if ([cell.titleLabel.text isEqualToString:@"一键认证"]){
+        
+    }else if ([cell.titleLabel.text isEqualToString:@"钱包"]){
+        
+    }else if ([cell.midLab.text isEqualToString:@"y129"]){//我的客户
+        
+    }else if ([cell.midLab.text isEqualToString:@"y130"]){//我的团队
+        
+    }else if ([cell.midLab.text isEqualToString:@"y131"]){ // 我的业绩
+       
+    }else if ([cell.midLab.text isEqualToString:@"y126"]) {//我的约见
+        if ([_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东（我的专家）
+           
+        }else{//专家、投资人（我的学员）
+           
+        }
+    }else if ([cell.midLab.text isEqualToString:@"y128"]){
+//        WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];
+//        
+//        [[RCDataBaseManager shareInstance] removeMsgFlag:msgFlagTypeMyQA];
+//        [[RCDataBaseManager shareInstance] removeMsgFlag:msgFlagTypey128];
+//        
+//        wowenView.midStrr = _midStrr;
+//        if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
+//            wowenView.titleStrr = @"我的答复";
+//        }else if ([_PersonalMode.userType isEqualToString:@"Investor"]||[_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
+//            wowenView.titleStrr = @"我的问答";
+//        }
+//        wowenView.title2Str = @"我的问答";
+//        [MobClick event:MYQuestionEvent];
+//        [self.navigationController pushViewController:wowenView animated:YES];
+    }else if ([cell.midLab.text isEqualToString:@"y109"]){//我的主题
+        
+    }else if ([cell.midLab.text isEqualToString:@"y132"]){//成为运营商
+        
+    }else if ([cell.midLab.text isEqualToString:@"y110"]){//我要讲课
+        
+    }else if ([cell.midLab.text  isEqualToString:@"y101"]){ // 录制路演
+        
+        
+    }else if ([cell.midLab.text  isEqualToString:@"y100"]){ //发布项目
+        
+    }else if ([cell.midLab.text  isEqualToString:@"y118"]){// 商业计划书
+        
+    }else if ([cell.midLab.text  isEqualToString:@"y200"]){//我的购买
+        TRZXPersonalMyBuyController * guanzhu = [[TRZXPersonalMyBuyController alloc] init];
+        [self.navigationController pushViewController:guanzhu animated:YES];
+    }else if ([cell.midLab.text  isEqualToString:@"y201"]){//我的发布
+    }
 }
 
 

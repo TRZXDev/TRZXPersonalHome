@@ -21,6 +21,7 @@ def pods
     pod 'TRZXPersonalProfile' #关于我
     pod 'TRZXMyWallet' #钱包
     pod 'TRZXMyCustomer'#我的客户
+    pod 'TRZXPersonalCustomerCenter'
 
 end
 

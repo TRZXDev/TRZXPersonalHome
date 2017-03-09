@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
     s.dependency "TRZXMyCustomer"
     s.dependency "TRZXMyWallet"
     s.dependency "TRZXPersonalProfile"
+    s.dependency "TRZXPersonalCustomerCenter"
+
 
     s.requires_arc = true
 end
