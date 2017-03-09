@@ -184,7 +184,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)viewDidLoad {
     [super viewDidLoad];
     _otherStr = @"1";
-    _midStrr = @"aea1feeb14e24a7291ab1a99f3c89690";
+    _midStrr = @"06c863c06a7d4384a26b2a656870382d";
     [self bgTableview];
 }
 
@@ -441,13 +441,13 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)bgTableview
 {
     if ([_otherStr isEqualToString:@"1"]){
-        if ([_midStrr isEqualToString:@"aea1feeb14e24a7291ab1a99f3c89690"]) {//其他方式自己看自己（默认的id）
+        if ([_midStrr isEqualToString:@"d27f9813e8f04df3964273345eb8e3bf"]) {//其他方式自己看自己（默认的id）
             _otherTwoStr = @"1";
         }else{//看其他人
             _otherTwoStr = @"2";
         }
     }else{//自己看自己
-        _midStrr = @"aea1feeb14e24a7291ab1a99f3c89690";//默认的id
+        _midStrr = @"d27f9813e8f04df3964273345eb8e3bf";//默认的id
         _otherTwoStr = @"0";
     }
     
@@ -510,7 +510,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     //    [self.tableView reloadData];
     //    [self.collectionView reloadData];
     if(_midStrr == nil){
-        _midStrr = @"aea1feeb14e24a7291ab1a99f3c89690";//默认的id
+        _midStrr = @"d27f9813e8f04df3964273345eb8e3bf";//默认的id
         [self bgTableview];
     }
     
