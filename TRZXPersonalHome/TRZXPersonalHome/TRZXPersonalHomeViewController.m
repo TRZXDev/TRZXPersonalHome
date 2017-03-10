@@ -43,7 +43,7 @@
 #import "TRZXPersonalWatchController.h"//观看课程
 #import "TRZXPersonalTopButtonController.h"//关注、粉丝、路演观众等
 #import "TRZXPersonalMyBuyController.h"//我的购买
-
+#import "TRZXStrategyViewController.h"//攻略
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
@@ -1371,7 +1371,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 //投融在线攻略跳转
 - (void)gengduorenClick:(UIButton *)sender{
-    
+    TRZXStrategyViewController * setController = [[TRZXStrategyViewController alloc] init];
+    [self.navigationController pushViewController:setController animated:YES];
 }
 //分享的事件
 - (void)fenxiangClick:(UIButton *)sender{
