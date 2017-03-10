@@ -9,7 +9,7 @@
 #import "TRZXPersonalWatchController.h"
 #import "TRZXPersonalWatchModel.h"
 #import "ZaixianerjiyedeCell.h"
-#import "InvestSeeCell.h"
+#import "TRZXPInvestSeeCell.h"
 #import "TRZXDIYRefresh.h"
 #import "MJExtension.h"
 #import "TRZXNetwork.h"
@@ -187,9 +187,9 @@
         
     }else {
         
-        InvestSeeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InvestSeeCell"];
+        TRZXPInvestSeeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXPInvestSeeCell"];
         if (!cell) {
-            cell = [[[NSBundle bundleForClass:[self class]]loadNibNamed:@"InvestSeeCell" owner:nil options:nil]lastObject];
+            cell = [[[NSBundle bundleForClass:[self class]]loadNibNamed:@"TRZXPInvestSeeCell" owner:nil options:nil]lastObject];
         }
         _tableView.showsVerticalScrollIndicator =
         NO;

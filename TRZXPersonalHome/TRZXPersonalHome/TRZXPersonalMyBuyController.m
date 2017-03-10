@@ -189,7 +189,7 @@
     ZXShouMode *mode = [_liebiaoDataArr objectAtIndex:indexPath.row];
     ZaixianerjiyedeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZaixianerjiyedeCell"];
     if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"ZaixianerjiyedeCell" owner:self options:nil] lastObject];
+        cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"ZaixianerjiyedeCell" owner:self options:nil] lastObject];
     }
     self.tableView.showsVerticalScrollIndicator =
     NO;

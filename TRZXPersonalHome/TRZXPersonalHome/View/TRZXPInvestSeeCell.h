@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InvestSeeCell : UITableViewCell
+@interface TRZXPInvestSeeCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;

@@ -18,6 +18,18 @@
 		B72E8A411E72560E00DE5DBE /* TRZXPersonalYYSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A401E72560E00DE5DBE /* TRZXPersonalYYSViewController.m */; };
 		B72E8A451E72571200DE5DBE /* TRZXYYSTYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A431E72571200DE5DBE /* TRZXYYSTYTableViewCell.m */; };
 		B72E8A461E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A441E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib */; };
+		B72E8A491E727BE000DE5DBE /* TRZXCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A481E727BE000DE5DBE /* TRZXCollectionViewController.m */; };
+		B72E8A4E1E727E5800DE5DBE /* TRZXYdyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A4C1E727E5800DE5DBE /* TRZXYdyTableViewCell.m */; };
+		B72E8A4F1E727E5800DE5DBE /* TRZXYdyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A4D1E727E5800DE5DBE /* TRZXYdyTableViewCell.xib */; };
+		B72E8A531E727F5200DE5DBE /* TRZXPOneToOneListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A511E727F5200DE5DBE /* TRZXPOneToOneListCell.m */; };
+		B72E8A541E727F5200DE5DBE /* TRZXPOneToOneListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A521E727F5200DE5DBE /* TRZXPOneToOneListCell.xib */; };
+		B72E8A571E727FF900DE5DBE /* shoucangModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A561E727FF900DE5DBE /* shoucangModel.m */; };
+		B72E8A6A1E7280DC00DE5DBE /* SCViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A681E7280DC00DE5DBE /* SCViewTableViewCell.m */; };
+		B72E8A6B1E7280DC00DE5DBE /* SCViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A691E7280DC00DE5DBE /* SCViewTableViewCell.xib */; };
+		B72E8A6F1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A6D1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.m */; };
+		B72E8A701E72810300DE5DBE /* TRPCollectionProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A6E1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.xib */; };
+		B72E8A731E7285BA00DE5DBE /* TRZXPShareDeleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A721E7285BA00DE5DBE /* TRZXPShareDeleViewController.m */; };
+		B72E8A751E7290C500DE5DBE /* TRPshareimg_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A741E7290C500DE5DBE /* TRPshareimg_delete.png */; };
 		B73D1BE51E6FF0D500510C3A /* TRZXPersonalCareAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */; };
 		B73D1BE91E6FF10200510C3A /* PersonalGuanZhuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BE71E6FF10200510C3A /* PersonalGuanZhuCell.m */; };
 		B73D1BEA1E6FF10200510C3A /* PersonalGuanZhuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BE81E6FF10200510C3A /* PersonalGuanZhuCell.xib */; };
@@ -25,8 +37,8 @@
 		B73D1BF01E6FFE0B00510C3A /* 播放1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BED1E6FFE0B00510C3A /* 播放1@2x.png */; };
 		B73D1BF11E6FFE0B00510C3A /* 看过@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BEE1E6FFE0B00510C3A /* 看过@2x.png */; };
 		B73D1BF21E6FFE0B00510C3A /* college_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BEF1E6FFE0B00510C3A /* college_home@2x.png */; };
-		B73D1BF91E6FFE2600510C3A /* InvestSeeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BF41E6FFE2600510C3A /* InvestSeeCell.m */; };
-		B73D1BFA1E6FFE2600510C3A /* InvestSeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BF51E6FFE2600510C3A /* InvestSeeCell.xib */; };
+		B73D1BF91E6FFE2600510C3A /* TRZXPInvestSeeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BF41E6FFE2600510C3A /* TRZXPInvestSeeCell.m */; };
+		B73D1BFA1E6FFE2600510C3A /* TRZXPInvestSeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BF51E6FFE2600510C3A /* TRZXPInvestSeeCell.xib */; };
 		B73D1BFB1E6FFE2600510C3A /* ZaixianerjiyedeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BF71E6FFE2600510C3A /* ZaixianerjiyedeCell.m */; };
 		B73D1BFC1E6FFE2600510C3A /* ZaixianerjiyedeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BF81E6FFE2600510C3A /* ZaixianerjiyedeCell.xib */; };
 		B73D1BFF1E6FFE4E00510C3A /* TRZXPWatchViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BFE1E6FFE4E00510C3A /* TRZXPWatchViewMode.m */; };
@@ -187,6 +199,25 @@
 		B72E8A421E72571200DE5DBE /* TRZXYYSTYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXYYSTYTableViewCell.h; sourceTree = "<group>"; };
 		B72E8A431E72571200DE5DBE /* TRZXYYSTYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXYYSTYTableViewCell.m; sourceTree = "<group>"; };
 		B72E8A441E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXYYSTYTableViewCell.xib; sourceTree = "<group>"; };
+		B72E8A471E727BE000DE5DBE /* TRZXCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXCollectionViewController.h; sourceTree = "<group>"; };
+		B72E8A481E727BE000DE5DBE /* TRZXCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXCollectionViewController.m; sourceTree = "<group>"; };
+		B72E8A4B1E727E5800DE5DBE /* TRZXYdyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXYdyTableViewCell.h; sourceTree = "<group>"; };
+		B72E8A4C1E727E5800DE5DBE /* TRZXYdyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXYdyTableViewCell.m; sourceTree = "<group>"; };
+		B72E8A4D1E727E5800DE5DBE /* TRZXYdyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXYdyTableViewCell.xib; sourceTree = "<group>"; };
+		B72E8A501E727F5200DE5DBE /* TRZXPOneToOneListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPOneToOneListCell.h; sourceTree = "<group>"; };
+		B72E8A511E727F5200DE5DBE /* TRZXPOneToOneListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPOneToOneListCell.m; sourceTree = "<group>"; };
+		B72E8A521E727F5200DE5DBE /* TRZXPOneToOneListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXPOneToOneListCell.xib; sourceTree = "<group>"; };
+		B72E8A551E727FF900DE5DBE /* shoucangModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoucangModel.h; sourceTree = "<group>"; };
+		B72E8A561E727FF900DE5DBE /* shoucangModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoucangModel.m; sourceTree = "<group>"; };
+		B72E8A671E7280DC00DE5DBE /* SCViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewTableViewCell.h; sourceTree = "<group>"; };
+		B72E8A681E7280DC00DE5DBE /* SCViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewTableViewCell.m; sourceTree = "<group>"; };
+		B72E8A691E7280DC00DE5DBE /* SCViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCViewTableViewCell.xib; sourceTree = "<group>"; };
+		B72E8A6C1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPCollectionProjectTableViewCell.h; sourceTree = "<group>"; };
+		B72E8A6D1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPCollectionProjectTableViewCell.m; sourceTree = "<group>"; };
+		B72E8A6E1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRPCollectionProjectTableViewCell.xib; sourceTree = "<group>"; };
+		B72E8A711E7285BA00DE5DBE /* TRZXPShareDeleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPShareDeleViewController.h; sourceTree = "<group>"; };
+		B72E8A721E7285BA00DE5DBE /* TRZXPShareDeleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPShareDeleViewController.m; sourceTree = "<group>"; };
+		B72E8A741E7290C500DE5DBE /* TRPshareimg_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TRPshareimg_delete.png; sourceTree = "<group>"; };
 		B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalCareAboutController.m; sourceTree = "<group>"; };
 		B73D1BE41E6FF0D500510C3A /* TRZXPersonalCareAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalCareAboutController.h; sourceTree = "<group>"; };
 		B73D1BE61E6FF10200510C3A /* PersonalGuanZhuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalGuanZhuCell.h; sourceTree = "<group>"; };
@@ -196,9 +227,9 @@
 		B73D1BED1E6FFE0B00510C3A /* 播放1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放1@2x.png"; sourceTree = "<group>"; };
 		B73D1BEE1E6FFE0B00510C3A /* 看过@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "看过@2x.png"; sourceTree = "<group>"; };
 		B73D1BEF1E6FFE0B00510C3A /* college_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "college_home@2x.png"; sourceTree = "<group>"; };
-		B73D1BF31E6FFE2600510C3A /* InvestSeeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestSeeCell.h; sourceTree = "<group>"; };
-		B73D1BF41E6FFE2600510C3A /* InvestSeeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestSeeCell.m; sourceTree = "<group>"; };
-		B73D1BF51E6FFE2600510C3A /* InvestSeeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestSeeCell.xib; sourceTree = "<group>"; };
+		B73D1BF31E6FFE2600510C3A /* TRZXPInvestSeeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPInvestSeeCell.h; sourceTree = "<group>"; };
+		B73D1BF41E6FFE2600510C3A /* TRZXPInvestSeeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPInvestSeeCell.m; sourceTree = "<group>"; };
+		B73D1BF51E6FFE2600510C3A /* TRZXPInvestSeeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXPInvestSeeCell.xib; sourceTree = "<group>"; };
 		B73D1BF61E6FFE2600510C3A /* ZaixianerjiyedeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZaixianerjiyedeCell.h; sourceTree = "<group>"; };
 		B73D1BF71E6FFE2600510C3A /* ZaixianerjiyedeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZaixianerjiyedeCell.m; sourceTree = "<group>"; };
 		B73D1BF81E6FFE2600510C3A /* ZaixianerjiyedeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZaixianerjiyedeCell.xib; sourceTree = "<group>"; };
@@ -404,6 +435,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B72E8A4A1E727E3000DE5DBE /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B72E8A6C1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.h */,
+				B72E8A6D1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.m */,
+				B72E8A6E1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.xib */,
+				B72E8A671E7280DC00DE5DBE /* SCViewTableViewCell.h */,
+				B72E8A681E7280DC00DE5DBE /* SCViewTableViewCell.m */,
+				B72E8A691E7280DC00DE5DBE /* SCViewTableViewCell.xib */,
+				B72E8A501E727F5200DE5DBE /* TRZXPOneToOneListCell.h */,
+				B72E8A511E727F5200DE5DBE /* TRZXPOneToOneListCell.m */,
+				B72E8A521E727F5200DE5DBE /* TRZXPOneToOneListCell.xib */,
+				B72E8A4B1E727E5800DE5DBE /* TRZXYdyTableViewCell.h */,
+				B72E8A4C1E727E5800DE5DBE /* TRZXYdyTableViewCell.m */,
+				B72E8A4D1E727E5800DE5DBE /* TRZXYdyTableViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		B7C0B7281E5D610E0030D138 = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +537,10 @@
 				B72E8A3B1E72428F00DE5DBE /* TRZXStrategyViewController.m */,
 				B72E8A3F1E72560E00DE5DBE /* TRZXPersonalYYSViewController.h */,
 				B72E8A401E72560E00DE5DBE /* TRZXPersonalYYSViewController.m */,
+				B72E8A471E727BE000DE5DBE /* TRZXCollectionViewController.h */,
+				B72E8A481E727BE000DE5DBE /* TRZXCollectionViewController.m */,
+				B72E8A711E7285BA00DE5DBE /* TRZXPShareDeleViewController.h */,
+				B72E8A721E7285BA00DE5DBE /* TRZXPShareDeleViewController.m */,
 				B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */,
 				B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */,
 			);
@@ -496,6 +550,8 @@
 		B7C0B7A81E5D6A160030D138 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B72E8A551E727FF900DE5DBE /* shoucangModel.h */,
+				B72E8A561E727FF900DE5DBE /* shoucangModel.m */,
 				B71CFF721E710C8B00778A37 /* ZXShouMode.h */,
 				B71CFF731E710C8B00778A37 /* ZXShouMode.m */,
 				B73D1C001E6FFE5300510C3A /* TRZXPersonalWatchModel.h */,
@@ -519,14 +575,15 @@
 		B7C0B7B51E5D6A160030D138 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B72E8A4A1E727E3000DE5DBE /* CollectionView */,
 				B72E8A421E72571200DE5DBE /* TRZXYYSTYTableViewCell.h */,
 				B72E8A431E72571200DE5DBE /* TRZXYYSTYTableViewCell.m */,
 				B72E8A441E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib */,
 				B72E8A371E715F1900DE5DBE /* TRZSJAvatarBrowser.h */,
 				B72E8A381E715F1900DE5DBE /* TRZSJAvatarBrowser.m */,
-				B73D1BF31E6FFE2600510C3A /* InvestSeeCell.h */,
-				B73D1BF41E6FFE2600510C3A /* InvestSeeCell.m */,
-				B73D1BF51E6FFE2600510C3A /* InvestSeeCell.xib */,
+				B73D1BF31E6FFE2600510C3A /* TRZXPInvestSeeCell.h */,
+				B73D1BF41E6FFE2600510C3A /* TRZXPInvestSeeCell.m */,
+				B73D1BF51E6FFE2600510C3A /* TRZXPInvestSeeCell.xib */,
 				B73D1BF61E6FFE2600510C3A /* ZaixianerjiyedeCell.h */,
 				B73D1BF71E6FFE2600510C3A /* ZaixianerjiyedeCell.m */,
 				B73D1BF81E6FFE2600510C3A /* ZaixianerjiyedeCell.xib */,
@@ -598,6 +655,7 @@
 		B7C0B8941E5D70610030D138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B72E8A741E7290C500DE5DBE /* TRPshareimg_delete.png */,
 				B72E8A3D1E72465600DE5DBE /* 投融攻略.png */,
 				B73D1BED1E6FFE0B00510C3A /* 播放1@2x.png */,
 				B73D1BEE1E6FFE0B00510C3A /* 看过@2x.png */,
@@ -808,10 +866,12 @@
 				B7C0B8801E5D6A170030D138 /* PhotoDTableViewCell.xib in Resources */,
 				B7C0B9041E5D70610030D138 /* 男.png in Resources */,
 				B7C0B8D21E5D70610030D138 /* bianjiW.png in Resources */,
+				B72E8A701E72810300DE5DBE /* TRPCollectionProjectTableViewCell.xib in Resources */,
 				B7C0B85B1E5D6A160030D138 /* CeHuaTableView2Cell.xib in Resources */,
 				B7C0B8701E5D6A160030D138 /* PersonalCollectionView.xib in Resources */,
 				B7C0B8E51E5D70610030D138 /* 展位loge.png in Resources */,
 				B7C0B8F51E5D70610030D138 /* 我的学员@3x.png in Resources */,
+				B72E8A4F1E727E5800DE5DBE /* TRZXYdyTableViewCell.xib in Resources */,
 				B7C0B8DD1E5D70610030D138 /* 加好友1@2x.png in Resources */,
 				B7C0B9081E5D70610030D138 /* 钱包@2x.png in Resources */,
 				B73D1BF01E6FFE0B00510C3A /* 播放1@2x.png in Resources */,
@@ -843,6 +903,7 @@
 				B7C0B8EA1E5D70610030D138 /* 录制路演@2x.png in Resources */,
 				B7C0B87A1E5D6A170030D138 /* PersonalTopView.xib in Resources */,
 				B7C0B9101E5D74E50030D138 /* 挂牌企业@2x.png in Resources */,
+				B72E8A6B1E7280DC00DE5DBE /* SCViewTableViewCell.xib in Resources */,
 				B7C0B8E61E5D70610030D138 /* 展位图.png in Resources */,
 				B7C0B8FF1E5D70610030D138 /* 我需要的资源.png in Resources */,
 				B7C0B8E21E5D70610030D138 /* 孵化会员.png in Resources */,
@@ -864,11 +925,12 @@
 				B7C0B8D51E5D70610030D138 /* shareG.png in Resources */,
 				B7C0B8D91E5D70610030D138 /* 一键认证@2x.png in Resources */,
 				B7C0B8861E5D6A170030D138 /* StudentJingLiBTCell.xib in Resources */,
+				B72E8A751E7290C500DE5DBE /* TRPshareimg_delete.png in Resources */,
 				B7C0B8781E5D6A170030D138 /* PersonalJiaoYiTabCell.xib in Resources */,
 				B7C0B9031E5D70610030D138 /* 收藏@3x.png in Resources */,
 				B7C0B9061E5D70610030D138 /* 返回.png in Resources */,
 				B7C0B8FE1E5D70610030D138 /* 我要讲课@2x.png in Resources */,
-				B73D1BFA1E6FFE2600510C3A /* InvestSeeCell.xib in Resources */,
+				B73D1BFA1E6FFE2600510C3A /* TRZXPInvestSeeCell.xib in Resources */,
 				B7C0B9121E5D76130030D138 /* xlb02.png in Resources */,
 				B7C0B8FC1E5D70610030D138 /* 我的项目@2x.png in Resources */,
 				B7C0B8F21E5D70610030D138 /* 我的发布@3x.png in Resources */,
@@ -877,6 +939,7 @@
 				B72E8A3E1E72465600DE5DBE /* 投融攻略.png in Resources */,
 				B73D1BF11E6FFE0B00510C3A /* 看过@2x.png in Resources */,
 				B7C0B9021E5D70610030D138 /* 收藏@2x.png in Resources */,
+				B72E8A541E727F5200DE5DBE /* TRZXPOneToOneListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -949,8 +1012,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B73D1BF91E6FFE2600510C3A /* InvestSeeCell.m in Sources */,
+				B73D1BF91E6FFE2600510C3A /* TRZXPInvestSeeCell.m in Sources */,
 				B7C0B8931E5D6A170030D138 /* TRZXZHScrollViewLB.m in Sources */,
+				B72E8A531E727F5200DE5DBE /* TRZXPOneToOneListCell.m in Sources */,
 				B7C0B8851E5D6A170030D138 /* StudentJingLiBTCell.m in Sources */,
 				B71CFF741E710C8B00778A37 /* ZXShouMode.m in Sources */,
 				B7C0B8521E5D6A160030D138 /* TRZPersonalModell.m in Sources */,
@@ -960,7 +1024,9 @@
 				B70E98F41E64097E00FA3145 /* Target_TRZXPersonalHome.m in Sources */,
 				B73D1BFF1E6FFE4E00510C3A /* TRZXPWatchViewMode.m in Sources */,
 				B7C0B88B1E5D6A170030D138 /* xiaoxi2Cell.m in Sources */,
+				B72E8A571E727FF900DE5DBE /* shoucangModel.m in Sources */,
 				B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */,
+				B72E8A491E727BE000DE5DBE /* TRZXCollectionViewController.m in Sources */,
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
 				B7C0B85A1E5D6A160030D138 /* CeHuaTableView2Cell.m in Sources */,
 				B72E8A451E72571200DE5DBE /* TRZXYYSTYTableViewCell.m in Sources */,
@@ -971,6 +1037,7 @@
 				B7C0B8511E5D6A160030D138 /* PersonalLiveVideoModel.m in Sources */,
 				B7C0B8531E5D6A160030D138 /* TRZXPCourse.m in Sources */,
 				B7C0B85C1E5D6A160030D138 /* CeHuaTableViewCell.m in Sources */,
+				B72E8A4E1E727E5800DE5DBE /* TRZXYdyTableViewCell.m in Sources */,
 				B73D1BFB1E6FFE2600510C3A /* ZaixianerjiyedeCell.m in Sources */,
 				B7C0B8501E5D6A160030D138 /* LatestLiveModel.m in Sources */,
 				B7C0B8811E5D6A170030D138 /* presonalNavgationViw.m in Sources */,
@@ -982,10 +1049,13 @@
 				B7C0B8791E5D6A170030D138 /* PersonalTopView.m in Sources */,
 				B7C0B8581E5D6A160030D138 /* CeHuaCollectionViewCell.m in Sources */,
 				B7C0B85E1E5D6A160030D138 /* GifView.m in Sources */,
+				B72E8A6A1E7280DC00DE5DBE /* SCViewTableViewCell.m in Sources */,
 				B72E8A411E72560E00DE5DBE /* TRZXPersonalYYSViewController.m in Sources */,
 				B73D1BE91E6FF10200510C3A /* PersonalGuanZhuCell.m in Sources */,
+				B72E8A731E7285BA00DE5DBE /* TRZXPShareDeleViewController.m in Sources */,
 				B7C0B8831E5D6A170030D138 /* StudentJianJieCell.m in Sources */,
 				B72E8A3C1E72428F00DE5DBE /* TRZXStrategyViewController.m in Sources */,
+				B72E8A6F1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.m in Sources */,
 				B7C0B8691E5D6A160030D138 /* PersonalBottomView.m in Sources */,
 				B7C0B8731E5D6A170030D138 /* PersonalJianJieCell.m in Sources */,
 				B72E8A391E715F1900DE5DBE /* TRZSJAvatarBrowser.m in Sources */,

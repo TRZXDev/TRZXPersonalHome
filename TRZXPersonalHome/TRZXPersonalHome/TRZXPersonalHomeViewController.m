@@ -45,6 +45,8 @@
 #import "TRZXPersonalMyBuyController.h"//我的购买
 #import "TRZXStrategyViewController.h"//攻略
 #import "TRZXPersonalYYSViewController.h"//成为合伙人
+#import "TRZXCollectionViewController.h"
+
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
@@ -185,7 +187,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)viewDidLoad {
     [super viewDidLoad];
     _otherStr = @"1";
-    _midStrr = @"06c863c06a7d4384a26b2a656870382d";
+    _midStrr = @"d27f9813e8f04df3964273345eb8e3bf";
     [self bgTableview];
 }
 
@@ -773,7 +775,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     CeHuaCollectionViewCell *cell = (CeHuaCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     cell.hongdian.hidden = YES;
     if ([cell.titleLabel.text isEqualToString:@"收藏"]){
-        
+        TRZXCollectionViewController * collectionController = [[TRZXCollectionViewController alloc]init];
+        [self.navigationController pushViewController:collectionController animated:true];
     }else if ([cell.titleLabel.text isEqualToString:@"客服中心"]){
         UIViewController *vc = [Target_TRZXPersonalHome Action_TRZXCustomerCenterController];
         [self.navigationController pushViewController:vc animated:YES];

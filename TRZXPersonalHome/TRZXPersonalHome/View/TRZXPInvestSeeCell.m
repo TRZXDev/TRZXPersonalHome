@@ -6,11 +6,11 @@
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "InvestSeeCell.h"
+#import "TRZXPInvestSeeCell.h"
 
 #define backColor [UIColor colorWithRed:240.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1]
 
-@interface InvestSeeCell()
+@interface TRZXPInvestSeeCell()
 //@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 //@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 //@property (weak, nonatomic) IBOutlet UILabel *tradeLabel;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation InvestSeeCell
+@implementation TRZXPInvestSeeCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
