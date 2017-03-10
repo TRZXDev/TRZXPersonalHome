@@ -38,7 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = backColor;
     _bgdImage = [[UIImageView alloc]init];
     _bgdImage.image = [UIImage imageNamed:@"列表无内容.png"];
     //    _bgdImage.contentMode =  UIViewContentModeScaleAspectFill;
