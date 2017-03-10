@@ -21,7 +21,7 @@
 #import "CeHuaTableViewCell.h"
 #import "CeHuaCollectionViewCell.h"
 #import "xihuanTableViewCell.h"
-//#import "SJAvatarBrowser.h"
+#import "TRZSJAvatarBrowser.h"
 #import "PhotoDTableViewCell.h"
 #import "TRZXZHScrollViewLB.h"
 #import "PersonalLiveVideoModel.h"
@@ -494,10 +494,10 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(maxImageRemove) name:@"maxImageRemove" object:nil];
     
     _isImageCompleteSecond = YES;
-//    __block zjself;
+    __block zjself;
     self.maxImageComplete = ^{
-        //先注销放大图片
-        //        [SJAvatarBrowser showImage:sfself.PersonalTopView.AmplifyImageView];//调用方法
+//        先注销放大图片
+                [TRZSJAvatarBrowser showImage:sfself.PersonalTopView.AmplifyImageView];//调用方法
     };
     
     //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refersh) name:RCDUmengNotification object:nil];
