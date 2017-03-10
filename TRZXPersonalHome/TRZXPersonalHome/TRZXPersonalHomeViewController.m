@@ -45,7 +45,8 @@
 #import "TRZXPersonalMyBuyController.h"//我的购买
 #import "TRZXStrategyViewController.h"//攻略
 #import "TRZXPersonalYYSViewController.h"//成为合伙人
-#import "TRZXCollectionViewController.h"
+#import "TRZXCollectionViewController.h"//收藏
+#import "WoWenWoDaViewController.h"//我问我答
 
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
@@ -74,8 +75,8 @@
 // 关注点击 同时改变
 NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
-@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate,GuanKanDelegate>
-//,gengduoDelegate,UMSocialUIDelegate,AllSettingDelegate,yysDelegate,PhotoDelegate,VideoDelegate>
+@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate,GuanKanDelegate,yysDelegate>
+//,gengduoDelegate,UMSocialUIDelegate,AllSettingDelegate,PhotoDelegate,VideoDelegate>
 
 
 @property (strong, nonatomic) NSDictionary *dataDic;
@@ -187,7 +188,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)viewDidLoad {
     [super viewDidLoad];
     _otherStr = @"1";
-    _midStrr = @"d27f9813e8f04df3964273345eb8e3bf";
+    _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";
     [self bgTableview];
 }
 
@@ -444,13 +445,13 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)bgTableview
 {
     if ([_otherStr isEqualToString:@"1"]){
-        if ([_midStrr isEqualToString:@"d27f9813e8f04df3964273345eb8e3bf"]) {//其他方式自己看自己（默认的id）
+        if ([_midStrr isEqualToString:@"9cbde6d2b93a4c21ad20219af1b0f33b"]) {//其他方式自己看自己（默认的id）
             _otherTwoStr = @"1";
         }else{//看其他人
             _otherTwoStr = @"2";
         }
     }else{//自己看自己
-        _midStrr = @"d27f9813e8f04df3964273345eb8e3bf";//默认的id
+        _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";//默认的id
         _otherTwoStr = @"0";
     }
     
@@ -513,7 +514,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     //    [self.tableView reloadData];
     //    [self.collectionView reloadData];
     if(_midStrr == nil){
-        _midStrr = @"d27f9813e8f04df3964273345eb8e3bf";//默认的id
+        _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";//默认的id
         [self bgTableview];
     }
     
@@ -799,20 +800,16 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
            
         }
     }else if ([cell.midLab.text isEqualToString:@"y128"]){
-//        WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];
-//        
-//        [[RCDataBaseManager shareInstance] removeMsgFlag:msgFlagTypeMyQA];
-//        [[RCDataBaseManager shareInstance] removeMsgFlag:msgFlagTypey128];
-//        
-//        wowenView.midStrr = _midStrr;
-//        if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
-//            wowenView.titleStrr = @"我的答复";
-//        }else if ([_PersonalMode.userType isEqualToString:@"Investor"]||[_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
-//            wowenView.titleStrr = @"我的问答";
-//        }
-//        wowenView.title2Str = @"我的问答";
-//        [MobClick event:MYQuestionEvent];
-//        [self.navigationController pushViewController:wowenView animated:YES];
+        WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];
+        
+        wowenView.midStrr = _midStrr;
+        if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
+            wowenView.titleStrr = @"我的答复";
+        }else if ([_PersonalMode.userType isEqualToString:@"Investor"]||[_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
+            wowenView.titleStrr = @"我的问答";
+        }
+        wowenView.title2Str = @"我的问答";
+        [self.navigationController pushViewController:wowenView animated:YES];
     }else if ([cell.midLab.text isEqualToString:@"y109"]){//我的主题
         
     }else if ([cell.midLab.text isEqualToString:@"y132"]){//成为运营商

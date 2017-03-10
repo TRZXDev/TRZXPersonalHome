@@ -23,8 +23,8 @@
     NSMutableDictionary *headers = [[NSMutableDictionary alloc]init];
 //    [headers setValue:[Login curLoginUser].token forKey:@"token"];
 //    [headers setValue:[Login curLoginUser].userId forKey:@"userId"];
-    [headers setValue:@"5974bda56703adf1733956113a956222" forKey:@"token"];
-    [headers setValue:@"d27f9813e8f04df3964273345eb8e3bf" forKey:@"userId"];
+    [headers setValue:@"7cd9624f25cd2a1c8a36d28a8e930418" forKey:@"token"];
+    [headers setValue:@"9cbde6d2b93a4c21ad20219af1b0f33b" forKey:@"userId"];
     [headers setValue:@"iOS" forKey:@"equipment"];
     
     

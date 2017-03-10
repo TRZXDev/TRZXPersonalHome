@@ -45,6 +45,9 @@
 		B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */; };
 		B73D1C051E6FFE5D00510C3A /* TRZXPersonalWatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */; };
 		B73D1C081E70033900510C3A /* TRZXPersonalTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C071E70033900510C3A /* TRZXPersonalTopButtonController.m */; };
+		B77F00C51E729E3100DE8F28 /* WoWenWoDaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77F00C41E729E3100DE8F28 /* WoWenWoDaViewController.m */; };
+		B77F00C91E729F9C00DE8F28 /* WoWenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B77F00C71E729F9C00DE8F28 /* WoWenTableViewCell.m */; };
+		B77F00CA1E729F9C00DE8F28 /* WoWenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77F00C81E729F9C00DE8F28 /* WoWenTableViewCell.xib */; };
 		B7C0B7361E5D610E0030D138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7351E5D610E0030D138 /* main.m */; };
 		B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7381E5D610E0030D138 /* AppDelegate.m */; };
 		B7C0B73F1E5D610E0030D138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B73D1E5D610E0030D138 /* Main.storyboard */; };
@@ -241,6 +244,11 @@
 		B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalWatchController.m; sourceTree = "<group>"; };
 		B73D1C061E70033900510C3A /* TRZXPersonalTopButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalTopButtonController.h; sourceTree = "<group>"; };
 		B73D1C071E70033900510C3A /* TRZXPersonalTopButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalTopButtonController.m; sourceTree = "<group>"; };
+		B77F00C31E729E3100DE8F28 /* WoWenWoDaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWenWoDaViewController.h; sourceTree = "<group>"; };
+		B77F00C41E729E3100DE8F28 /* WoWenWoDaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoWenWoDaViewController.m; sourceTree = "<group>"; };
+		B77F00C61E729F9C00DE8F28 /* WoWenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWenTableViewCell.h; sourceTree = "<group>"; };
+		B77F00C71E729F9C00DE8F28 /* WoWenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoWenTableViewCell.m; sourceTree = "<group>"; };
+		B77F00C81E729F9C00DE8F28 /* WoWenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoWenTableViewCell.xib; sourceTree = "<group>"; };
 		B7C0B7311E5D610E0030D138 /* TRZXPersonalHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXPersonalHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C0B7351E5D610E0030D138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7C0B7371E5D610E0030D138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -541,6 +549,8 @@
 				B72E8A481E727BE000DE5DBE /* TRZXCollectionViewController.m */,
 				B72E8A711E7285BA00DE5DBE /* TRZXPShareDeleViewController.h */,
 				B72E8A721E7285BA00DE5DBE /* TRZXPShareDeleViewController.m */,
+				B77F00C31E729E3100DE8F28 /* WoWenWoDaViewController.h */,
+				B77F00C41E729E3100DE8F28 /* WoWenWoDaViewController.m */,
 				B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */,
 				B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */,
 			);
@@ -579,6 +589,9 @@
 				B72E8A421E72571200DE5DBE /* TRZXYYSTYTableViewCell.h */,
 				B72E8A431E72571200DE5DBE /* TRZXYYSTYTableViewCell.m */,
 				B72E8A441E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib */,
+				B77F00C61E729F9C00DE8F28 /* WoWenTableViewCell.h */,
+				B77F00C71E729F9C00DE8F28 /* WoWenTableViewCell.m */,
+				B77F00C81E729F9C00DE8F28 /* WoWenTableViewCell.xib */,
 				B72E8A371E715F1900DE5DBE /* TRZSJAvatarBrowser.h */,
 				B72E8A381E715F1900DE5DBE /* TRZSJAvatarBrowser.m */,
 				B73D1BF31E6FFE2600510C3A /* TRZXPInvestSeeCell.h */,
@@ -844,6 +857,7 @@
 				B7C0B8EF1E5D70610030D138 /* 我的业绩@2x.png in Resources */,
 				B7C0B8D61E5D70610030D138 /* shareW.png in Resources */,
 				B7C0B87E1E5D6A170030D138 /* PersonalZhiBoCollectionViewCell.xib in Resources */,
+				B77F00CA1E729F9C00DE8F28 /* WoWenTableViewCell.xib in Resources */,
 				B7C0B8DB1E5D70610030D138 /* 付费课程@2x.png in Resources */,
 				B7C0B8571E5D6A160030D138 /* CeHuaButtonCell.xib in Resources */,
 				B7C0B8E31E5D70610030D138 /* 官.png in Resources */,
@@ -1030,6 +1044,7 @@
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
 				B7C0B85A1E5D6A160030D138 /* CeHuaTableView2Cell.m in Sources */,
 				B72E8A451E72571200DE5DBE /* TRZXYYSTYTableViewCell.m in Sources */,
+				B77F00C91E729F9C00DE8F28 /* WoWenTableViewCell.m in Sources */,
 				B7C0B8771E5D6A170030D138 /* PersonalJiaoYiTabCell.m in Sources */,
 				B7C0B87D1E5D6A170030D138 /* PersonalZhiBoCollectionViewCell.m in Sources */,
 				B7C0B76A1E5D61A90030D138 /* TRZXPersonalHomeViewController.m in Sources */,
@@ -1043,6 +1058,7 @@
 				B7C0B8811E5D6A170030D138 /* presonalNavgationViw.m in Sources */,
 				B7C0B8551E5D6A160030D138 /* UIButton+Extension.m in Sources */,
 				B7C0B86F1E5D6A160030D138 /* PersonalCollectionView.m in Sources */,
+				B77F00C51E729E3100DE8F28 /* WoWenWoDaViewController.m in Sources */,
 				B7C0B8561E5D6A160030D138 /* CeHuaButtonCell.m in Sources */,
 				B7C0B7361E5D610E0030D138 /* main.m in Sources */,
 				B73D1C081E70033900510C3A /* TRZXPersonalTopButtonController.m in Sources */,
