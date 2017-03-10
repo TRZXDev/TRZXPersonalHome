@@ -15,6 +15,9 @@
 		B72E8A391E715F1900DE5DBE /* TRZSJAvatarBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A381E715F1900DE5DBE /* TRZSJAvatarBrowser.m */; };
 		B72E8A3C1E72428F00DE5DBE /* TRZXStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A3B1E72428F00DE5DBE /* TRZXStrategyViewController.m */; };
 		B72E8A3E1E72465600DE5DBE /* 投融攻略.png in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A3D1E72465600DE5DBE /* 投融攻略.png */; };
+		B72E8A411E72560E00DE5DBE /* TRZXPersonalYYSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A401E72560E00DE5DBE /* TRZXPersonalYYSViewController.m */; };
+		B72E8A451E72571200DE5DBE /* TRZXYYSTYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A431E72571200DE5DBE /* TRZXYYSTYTableViewCell.m */; };
+		B72E8A461E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A441E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib */; };
 		B73D1BE51E6FF0D500510C3A /* TRZXPersonalCareAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */; };
 		B73D1BE91E6FF10200510C3A /* PersonalGuanZhuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BE71E6FF10200510C3A /* PersonalGuanZhuCell.m */; };
 		B73D1BEA1E6FF10200510C3A /* PersonalGuanZhuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BE81E6FF10200510C3A /* PersonalGuanZhuCell.xib */; };
@@ -179,6 +182,11 @@
 		B72E8A3A1E72428F00DE5DBE /* TRZXStrategyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXStrategyViewController.h; sourceTree = "<group>"; };
 		B72E8A3B1E72428F00DE5DBE /* TRZXStrategyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXStrategyViewController.m; sourceTree = "<group>"; };
 		B72E8A3D1E72465600DE5DBE /* 投融攻略.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "投融攻略.png"; sourceTree = "<group>"; };
+		B72E8A3F1E72560E00DE5DBE /* TRZXPersonalYYSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalYYSViewController.h; sourceTree = "<group>"; };
+		B72E8A401E72560E00DE5DBE /* TRZXPersonalYYSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalYYSViewController.m; sourceTree = "<group>"; };
+		B72E8A421E72571200DE5DBE /* TRZXYYSTYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXYYSTYTableViewCell.h; sourceTree = "<group>"; };
+		B72E8A431E72571200DE5DBE /* TRZXYYSTYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXYYSTYTableViewCell.m; sourceTree = "<group>"; };
+		B72E8A441E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXYYSTYTableViewCell.xib; sourceTree = "<group>"; };
 		B73D1BE31E6FF0D500510C3A /* TRZXPersonalCareAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalCareAboutController.m; sourceTree = "<group>"; };
 		B73D1BE41E6FF0D500510C3A /* TRZXPersonalCareAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalCareAboutController.h; sourceTree = "<group>"; };
 		B73D1BE61E6FF10200510C3A /* PersonalGuanZhuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalGuanZhuCell.h; sourceTree = "<group>"; };
@@ -477,6 +485,8 @@
 				B71CFF701E710C8500778A37 /* TRZXPersonalMyBuyController.m */,
 				B72E8A3A1E72428F00DE5DBE /* TRZXStrategyViewController.h */,
 				B72E8A3B1E72428F00DE5DBE /* TRZXStrategyViewController.m */,
+				B72E8A3F1E72560E00DE5DBE /* TRZXPersonalYYSViewController.h */,
+				B72E8A401E72560E00DE5DBE /* TRZXPersonalYYSViewController.m */,
 				B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */,
 				B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */,
 			);
@@ -509,6 +519,9 @@
 		B7C0B7B51E5D6A160030D138 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B72E8A421E72571200DE5DBE /* TRZXYYSTYTableViewCell.h */,
+				B72E8A431E72571200DE5DBE /* TRZXYYSTYTableViewCell.m */,
+				B72E8A441E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib */,
 				B72E8A371E715F1900DE5DBE /* TRZSJAvatarBrowser.h */,
 				B72E8A381E715F1900DE5DBE /* TRZSJAvatarBrowser.m */,
 				B73D1BF31E6FFE2600510C3A /* InvestSeeCell.h */,
@@ -787,6 +800,7 @@
 				B7C0B8F41E5D70610030D138 /* 我的学员@2x.png in Resources */,
 				B7C0B88C1E5D6A170030D138 /* xiaoxi2Cell.xib in Resources */,
 				B7C0B8DC1E5D70610030D138 /* 代表.png in Resources */,
+				B72E8A461E72571200DE5DBE /* TRZXYYSTYTableViewCell.xib in Resources */,
 				B7C0B8EC1E5D70610030D138 /* 我提供的资源.png in Resources */,
 				B7C0B8F61E5D70610030D138 /* 我的客户@2x.png in Resources */,
 				B7C0B8FA1E5D70610030D138 /* 我的路演@3x.png in Resources */,
@@ -949,6 +963,7 @@
 				B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */,
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
 				B7C0B85A1E5D6A160030D138 /* CeHuaTableView2Cell.m in Sources */,
+				B72E8A451E72571200DE5DBE /* TRZXYYSTYTableViewCell.m in Sources */,
 				B7C0B8771E5D6A170030D138 /* PersonalJiaoYiTabCell.m in Sources */,
 				B7C0B87D1E5D6A170030D138 /* PersonalZhiBoCollectionViewCell.m in Sources */,
 				B7C0B76A1E5D61A90030D138 /* TRZXPersonalHomeViewController.m in Sources */,
@@ -967,6 +982,7 @@
 				B7C0B8791E5D6A170030D138 /* PersonalTopView.m in Sources */,
 				B7C0B8581E5D6A160030D138 /* CeHuaCollectionViewCell.m in Sources */,
 				B7C0B85E1E5D6A160030D138 /* GifView.m in Sources */,
+				B72E8A411E72560E00DE5DBE /* TRZXPersonalYYSViewController.m in Sources */,
 				B73D1BE91E6FF10200510C3A /* PersonalGuanZhuCell.m in Sources */,
 				B7C0B8831E5D6A170030D138 /* StudentJianJieCell.m in Sources */,
 				B72E8A3C1E72428F00DE5DBE /* TRZXStrategyViewController.m in Sources */,

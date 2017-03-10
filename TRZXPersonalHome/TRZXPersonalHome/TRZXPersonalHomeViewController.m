@@ -44,6 +44,7 @@
 #import "TRZXPersonalTopButtonController.h"//关注、粉丝、路演观众等
 #import "TRZXPersonalMyBuyController.h"//我的购买
 #import "TRZXStrategyViewController.h"//攻略
+#import "TRZXPersonalYYSViewController.h"//成为合伙人
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
@@ -812,7 +813,10 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     }else if ([cell.midLab.text isEqualToString:@"y109"]){//我的主题
         
     }else if ([cell.midLab.text isEqualToString:@"y132"]){//成为运营商
-        
+        TRZXPersonalYYSViewController * myThemeViewController = [[TRZXPersonalYYSViewController alloc]init];
+        myThemeViewController.titleStr = @"成为合伙人";
+        myThemeViewController.delegate = self;
+        [self.navigationController pushViewController:myThemeViewController animated:true];
     }else if ([cell.midLab.text isEqualToString:@"y110"]){//我要讲课
         
     }else if ([cell.midLab.text  isEqualToString:@"y101"]){ // 录制路演
