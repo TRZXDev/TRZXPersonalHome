@@ -93,7 +93,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CTMediator/CTMediator.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DVSwitch/DVSwitch.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FDStackView/FDStackView.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/FMDB/FMDB.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "$BUILT_PRODUCTS_DIR/LCActionSheet/LCActionSheet.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MJExtension/MJExtension.framework"
@@ -114,7 +113,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/TRZXPersonalProfile/TRZXPersonalProfile.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TRZXShufflingView/TRZXShufflingView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TZImagePickerController/TZImagePickerController.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/YTKKeyValueStore/YTKKeyValueStore.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YYCache/YYCache.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -122,7 +120,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CTMediator/CTMediator.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DVSwitch/DVSwitch.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FDStackView/FDStackView.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/FMDB/FMDB.framework"
   install_framework "$BUILT_PRODUCTS_DIR/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "$BUILT_PRODUCTS_DIR/LCActionSheet/LCActionSheet.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MJExtension/MJExtension.framework"
@@ -143,7 +140,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/TRZXPersonalProfile/TRZXPersonalProfile.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TRZXShufflingView/TRZXShufflingView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TZImagePickerController/TZImagePickerController.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/YTKKeyValueStore/YTKKeyValueStore.framework"
   install_framework "$BUILT_PRODUCTS_DIR/YYCache/YYCache.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

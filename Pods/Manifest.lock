@@ -17,9 +17,6 @@ PODS:
   - CTMediator (0.0.3)
   - DVSwitch (1.0.2)
   - FDStackView (1.0)
-  - FMDB (2.6.2):
-    - FMDB/standard (= 2.6.2)
-  - FMDB/standard (2.6.2)
   - IQKeyboardManager (4.0.8)
   - LCActionSheet (2.7.2):
     - Masonry (~> 1.0.1)
@@ -48,13 +45,12 @@ PODS:
     - MJRefresh
   - TRZXDVSwitch (0.0.6)
   - TRZXKit (0.0.9)
-  - TRZXLogin (0.0.2):
+  - TRZXLogin (0.0.3):
     - MJExtension
     - ReactiveCocoa (~> 2.5)
     - TRZXKit
     - TRZXNetwork
-    - YTKKeyValueStore
-  - TRZXMyWallet (0.0.5):
+  - TRZXMyWallet (0.0.6):
     - CTMediator
     - IQKeyboardManager
     - Masonry
@@ -75,13 +71,11 @@ PODS:
     - TRZXComplaint
     - TRZXKit
     - TRZXNetwork
-  - TRZXPersonalProfile (0.0.5):
+  - TRZXPersonalProfile (0.0.6):
     - CTMediator
   - TRZXShufflingView (0.0.4):
     - AFNetworking
   - TZImagePickerController (1.7.8)
-  - YTKKeyValueStore (0.1.2):
-    - FMDB (~> 2.0)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
@@ -106,7 +100,6 @@ SPEC CHECKSUMS:
   CTMediator: c9a1203561e2232cb9a72822659159a02ae3cf20
   DVSwitch: cc13ee6ca6244edcb2afa07b6f07978a0b053c1d
   FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
   LCActionSheet: 2071dfc1834585cd7f57a234890cd0a96e4b6682
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -120,14 +113,13 @@ SPEC CHECKSUMS:
   TRZXDIYRefresh: a89e7cf1658ff7d57aad081c596c2a9cf137dcf2
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
-  TRZXLogin: 1bd768836091bbdb3da4d4520c3bfb144e10e2b2
-  TRZXMyWallet: 89dba71b4ba03876ef285c2007de6b3e8e3a836e
+  TRZXLogin: 5645812a5e4e18e756e53394f4fb4c405be9a81d
+  TRZXMyWallet: a7e81785cf8b39744ead549f303803043b788d15
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
   TRZXPersonalCustomerCenter: 9822a34b41ee77454b70e206346744f0d53b92c8
-  TRZXPersonalProfile: d5690dc67a1215d979bda30ef1e89ef0e1bc1155
+  TRZXPersonalProfile: 7f986519e1872f6d1d385b4113b8cab08477aaed
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
-  YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
 PODFILE CHECKSUM: 7c02674762ab9f5fabf6edf86c55e8f05e7baf9c

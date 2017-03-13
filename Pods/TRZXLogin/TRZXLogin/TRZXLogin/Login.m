@@ -9,7 +9,6 @@
 #import "Login.h"
 #import "GetUUID.h"
 #import <CommonCrypto/CommonDigest.h>
-#import "TRZXStore.h"
 #import "MJExtension.h"
 #define kLoginStatus @"login_status"
 #define kLoginUserDict @"user_dict"

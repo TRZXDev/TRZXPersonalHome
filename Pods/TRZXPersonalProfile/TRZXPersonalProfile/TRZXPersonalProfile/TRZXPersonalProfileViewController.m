@@ -97,7 +97,7 @@
     if (indexPath.section == 0){
         TRZXPersonalProfileCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXPersonalProfileCell"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"TRZXPersonalProfileCell" owner:self options:nil] lastObject];
+            cell = [[PPPhotoBrowserBundle loadNibNamed:@"TRZXPersonalProfileCell" owner:self options:nil] lastObject];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
