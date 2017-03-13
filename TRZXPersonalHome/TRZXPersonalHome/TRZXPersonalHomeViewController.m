@@ -786,7 +786,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     }else if ([cell.titleLabel.text isEqualToString:@"一键认证"]){
         
     }else if ([cell.titleLabel.text isEqualToString:@"钱包"]){
-        
+        UIViewController *vc = [Target_TRZXPersonalHome Action_MyWalletViewController:nil];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if ([cell.midLab.text isEqualToString:@"y129"]){//我的客户
         
     }else if ([cell.midLab.text isEqualToString:@"y130"]){//我的团队

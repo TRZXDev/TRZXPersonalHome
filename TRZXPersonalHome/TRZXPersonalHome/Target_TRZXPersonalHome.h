@@ -36,13 +36,13 @@
 + (UIViewController *)Action_MyWalletViewController:(NSDictionary *)params;
 
 
-/**
- 我的客户
-
- @param params ..
- @return ..
- */
-+ (UIViewController *)Action_MyCustomerViewController:(NSDictionary *)params;
+///**
+// 我的客户
+//
+// @param params ..
+// @return ..
+// */
+//+ (UIViewController *)Action_MyCustomerViewController:(NSDictionary *)params;
 
 /**
  客服中心

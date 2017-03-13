@@ -54,16 +54,7 @@ PODS:
     - TRZXKit
     - TRZXNetwork
     - YTKKeyValueStore
-  - TRZXMyCustomer (0.0.5):
-    - CTMediator
-    - MJExtension
-    - MJRefresh
-    - SDWebImage
-    - TRZXDIYRefresh
-    - TRZXDVSwitch
-    - TRZXKit
-    - TRZXNetwork
-  - TRZXMyWallet (0.0.3):
+  - TRZXMyWallet (0.0.5):
     - CTMediator
     - IQKeyboardManager
     - Masonry
@@ -72,6 +63,7 @@ PODS:
     - SDWebImage
     - TRZXDVSwitch
     - TRZXKit
+    - TRZXLogin
     - TRZXNetwork
   - TRZXNetwork (0.0.7):
     - AFNetworking
@@ -102,8 +94,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - SDAutoLayout
   - SDWebImage
-  - TRZXLogin
-  - TRZXMyCustomer
+  - TRZXDIYRefresh
   - TRZXMyWallet
   - TRZXNetwork
   - TRZXPersonalCustomerCenter
@@ -130,8 +121,7 @@ SPEC CHECKSUMS:
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
   TRZXLogin: 1bd768836091bbdb3da4d4520c3bfb144e10e2b2
-  TRZXMyCustomer: 636d05d6df200709f93d783d66dee707331e8881
-  TRZXMyWallet: b1f5d741ebfb50735bfe4a05b98cc7d5da35abb2
+  TRZXMyWallet: 89dba71b4ba03876ef285c2007de6b3e8e3a836e
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
   TRZXPersonalCustomerCenter: 9822a34b41ee77454b70e206346744f0d53b92c8
   TRZXPersonalProfile: d5690dc67a1215d979bda30ef1e89ef0e1bc1155
@@ -140,6 +130,6 @@ SPEC CHECKSUMS:
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: c5d1cc7625ca020f4d1e57d0998ebf2a67f8bd10
+PODFILE CHECKSUM: 7c02674762ab9f5fabf6edf86c55e8f05e7baf9c
 
 COCOAPODS: 1.2.0

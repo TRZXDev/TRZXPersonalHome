@@ -14,6 +14,7 @@
 #import <Masonry/Masonry.h>
 #import <TRZXKit/TRZXKit.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import <TRZXLogin/Login.h>
 
 #import "NSString+WalletMD5.h"
 #import "EOMyWalletViewModel.h"
@@ -24,6 +25,8 @@
 #define WalletRGBA(R/*红*/, G/*绿*/, B/*蓝*/, A/*透明*/) \
 [UIColor colorWithRed:R/255.f green:G/255.f blue:B/255.f alpha:A]
 
+
+#define TRZXWalletBundle [NSBundle bundleForClass:[self class]]
 
 //定义宏（限制输入内容）
 #define kWalletAlphaNum  @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"

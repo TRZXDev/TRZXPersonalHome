@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
     s.dependency "MLLabel"
     s.dependency "FDStackView"
     s.dependency "SDAutoLayout"
-    s.dependency "TRZXMyCustomer"
+#    s.dependency "TRZXMyCustomer"
     s.dependency "TRZXMyWallet"
     s.dependency "TRZXPersonalProfile"
     s.dependency "TRZXPersonalCustomerCenter"
-    s.dependency "TRZXLogin"
+#    s.dependency "TRZXLogin"
 
 
     s.requires_arc = true

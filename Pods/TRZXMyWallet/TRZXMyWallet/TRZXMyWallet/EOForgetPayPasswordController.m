@@ -55,15 +55,15 @@ static  NSString *addIdentifier = @"EOWalletAddCardTableViewCell";
 - (void)createUI
 {
 
-    EOWalletNoteDetailHeaderView *headerView = [[[NSBundle mainBundle]loadNibNamed:@"EOWalletNoteDetailHeaderView" owner:self options:nil] firstObject];
+    EOWalletNoteDetailHeaderView *headerView = [[TRZXWalletBundle loadNibNamed:@"EOWalletNoteDetailHeaderView" owner:self options:nil] firstObject];
     headerView.frame                         = CGRectMake(0, 0,SCREEN_WIDTH,60);
     headerView.topLable.hidden = NO;
     headerView.bottomLabel.hidden = NO;
     headerView.accountTotal.hidden = YES;
     headerView.dateLabel.hidden = YES;
     
-    NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"17310220038"];
-//    NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"%@",[KPOUserDefaults mobile]];
+//    NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"17310220038"];
+    NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"%@",[Login curLoginUser].mobile?[Login curLoginUser].mobile:@"12345678901"];
     [str replaceCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
     headerView.bottomLabel.text = [NSString stringWithFormat:@"验证码将发送至手机：%@.请按提示操作。",str];
     
@@ -306,8 +306,8 @@ static  NSString *addIdentifier = @"EOWalletAddCardTableViewCell";
                         button.enabled = NO;
                         self.isSend = YES;
                         EOWalletNoteDetailHeaderView *headerView = (EOWalletNoteDetailHeaderView *)self.tableView.tableHeaderView;
-                        NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"17310220036"];
-//                        NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"%@",[KPOUserDefaults mobile]];
+//                        NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"17310220036"];
+                        NSMutableString *str = [[NSMutableString alloc] initWithFormat:@"%@",[Login curLoginUser].mobile?[Login curLoginUser].mobile:@"12345678901"];
                         if (str.length > 0) {
                             [str replaceCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
                             headerView.bottomLabel.text = [NSString stringWithFormat:@"验证码将发送至手机：%@.请按提示操作。",str];

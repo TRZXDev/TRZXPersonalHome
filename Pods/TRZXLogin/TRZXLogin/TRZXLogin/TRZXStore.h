@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YTKKeyValueStore.h"
+#import <YTKKeyValueStore/YTKKeyValueStore.h>
 
 
 

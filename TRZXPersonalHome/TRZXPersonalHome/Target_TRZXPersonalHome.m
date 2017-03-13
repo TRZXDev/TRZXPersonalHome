@@ -10,7 +10,7 @@
 #import "TRZXPersonalHomeViewController.h"
 #import <TRZXPersonalProfile/CTMediator+PersonalProfile.h>
 #import <TRZXMyWallet/CTMediator+Wallet.h>
-#import <TRZXMyCustomer/CTMediator+MyCustomer.h>
+//#import <TRZXMyCustomer/CTMediator+MyCustomer.h>
 #import <TRZXPersonalCustomerCenter/CTMediator+TRZXCustomerCenterController.h>
 
 
@@ -59,15 +59,15 @@
 }
 
 
-/**
- 我的客户
- 
- @param params ..
- @return ..
- */
-+ (UIViewController *)Action_MyCustomerViewController:(NSDictionary *)params{
-    return [[CTMediator sharedInstance]rh_MyCustomer_TRZXMyCustomerViewController:params];
-}
+///**
+// 我的客户
+// 
+// @param params ..
+// @return ..
+// */
+//+ (UIViewController *)Action_MyCustomerViewController:(NSDictionary *)params{
+//    return [[CTMediator sharedInstance]rh_MyCustomer_TRZXMyCustomerViewController:params];
+//}
 
 /**
  客服中心
