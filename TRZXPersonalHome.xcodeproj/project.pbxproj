@@ -48,6 +48,15 @@
 		B77F00C51E729E3100DE8F28 /* WoWenWoDaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77F00C41E729E3100DE8F28 /* WoWenWoDaViewController.m */; };
 		B77F00C91E729F9C00DE8F28 /* WoWenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B77F00C71E729F9C00DE8F28 /* WoWenTableViewCell.m */; };
 		B77F00CA1E729F9C00DE8F28 /* WoWenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77F00C81E729F9C00DE8F28 /* WoWenTableViewCell.xib */; };
+		B79278E11E764FA50034CC6E /* TRNewShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79278DF1E764FA50034CC6E /* TRNewShareViewController.m */; };
+		B79278E21E764FA50034CC6E /* TRNewShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79278E01E764FA50034CC6E /* TRNewShareViewController.xib */; };
+		B79278E41E76550F0034CC6E /* 图标-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B79278E31E76550F0034CC6E /* 图标-2.png */; };
+		B79278E61E76561A0034CC6E /* profile_inverster_空间.png in Resources */ = {isa = PBXBuildFile; fileRef = B79278E51E76561A0034CC6E /* profile_inverster_空间.png */; };
+		B79278E81E7656280034CC6E /* profile_inverster_朋友圈.png in Resources */ = {isa = PBXBuildFile; fileRef = B79278E71E7656280034CC6E /* profile_inverster_朋友圈.png */; };
+		B79278EA1E7656310034CC6E /* profile_inverster_通讯录.png in Resources */ = {isa = PBXBuildFile; fileRef = B79278E91E7656310034CC6E /* profile_inverster_通讯录.png */; };
+		B79278EC1E76563B0034CC6E /* profile_inverster_微信.png in Resources */ = {isa = PBXBuildFile; fileRef = B79278EB1E76563B0034CC6E /* profile_inverster_微信.png */; };
+		B79278EE1E7656490034CC6E /* profile_inverster_QQ.png in Resources */ = {isa = PBXBuildFile; fileRef = B79278ED1E7656490034CC6E /* profile_inverster_QQ.png */; };
+		B79278F11E7657440034CC6E /* TRZRHShowUserHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B79278F01E7657440034CC6E /* TRZRHShowUserHeader.m */; };
 		B7C0B7361E5D610E0030D138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7351E5D610E0030D138 /* main.m */; };
 		B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B7381E5D610E0030D138 /* AppDelegate.m */; };
 		B7C0B73F1E5D610E0030D138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B73D1E5D610E0030D138 /* Main.storyboard */; };
@@ -249,6 +258,17 @@
 		B77F00C61E729F9C00DE8F28 /* WoWenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWenTableViewCell.h; sourceTree = "<group>"; };
 		B77F00C71E729F9C00DE8F28 /* WoWenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoWenTableViewCell.m; sourceTree = "<group>"; };
 		B77F00C81E729F9C00DE8F28 /* WoWenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoWenTableViewCell.xib; sourceTree = "<group>"; };
+		B79278DE1E764FA50034CC6E /* TRNewShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNewShareViewController.h; sourceTree = "<group>"; };
+		B79278DF1E764FA50034CC6E /* TRNewShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNewShareViewController.m; sourceTree = "<group>"; };
+		B79278E01E764FA50034CC6E /* TRNewShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRNewShareViewController.xib; sourceTree = "<group>"; };
+		B79278E31E76550F0034CC6E /* 图标-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-2.png"; sourceTree = "<group>"; };
+		B79278E51E76561A0034CC6E /* profile_inverster_空间.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_inverster_空间.png"; sourceTree = "<group>"; };
+		B79278E71E7656280034CC6E /* profile_inverster_朋友圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_inverster_朋友圈.png"; sourceTree = "<group>"; };
+		B79278E91E7656310034CC6E /* profile_inverster_通讯录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_inverster_通讯录.png"; sourceTree = "<group>"; };
+		B79278EB1E76563B0034CC6E /* profile_inverster_微信.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_inverster_微信.png"; sourceTree = "<group>"; };
+		B79278ED1E7656490034CC6E /* profile_inverster_QQ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_inverster_QQ.png; sourceTree = "<group>"; };
+		B79278EF1E7657440034CC6E /* TRZRHShowUserHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZRHShowUserHeader.h; sourceTree = "<group>"; };
+		B79278F01E7657440034CC6E /* TRZRHShowUserHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZRHShowUserHeader.m; sourceTree = "<group>"; };
 		B7C0B7311E5D610E0030D138 /* TRZXPersonalHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXPersonalHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C0B7351E5D610E0030D138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7C0B7371E5D610E0030D138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -551,6 +571,9 @@
 				B72E8A721E7285BA00DE5DBE /* TRZXPShareDeleViewController.m */,
 				B77F00C31E729E3100DE8F28 /* WoWenWoDaViewController.h */,
 				B77F00C41E729E3100DE8F28 /* WoWenWoDaViewController.m */,
+				B79278DE1E764FA50034CC6E /* TRNewShareViewController.h */,
+				B79278DF1E764FA50034CC6E /* TRNewShareViewController.m */,
+				B79278E01E764FA50034CC6E /* TRNewShareViewController.xib */,
 				B70E98F21E64097E00FA3145 /* Target_TRZXPersonalHome.h */,
 				B70E98F31E64097E00FA3145 /* Target_TRZXPersonalHome.m */,
 			);
@@ -585,6 +608,8 @@
 		B7C0B7B51E5D6A160030D138 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B79278EF1E7657440034CC6E /* TRZRHShowUserHeader.h */,
+				B79278F01E7657440034CC6E /* TRZRHShowUserHeader.m */,
 				B72E8A4A1E727E3000DE5DBE /* CollectionView */,
 				B72E8A421E72571200DE5DBE /* TRZXYYSTYTableViewCell.h */,
 				B72E8A431E72571200DE5DBE /* TRZXYYSTYTableViewCell.m */,
@@ -668,6 +693,12 @@
 		B7C0B8941E5D70610030D138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B79278ED1E7656490034CC6E /* profile_inverster_QQ.png */,
+				B79278EB1E76563B0034CC6E /* profile_inverster_微信.png */,
+				B79278E91E7656310034CC6E /* profile_inverster_通讯录.png */,
+				B79278E71E7656280034CC6E /* profile_inverster_朋友圈.png */,
+				B79278E51E76561A0034CC6E /* profile_inverster_空间.png */,
+				B79278E31E76550F0034CC6E /* 图标-2.png */,
 				B72E8A741E7290C500DE5DBE /* TRPshareimg_delete.png */,
 				B72E8A3D1E72465600DE5DBE /* 投融攻略.png */,
 				B73D1BED1E6FFE0B00510C3A /* 播放1@2x.png */,
@@ -860,6 +891,7 @@
 				B77F00CA1E729F9C00DE8F28 /* WoWenTableViewCell.xib in Resources */,
 				B7C0B8DB1E5D70610030D138 /* 付费课程@2x.png in Resources */,
 				B7C0B8571E5D6A160030D138 /* CeHuaButtonCell.xib in Resources */,
+				B79278EA1E7656310034CC6E /* profile_inverster_通讯录.png in Resources */,
 				B7C0B8E31E5D70610030D138 /* 官.png in Resources */,
 				B7C0B8D11E5D70610030D138 /* bianjiG.png in Resources */,
 				B73D1BF21E6FFE0B00510C3A /* college_home@2x.png in Resources */,
@@ -892,12 +924,15 @@
 				B7C0B8821E5D6A170030D138 /* presonalNavgationViw.xib in Resources */,
 				B7C0B8DE1E5D70610030D138 /* 发布项目@2x.png in Resources */,
 				B7C0B8EE1E5D70610030D138 /* 我的专家@3x.png in Resources */,
+				B79278EC1E76563B0034CC6E /* profile_inverster_微信.png in Resources */,
+				B79278E41E76550F0034CC6E /* 图标-2.png in Resources */,
 				B7C0B8E81E5D70610030D138 /* 延展@2x.png in Resources */,
 				B7C0B9071E5D70610030D138 /* 返回白.png in Resources */,
 				B7C0B86A1E5D6A160030D138 /* PersonalBottomView.xib in Resources */,
 				B7C0B8F11E5D70610030D138 /* 我的发布@2x.png in Resources */,
 				B7C0B8D31E5D70610030D138 /* investor_BP@1x.png in Resources */,
 				B7C0B8E01E5D70610030D138 /* 商城@3x.png in Resources */,
+				B79278E81E7656280034CC6E /* profile_inverster_朋友圈.png in Resources */,
 				B7C0B8FD1E5D70610030D138 /* 我的项目@3x.png in Resources */,
 				B7C0B8E91E5D70610030D138 /* 延展bai@1x.png in Resources */,
 				B7C0B8FB1E5D70610030D138 /* 我的问答@2x.png in Resources */,
@@ -911,12 +946,15 @@
 				B7C0B8EB1E5D70610030D138 /* 成为运营商.png in Resources */,
 				B7C0B8F91E5D70610030D138 /* 我的路演@2x.png in Resources */,
 				B7C0B73F1E5D610E0030D138 /* Main.storyboard in Resources */,
+				B79278EE1E7656490034CC6E /* profile_inverster_QQ.png in Resources */,
 				B7C0B8D41E5D70610030D138 /* investor_BP@2x.png in Resources */,
 				B7C0B8741E5D6A170030D138 /* PersonalJianJieCell.xib in Resources */,
 				B7C0B85D1E5D6A160030D138 /* CeHuaTableViewCell.xib in Resources */,
 				B7C0B8EA1E5D70610030D138 /* 录制路演@2x.png in Resources */,
 				B7C0B87A1E5D6A170030D138 /* PersonalTopView.xib in Resources */,
+				B79278E21E764FA50034CC6E /* TRNewShareViewController.xib in Resources */,
 				B7C0B9101E5D74E50030D138 /* 挂牌企业@2x.png in Resources */,
+				B79278E61E76561A0034CC6E /* profile_inverster_空间.png in Resources */,
 				B72E8A6B1E7280DC00DE5DBE /* SCViewTableViewCell.xib in Resources */,
 				B7C0B8E61E5D70610030D138 /* 展位图.png in Resources */,
 				B7C0B8FF1E5D70610030D138 /* 我需要的资源.png in Resources */,
@@ -1030,6 +1068,7 @@
 				B7C0B8931E5D6A170030D138 /* TRZXZHScrollViewLB.m in Sources */,
 				B72E8A531E727F5200DE5DBE /* TRZXPOneToOneListCell.m in Sources */,
 				B7C0B8851E5D6A170030D138 /* StudentJingLiBTCell.m in Sources */,
+				B79278E11E764FA50034CC6E /* TRNewShareViewController.m in Sources */,
 				B71CFF741E710C8B00778A37 /* ZXShouMode.m in Sources */,
 				B7C0B8521E5D6A160030D138 /* TRZPersonalModell.m in Sources */,
 				B7C0B87B1E5D6A170030D138 /* PersonalZBCollectionView.m in Sources */,
@@ -1047,6 +1086,7 @@
 				B77F00C91E729F9C00DE8F28 /* WoWenTableViewCell.m in Sources */,
 				B7C0B8771E5D6A170030D138 /* PersonalJiaoYiTabCell.m in Sources */,
 				B7C0B87D1E5D6A170030D138 /* PersonalZhiBoCollectionViewCell.m in Sources */,
+				B79278F11E7657440034CC6E /* TRZRHShowUserHeader.m in Sources */,
 				B7C0B76A1E5D61A90030D138 /* TRZXPersonalHomeViewController.m in Sources */,
 				B71CFF711E710C8500778A37 /* TRZXPersonalMyBuyController.m in Sources */,
 				B7C0B8511E5D6A160030D138 /* PersonalLiveVideoModel.m in Sources */,

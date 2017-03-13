@@ -47,6 +47,7 @@
 #import "TRZXPersonalYYSViewController.h"//成为合伙人
 #import "TRZXCollectionViewController.h"//收藏
 #import "WoWenWoDaViewController.h"//我问我答
+#import "TRNewShareViewController.h"//邀请好友
 
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
@@ -1286,6 +1287,39 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 {
     //行被选中后，自动变回反选状态的方法
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 4) {
+        if ([_otherTwoStr isEqualToString:@"2"]) {
+            if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
+                WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];
+                wowenView.midStrr = _midStrr;
+                if ([_PersonalMode.sex isEqualToString:@"女"]) {
+                    wowenView.titleStrr = @"她的答复";
+                    wowenView.title2Str = @"她的问答";
+                }else{
+                    wowenView.titleStrr = @"他的答复";
+                    wowenView.title2Str = @"他的问答";
+                }
+                [self.navigationController pushViewController:wowenView animated:YES];
+            }else if ([_PersonalMode.userType isEqualToString:@"Investor"]||[_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
+                WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];
+                wowenView.midStrr = _midStrr;
+                if ([_PersonalMode.sex isEqualToString:@"女"]) {
+                    wowenView.titleStrr = @"她的问答";
+                    wowenView.title2Str = @"她的问答";
+                }else{
+                    wowenView.titleStrr = @"他的问答";
+                    wowenView.title2Str = @"他的问答";
+                }
+                [self.navigationController pushViewController:wowenView animated:YES];
+            }
+        }else{
+            TRNewShareViewController *InviteFriend = [[TRNewShareViewController alloc]initWithNibName:@"TRNewShareViewController" bundle:nil];
+            InviteFriend.imageUrl = _imageStr;
+            InviteFriend.smsUrl = _smsUrl;
+            InviteFriend.smsInviteUrl = _smsInviteUrl;
+            [self.navigationController pushViewController:InviteFriend animated:YES];
+        }
+    }
     if (indexPath.section == 5) {
         //关于我
         UIViewController *vc = [Target_TRZXPersonalHome Action_PersonalProfileViewControllerTitle:@"" eduArr:_jiaoyuArr workArr:_gongzuoArr userType:_PersonalMode.userType abstract:_PersonalMode.abstractz];
