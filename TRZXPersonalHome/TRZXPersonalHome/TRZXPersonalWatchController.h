@@ -18,6 +18,6 @@
 
 @property (strong, nonatomic) NSString * panduanStr;
 
-@property (strong, nonatomic)NSString *MID;
+@property (strong, nonatomic)NSString *midStr;
 
 @end

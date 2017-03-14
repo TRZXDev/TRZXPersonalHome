@@ -31,11 +31,10 @@
 @property (strong, nonatomic) NSString * pageNoStr;
 @property (strong, nonatomic) UILabel *noLabelView;
 @property (strong, nonatomic) NSString * wendaStr;
-//@property (strong, nonatomic) UILabel * moreLabel;
 @property (nonatomic) NSInteger pageNo;
 @property (nonatomic) NSInteger totalPage;
 @property (strong, nonatomic) NSString * totalCount;
-
+@property (nonatomic, strong) UIImageView * bgdImage;
 
 @end
 
@@ -57,30 +56,26 @@
     
     [self createUI];
     
-    _wwwwTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        _wwwwTableView.mj_footer.hidden = YES;
+    _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        _tableView.mj_footer.hidden = YES;
         _noLabelView.hidden = YES;
         _pageNo = 1;
         [self createData:_pageNo refresh:0];
     }];
-    _wwwwTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+    _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         _pageNo+=1;
         if(_pageNo <=_totalPage){
             [self createData:_pageNo refresh:1];
             
         }else{
-            [_wwwwTableView.mj_footer endRefreshing];
-            if (!_noLabelView) {
-                _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
-                _noLabelView.text = @"— 没有更多了 —";
-                _noLabelView.textAlignment = NSTextAlignmentCenter;
-                _noLabelView.textColor = zideColor;
-                self.wwwwTableView.tableFooterView = _noLabelView;
-            }
-            _wwwwTableView.mj_footer.hidden = YES;
+            [_tableView.mj_footer endRefreshing];
+           
+            self.tableView.tableFooterView = self.noLabelView;
+            _noLabelView.hidden = NO;
+            _tableView.mj_footer.hidden = YES;
         }
     }];
-    _wwwwTableView.mj_footer.hidden = YES;
+    _tableView.mj_footer.hidden = YES;
     [self createData:_pageNo refresh:0];
 }
 - (void)createData:(NSInteger)pageNo refresh:(NSInteger)refreshIndex{
@@ -98,64 +93,56 @@
             if(refreshIndex==0){
                 _personalArr = [[NSMutableArray alloc]initWithArray:[TRZPersonalModell mj_objectArrayWithKeyValuesArray:object[@"data"]]];
                 if (_personalArr.count>0) {
-                    _wwwwTableView.backgroundColor = backColor;
-                    _wwwwTableView.mj_footer.hidden = NO;
-                    _totalCount = object[@"totalCount"];
-                    [_wwwwTableView reloadData];
+                    _tableView.tableFooterView = [[UIView alloc]init];
+                    _tableView.mj_footer.hidden = NO;
+                    _tableView.backgroundColor = backColor;
+                    self.bgdImage.hidden = YES;
+                if(_totalPage<=1){
+                    _tableView.tableFooterView = self.noLabelView;
+                    _noLabelView.hidden = NO;
+                    _tableView.mj_footer.hidden = YES;
                 }else{
-                    _wwwwTableView.mj_footer.hidden = YES;
-                    _wwwwTableView.backgroundColor = [UIColor clearColor];
+                    _tableView.mj_footer.hidden = NO;
+                    _tableView.tableFooterView.hidden = YES;
                 }
-                [_wwwwTableView.mj_header endRefreshing];
+                
+                }else{
+                    _tableView.mj_footer.hidden = YES;
+                    _tableView.backgroundColor = [UIColor clearColor];
+                    self.bgdImage.hidden = NO;
+                }
+                [_tableView.mj_header endRefreshing];
             }else{
                 NSArray *array = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:object[@"data"]];
                 if (array.count>0) {
                     [_personalArr addObjectsFromArray:array];
                 }else{
-                    if (!_noLabelView) {
-                        _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
-                        _noLabelView.text = @"— 没有更多了 —";
-                        _noLabelView.textAlignment = NSTextAlignmentCenter;
-                        _noLabelView.textColor = zideColor;
-                        self.wwwwTableView.tableFooterView = _noLabelView;
-                    }
-                    _wwwwTableView.mj_footer.hidden = YES;
+                    
+                    self.tableView.tableFooterView = self.noLabelView;
+                    
+                    _tableView.mj_footer.hidden = YES;
                 }
                 
-                [_wwwwTableView reloadData];
+                [_tableView reloadData];
             }
-//            if ([_wendaStr isEqualToString:@"1"]) {
-//                if (_personalArr.count == 0||[[KPOUserDefaults mobile] isEqualToString:@"trzx"]) {
-//                    _moreLabel.text = @"";
-//                }else{
-//                _moreLabel.text = [NSString stringWithFormat:@"已回答%@",_totalCount];
-//                }
-//            }else if ([_wendaStr isEqualToString:@"0"]) {
-//                if (_personalArr.count == 0||[[KPOUserDefaults mobile] isEqualToString:@"trzx"]) {
-//                    _moreLabel.text = @"";
-//                }else{
-//                _moreLabel.text = [NSString stringWithFormat:@"已提问%@",_totalCount];
-//                }
-//            }
-            
         }else{
             
         }
-        [_wwwwTableView.mj_footer endRefreshing];
-        [_wwwwTableView.mj_header endRefreshing];
+        [_tableView.mj_footer endRefreshing];
+        [_tableView.mj_header endRefreshing];
 
     }];
     
     
 }
 - (void)createUI{
-    _wwwwTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, (self.view.frame.size.height)) style:UITableViewStyleGrouped];
-    _wwwwTableView.separatorStyle = NO;
-    _wwwwTableView.delegate = self;
-    _wwwwTableView.dataSource = self;
-    _wwwwTableView.backgroundColor = backColor;
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, (self.view.frame.size.height)) style:UITableViewStyleGrouped];
+    _tableView.separatorStyle = NO;
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.backgroundColor = backColor;
     
-    [self.view addSubview:_wwwwTableView];
+    [self.view addSubview:_tableView];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -252,7 +239,26 @@
     
     
 }
-
+-(UIImageView *)bgdImage{
+    if (!_bgdImage) {
+        
+        _bgdImage = [[UIImageView alloc]init];
+        _bgdImage.image = [UIImage imageNamed:@"列表无内容.png"];
+        _bgdImage.frame = CGRectMake(0, (self.view.frame.size.height-self.view.frame.size.width)/2, self.view.frame.size.width, self.view.frame.size.width);
+        
+        
+    }
+    return _bgdImage;
+}
+- (UILabel *)noLabelView{
+    if (!_noLabelView) {
+        _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+        _noLabelView.text = @"— 没有更多了 —";
+        _noLabelView.textAlignment = NSTextAlignmentCenter;
+        _noLabelView.textColor = zideColor;
+    }
+    return _noLabelView;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

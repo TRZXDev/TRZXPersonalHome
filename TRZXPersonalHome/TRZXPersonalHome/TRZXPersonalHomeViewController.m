@@ -188,8 +188,11 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _otherStr = @"1";
-    _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";
+    if ([_midStrr isEqualToString:@""]) {
+        _otherStr = @"1";
+        _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";
+    }
+
     [self bgTableview];
 }
 
@@ -1436,13 +1439,13 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         
     }else if([sender.titleLabel.text isEqualToString:@"观看课程(集)"]){
         TRZXPersonalWatchController * sanjiVC = [[TRZXPersonalWatchController alloc] init];
-        sanjiVC.MID = _midStrr;
+        sanjiVC.midStr = _midStrr;
         sanjiVC.panduanStr = @"观看课程";
         sanjiVC.delegate = self;
         [self.navigationController pushViewController:sanjiVC animated:YES];
     }else if([sender.titleLabel.text isEqualToString:@"观看路演(次)"]){
         TRZXPersonalWatchController * sanjiVC = [[TRZXPersonalWatchController alloc] init];
-        sanjiVC.MID = _midStrr;
+        sanjiVC.midStr = _midStrr;
         sanjiVC.panduanStr = @"观看路演";
         sanjiVC.delegate = self;
         [self.navigationController pushViewController:sanjiVC animated:YES];

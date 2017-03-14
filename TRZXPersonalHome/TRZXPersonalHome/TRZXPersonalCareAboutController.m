@@ -13,6 +13,7 @@
 #import "MJExtension.h"
 #import "TRZXNetwork.h"
 #import "UIImageView+WebCache.h"
+#import "TRZXPersonalHomeViewController.h"
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define  zjself __weak __typeof(self) sfself = self
@@ -72,13 +73,7 @@
             
         }else{
             [_myTableView.mj_footer endRefreshing];
-            if (!_noLabelView) {
-                _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
-                _noLabelView.text = @"— 没有更多了 —";
-                _noLabelView.textAlignment = NSTextAlignmentCenter;
-                _noLabelView.textColor = zideColor;
-                _myTableView.tableFooterView = _noLabelView;
-            }
+            _myTableView.tableFooterView = self.noLabelView;
             _noLabelView.hidden = NO;
             _myTableView.mj_footer.hidden = YES;
         }
@@ -87,12 +82,21 @@
     [self createData:_pageNo refresh:0];
     
 }
+- (UILabel *)noLabelView{
+    if (!_noLabelView) {
+        _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+        _noLabelView.text = @"— 没有更多了 —";
+        _noLabelView.textAlignment = NSTextAlignmentCenter;
+        _noLabelView.textColor = zideColor;
+    }
+    return _noLabelView;
+}
 - (void)createData:(NSInteger)pageNo refresh:(NSInteger)refreshIndex{
         
         NSDictionary *params = @{@"requestType":@"Collection_Tools_List",
                                  @"apiType":@"findFollowList",
                                  @"id":_midStr?_midStr:@"",
-                                 @"pageSize":[NSString stringWithFormat:@"%ld",(long)_pageNo]
+                                 @"pageNo":[NSString stringWithFormat:@"%ld",(long)_pageNo]
                                  };
         [TRZXNetwork requestWithUrl:nil params:params method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id object, NSError *error) {
         
@@ -109,13 +113,7 @@
                         _myTableView.backgroundColor = backColor;
                         self.bgdImage.hidden = YES;
                         if(_totalPage<=1){
-                            if (!_noLabelView) {
-                                _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
-                                _noLabelView.text = @"— 没有更多了 —";
-                                _noLabelView.textAlignment = NSTextAlignmentCenter;
-                                _noLabelView.textColor = zideColor;
-                                _myTableView.tableFooterView = _noLabelView;
-                            }
+                            _myTableView.tableFooterView = self.noLabelView;
                             _noLabelView.hidden = NO;
                             _myTableView.mj_footer.hidden = YES;
                         }else{
@@ -199,7 +197,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //行被选中后，自动变回反选状态的方法
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    TRZPersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
+    TRZXPersonalHomeViewController * studentPersonal=[[TRZXPersonalHomeViewController alloc]init];
+    studentPersonal.midStrr = model.userId;
+    studentPersonal.otherStr = @"1";
+    [self.navigationController pushViewController:studentPersonal animated:true];
 }
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {

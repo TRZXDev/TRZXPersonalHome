@@ -25,34 +25,15 @@
     self.view.backgroundColor = backColor;
     
     UIImageView * bgdImage = [[UIImageView alloc]init];
-    bgdImage.image = [UIImage imageNamed:@"发布分享删除图标"];
-    //    _bgdImage.contentMode =  UIViewContentModeScaleAspectFill;358  312
+    bgdImage.image = [UIImage imageNamed:@"PersonalShareDelle"];
     bgdImage.frame = CGRectMake(0, 0, SCREEN_WIDTH-160, ((SCREEN_WIDTH-160)*312)/358);
     bgdImage.center = self.view.center;
     [self.view addSubview:bgdImage];
-//    UILabel * lab = [[UILabel alloc]init];
-//    lab.text = @"内容已删除";
-//    lab.frame = CGRectMake(0, (SCREEN_HEIGHT-(SCREEN_WIDTH*312)/358)/2+140, SCREEN_WIDTH, 30);
-//    lab.font = [UIFont systemFontOfSize:15];
-//    lab.textColor = zideColor;
-//    lab.textAlignment = NSTextAlignmentCenter;
-//    [self.view addSubview:lab];
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

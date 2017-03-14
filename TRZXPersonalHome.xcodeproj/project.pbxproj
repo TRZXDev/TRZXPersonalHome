@@ -45,6 +45,7 @@
 		B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */; };
 		B73D1C051E6FFE5D00510C3A /* TRZXPersonalWatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */; };
 		B73D1C081E70033900510C3A /* TRZXPersonalTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C071E70033900510C3A /* TRZXPersonalTopButtonController.m */; };
+		B7420F3E1E77914600C33169 /* PersonalShareDelle.png in Resources */ = {isa = PBXBuildFile; fileRef = B7420F3D1E77914600C33169 /* PersonalShareDelle.png */; };
 		B77F00C51E729E3100DE8F28 /* WoWenWoDaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77F00C41E729E3100DE8F28 /* WoWenWoDaViewController.m */; };
 		B77F00C91E729F9C00DE8F28 /* WoWenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B77F00C71E729F9C00DE8F28 /* WoWenTableViewCell.m */; };
 		B77F00CA1E729F9C00DE8F28 /* WoWenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77F00C81E729F9C00DE8F28 /* WoWenTableViewCell.xib */; };
@@ -254,6 +255,7 @@
 		B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalWatchController.m; sourceTree = "<group>"; };
 		B73D1C061E70033900510C3A /* TRZXPersonalTopButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalTopButtonController.h; sourceTree = "<group>"; };
 		B73D1C071E70033900510C3A /* TRZXPersonalTopButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalTopButtonController.m; sourceTree = "<group>"; };
+		B7420F3D1E77914600C33169 /* PersonalShareDelle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PersonalShareDelle.png; sourceTree = "<group>"; };
 		B77F00C31E729E3100DE8F28 /* WoWenWoDaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWenWoDaViewController.h; sourceTree = "<group>"; };
 		B77F00C41E729E3100DE8F28 /* WoWenWoDaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoWenWoDaViewController.m; sourceTree = "<group>"; };
 		B77F00C61E729F9C00DE8F28 /* WoWenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWenTableViewCell.h; sourceTree = "<group>"; };
@@ -695,6 +697,7 @@
 		B7C0B8941E5D70610030D138 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B7420F3D1E77914600C33169 /* PersonalShareDelle.png */,
 				B79278F21E7674AC0034CC6E /* huanguan.png */,
 				B79278ED1E7656490034CC6E /* profile_inverster_QQ.png */,
 				B79278EB1E76563B0034CC6E /* profile_inverster_微信.png */,
@@ -917,6 +920,7 @@
 				B7C0B8D21E5D70610030D138 /* bianjiW.png in Resources */,
 				B72E8A701E72810300DE5DBE /* TRPCollectionProjectTableViewCell.xib in Resources */,
 				B7C0B85B1E5D6A160030D138 /* CeHuaTableView2Cell.xib in Resources */,
+				B7420F3E1E77914600C33169 /* PersonalShareDelle.png in Resources */,
 				B7C0B8701E5D6A160030D138 /* PersonalCollectionView.xib in Resources */,
 				B7C0B8E51E5D70610030D138 /* 展位loge.png in Resources */,
 				B7C0B8F51E5D70610030D138 /* 我的学员@3x.png in Resources */,

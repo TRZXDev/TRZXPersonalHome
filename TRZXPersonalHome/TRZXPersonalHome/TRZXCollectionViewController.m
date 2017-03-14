@@ -84,13 +84,8 @@
             
         }else{
             [_CollectionTableView.mj_footer endRefreshing];
-            if (!_noLabelView) {
-                _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
-                _noLabelView.text = @"— 没有更多了 —";
-                _noLabelView.textAlignment = NSTextAlignmentCenter;
-                _noLabelView.textColor = zideColor;
-                self.CollectionTableView.tableFooterView = _noLabelView;
-            }
+            
+            self.CollectionTableView.tableFooterView = self.noLabelView;
             _CollectionTableView.mj_footer.hidden = YES;
         }
     }];
@@ -102,7 +97,7 @@
 
 - (void)createData:(NSInteger)pageNo refresh:(NSInteger)refreshIndex{
      NSDictionary *params = @{@"requestType":@"Collection_Tools_List",
-                             @"pageSize":[NSString stringWithFormat:@"%ld",(long)_pageNo]
+                             @"pageNo":[NSString stringWithFormat:@"%ld",(long)_pageNo]
                              };
     
    [TRZXNetwork requestWithUrl:nil params:params method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id object, NSError *error) {
@@ -131,13 +126,8 @@
                     [_CollectionTableView.mj_footer endRefreshing];
                     
                 }else{
-                    if (!_noLabelView) {
-                        _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
-                        _noLabelView.text = @"— 没有更多了 —";
-                        _noLabelView.textAlignment = NSTextAlignmentCenter;
-                        _noLabelView.textColor = zideColor;
-                        self.CollectionTableView.tableFooterView = _noLabelView;
-                    }
+                    
+                    self.CollectionTableView.tableFooterView = self.noLabelView;
                     _CollectionTableView.mj_footer.hidden = YES;
                     
                 }
@@ -372,6 +362,14 @@
 {
     return NO;
 }
-
+- (UILabel *)noLabelView{
+    if (!_noLabelView) {
+        _noLabelView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+        _noLabelView.text = @"— 没有更多了 —";
+        _noLabelView.textAlignment = NSTextAlignmentCenter;
+        _noLabelView.textColor = zideColor;
+    }
+    return _noLabelView;
+}
 
 @end

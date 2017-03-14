@@ -12,7 +12,7 @@
 
 
 @property (strong, nonatomic) NSString * midStrr;
-@property (strong, nonatomic) UITableView *wwwwTableView;
+@property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSString * titleStrr;
 
 @property (strong, nonatomic) NSString * title2Str;
