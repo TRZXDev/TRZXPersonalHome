@@ -25,7 +25,7 @@ def pods
 #    pod 'TRZXMyCustomer'#我的客户
     pod 'TRZXPersonalCustomerCenter'
     pod 'TRZXPersonalAppointment'
-#    pod 'TRZXLogin'
+    pod 'TRZXLogin'
 
 end
 

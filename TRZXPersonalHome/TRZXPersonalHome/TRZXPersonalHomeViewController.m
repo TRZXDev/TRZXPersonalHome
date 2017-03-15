@@ -37,7 +37,7 @@
 #import <UIKit/UIKit.h>
 
 #import "Target_TRZXPersonalHome.h"
-
+#import "Login.h"
 
 #import "TRZXPersonalCareAboutController.h"//关注（自己）
 #import "TRZXPersonalWatchController.h"//观看课程
@@ -188,11 +188,6 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if ([_midStrr isEqualToString:@""]) {
-        _otherStr = @"1";
-        _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";
-    }
-
     [self bgTableview];
 }
 
@@ -449,13 +444,16 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)bgTableview
 {
     if ([_otherStr isEqualToString:@"1"]){
-        if ([_midStrr isEqualToString:@"9cbde6d2b93a4c21ad20219af1b0f33b"]) {//其他方式自己看自己（默认的id）
+        if ([_midStrr isEqualToString:[Login curLoginUser].userId]) {//其他方式自己看自己（默认的id）
             _otherTwoStr = @"1";
         }else{//看其他人
             _otherTwoStr = @"2";
         }
     }else{//自己看自己
-        _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";//默认的id
+        _midStrr = [Login curLoginUser].userId;//默认的id
+        if (_midStrr.length == 0) {
+            _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";
+        }
         _otherTwoStr = @"0";
     }
     
@@ -518,7 +516,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     //    [self.tableView reloadData];
     //    [self.collectionView reloadData];
     if(_midStrr == nil){
-        _midStrr = @"9cbde6d2b93a4c21ad20219af1b0f33b";//默认的id
+        _midStrr = [Login curLoginUser].userId;//默认的id
         [self bgTableview];
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vnv-Eh-MeR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kLN-Oc-sGW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--我-->
         <scene sceneID="YDf-tc-kPp">
             <objects>
-                <navigationController id="vnv-Eh-MeR" sceneMemberID="viewController">
+                <navigationController id="vnv-Eh-MeR" userLabel="我" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" image="播放1.png" id="Cfd-Ow-kZ4" userLabel="我"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="03X-2o-Y59">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -42,7 +43,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e57-qw-e1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="151"/>
+            <point key="canvasLocation" x="222" y="121"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="fss-NN-mIV">
+            <objects>
+                <tabBarController id="kLN-Oc-sGW" customClass="MainTabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="X7A-Zb-rar">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vnv-Eh-MeR" kind="relationship" relationship="viewControllers" id="6NF-13-3Xl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PP-nf-Oop" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1393" y="121"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="播放1.png" width="25" height="25"/>
+    </resources>
 </document>
