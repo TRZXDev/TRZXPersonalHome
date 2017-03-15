@@ -34,7 +34,6 @@
 #import "PersonalBottomView.h"
 #import "AFHTTPSessionManager.h"
 #import "UIImageView+WebCache.h"
-#import <UIKit/UIKit.h>
 
 #import "Target_TRZXPersonalHome.h"
 #import "Login.h"
@@ -48,7 +47,8 @@
 #import "TRZXCollectionViewController.h"//收藏
 #import "WoWenWoDaViewController.h"//我问我答
 #import "TRNewShareViewController.h"//邀请好友
-
+#import "PersonalChengJiuVC.h"//更多成果
+#import "PersonalZhiBoViewController.h"//更多直播
 
 #define zideColor [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1]
 #define heizideColor [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1]
@@ -76,8 +76,8 @@
 // 关注点击 同时改变
 NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
-@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate,GuanKanDelegate,yysDelegate>
-//,gengduoDelegate,UMSocialUIDelegate,AllSettingDelegate,PhotoDelegate,VideoDelegate>
+@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate,GuanKanDelegate,yysDelegate,gengduoDelegate>
+//,UMSocialUIDelegate,AllSettingDelegate,PhotoDelegate,VideoDelegate>
 
 
 @property (strong, nonatomic) NSDictionary *dataDic;
@@ -1360,11 +1360,40 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 //更多直播点击事件
 - (void)zhiBoClick:(UITapGestureRecognizer *)tap
 {
+    PersonalZhiBoViewController *zhiBoVc = [[PersonalZhiBoViewController alloc]init];
+    zhiBoVc.isSelf  = YES;
     
+    zhiBoVc.delegate = self;
+    
+    if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
+        zhiBoVc.titleStr = @"直播";
+    }else if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//投资人、专家、券商
+        zhiBoVc.titleStr = @"直播课堂";
+    }else if ([_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东
+        zhiBoVc.titleStr = @"路演直播";
+    }else{
+        zhiBoVc.titleStr = @"个人直播";
+    }
+    zhiBoVc.otherStr = _otherTwoStr;
+    zhiBoVc.beVistedId = self.midStrr;
+    [self.navigationController pushViewController:zhiBoVc animated:YES];
 }
 
-//更多成果点击事件
+//更多
 - (void)gengduoClick:(UIButton *)sender{
+    
+    PersonalChengJiuVC * gengduo = [[PersonalChengJiuVC alloc] init];
+    if ([_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//券商
+        gengduo.titleStrr = @"个人成果";
+    }else if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
+        gengduo.titleStrr = @"交易中心的成果";
+    }else if ([_PersonalMode.userType isEqualToString:@"Gov"]) {//政府
+        gengduo.titleStrr = @"政府的成果";
+    }else{
+        gengduo.titleStrr = @"个人成果";
+    }
+    gengduo.midStrr = _midStrr;
+    [self.navigationController pushViewController:gengduo animated:YES];
     
 }
 

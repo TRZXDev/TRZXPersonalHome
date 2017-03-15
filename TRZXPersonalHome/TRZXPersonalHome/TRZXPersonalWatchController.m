@@ -68,7 +68,7 @@
             
         }else{
             [_tableView.mj_footer endRefreshing];
-                _tableView.tableFooterView = self.noLabelView;
+            _tableView.tableFooterView = self.noLabelView;
             _noLabelView.hidden = NO;
             _tableView.mj_footer.hidden = YES;
         }

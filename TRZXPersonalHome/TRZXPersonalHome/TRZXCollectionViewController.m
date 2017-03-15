@@ -107,11 +107,18 @@
             _totalPage = [object[@"totalPage"] integerValue];
 
             if(refreshIndex==0){
-                _shoucangMode = [shoucangModel mj_objectWithKeyValues:object];
+                _shoucangMode = [shoucangModel mj_objectWithKeyValues:Arr];
                 if (_shoucangMode.data.count>0) {
                     _CollectionTableView.tableFooterView = [[UIView alloc]init];
                     _CollectionTableView.backgroundColor = backColor;
-                    _CollectionTableView.mj_footer.hidden = NO;
+
+                    if(_totalPage<=1){
+                        self.CollectionTableView.tableFooterView = self.noLabelView;
+                        _CollectionTableView.mj_footer.hidden = YES;
+                    }else{
+                        _CollectionTableView.mj_footer.hidden = NO;
+                        self.CollectionTableView.tableFooterView.hidden = YES;
+                    }
                 }else{
                     _CollectionTableView.mj_footer.hidden = YES;
                     _CollectionTableView.backgroundColor = [UIColor clearColor];
@@ -119,7 +126,7 @@
                 [_CollectionTableView.mj_header endRefreshing];
             }else{
                 
-                NSArray *array = [shoucangModel mj_objectArrayWithKeyValuesArray:object];
+                NSArray *array = [shoucangModel mj_objectArrayWithKeyValuesArray:Arr];
                 
                 if (array.count>0) {
                     [_shoucangMode.data addObjectsFromArray:array];

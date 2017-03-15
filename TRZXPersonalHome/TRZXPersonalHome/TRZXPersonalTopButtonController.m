@@ -216,7 +216,11 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     TRZPersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
     TRZXPersonalHomeViewController * studentPersonal=[[TRZXPersonalHomeViewController alloc]init];
-    studentPersonal.midStrr = model.userId;
+    studentPersonal.midStrr = model.userId;if ([_titleStrr isEqualToString:@"粉丝"]||[_titleStrr isEqualToString:@"关注"]){
+        studentPersonal.midStrr = model.userId;
+    }else {
+        studentPersonal.midStrr = model.mid;
+    }
     studentPersonal.otherStr = @"1";
     [self.navigationController pushViewController:studentPersonal animated:true];
 }
