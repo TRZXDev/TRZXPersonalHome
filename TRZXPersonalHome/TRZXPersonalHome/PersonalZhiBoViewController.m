@@ -70,10 +70,10 @@
 }
 - (void)createUI
 {
-   [self.view addSubview:self.collectionView];
+    [self.view addSubview:self.collectionView];
     __weak typeof(self) weakSelf = self;
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-     
+        
         [weakSelf loadData];
         [weakSelf.collectionView.mj_footer resetNoMoreData];
     }];
@@ -93,14 +93,11 @@
 - (void)loadData
 {
     self.pageNo = 1;
-    NSString * str1;
-    NSString * str2;
     NSDictionary *params = @{@"requestType":@"Live_Video_Api",
-                            @"apiType":@"list",
-                            @"type":str1?str1:@"",
-                            @"pageNo":[NSString stringWithFormat:@"%ld",(long)self.pageNo],
-                            @"beVistedId":str2?str2:@""
-                            };
+                             @"apiType":@"list",
+                             @"pageNo":[NSString stringWithFormat:@"%ld",(long)self.pageNo],
+                             @"beVistedId":self.beVistedId?self.beVistedId:@""
+                             };
     [TRZXNetwork requestWithUrl:nil params:params method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id json, NSError *error) {
         
         if ([json[@"status_code"] isEqualToString:@"200"]) {
@@ -113,13 +110,13 @@
             [self.dataSource addObjectsFromArray:liveVedioArray];
             if (self.dataSource.count > 0) {
                 self.collectionView.backgroundColor = backColor;
-//                self.bgdImage.hidden = YES;
+                //                self.bgdImage.hidden = YES;
                 self.collectionView.mj_footer.hidden = NO;
                 [self.collectionView reloadData];
             }else{
                 self.collectionView.mj_footer.hidden = YES;
                 self.collectionView.backgroundColor = [UIColor clearColor];
-//                self.bgdImage.hidden = NO;
+                //                self.bgdImage.hidden = NO;
             }
             
         }else{
@@ -133,10 +130,8 @@
 
 - (void)loadMoreData
 {
-    NSString * str1;
     NSDictionary *params = @{@"requestType":@"Live_Video_Api",
                              @"apiType":@"list",
-                             @"type":str1?str1:@"",
                              @"pageNo":[NSString stringWithFormat:@"%ld",(long)self.pageNo],
                              @"beVistedId":self.beVistedId?self.beVistedId:@""
                              };
@@ -166,12 +161,12 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     TRPLiveListCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TRPLiveListCollectionCell" forIndexPath:indexPath];
     LatestLiveModel *model = self.dataSource[indexPath.row];
     cell.model = model;
-
-
+    
+    
     return cell;
 }
 
@@ -182,12 +177,12 @@
 #pragma mark - <WaterfallFlowLayoutDelegate>
 
 - (CGSize)collectionView:(UICollectionView *)collectionView collectionViewLayout:(TRZPWaterfallFlowLayout *)collectionViewLayout sizeOfItemAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     LatestLiveModel *model = self.dataSource[indexPath.row];
-
+    
     CGFloat W = (SCREEN_WIDTH - 3 * 1) / 2;
     NSString *liveTitle;
-
+    
     if(model.liveTitle.length>0){
         liveTitle = model.liveTitle;
     }else if (model.abstractz.length>0){
@@ -195,20 +190,20 @@
     }else if (model.title.length>0){
         liveTitle = model.title;
     }
-
+    
     NSInteger videoBgH;
-
+    
     if(model.img.length==0){
         videoBgH = W;
-
+        
     }else{
         videoBgH = (self.view.bounds.size.width*3)/4;
-
+        
     }
-
-
-
-
+    
+    
+    
+    
     //    CGFloat H = [liveTitle heightWithFont:[UIFont systemFontOfSize:14] withinWidth:W-20]+videoBgH;
     
     return CGSizeMake(W , videoBgH);
@@ -218,10 +213,10 @@
 //点击调用
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    __weak PersonalZhiBoViewController *weakSelf = self;
-//    
-//    LatestLiveModel *model = self.dataSource[indexPath.row];
-
+    //    __weak PersonalZhiBoViewController *weakSelf = self;
+    //
+    //    LatestLiveModel *model = self.dataSource[indexPath.row];
+    
     
 }
 //我要直播
@@ -237,25 +232,25 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 - (UICollectionView *)collectionView
 {
     if (_collectionView == nil) {
         TRZPWaterfallFlowLayout *flowLayout= [[TRZPWaterfallFlowLayout alloc]init];
         flowLayout.delegate = self;
-
+        
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) collectionViewLayout:flowLayout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.backgroundColor = backColor;
-       [_collectionView registerNib:[UINib nibWithNibName:@"TRPLiveListCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"TRPLiveListCollectionCell"];
+        [_collectionView registerNib:[UINib nibWithNibName:@"TRPLiveListCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"TRPLiveListCollectionCell"];
     }
     return _collectionView;
 }
