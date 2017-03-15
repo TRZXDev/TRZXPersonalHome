@@ -24,6 +24,7 @@ def pods
     pod 'TRZXMyWallet' #钱包
 #    pod 'TRZXMyCustomer'#我的客户
     pod 'TRZXPersonalCustomerCenter'
+    pod 'TRZXPersonalAppointment'
 #    pod 'TRZXLogin'
 
 end

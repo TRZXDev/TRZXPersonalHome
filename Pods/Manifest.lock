@@ -35,7 +35,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TRZXComplaint (0.0.4):
+  - TRZXComplaint (0.0.5):
     - CTMediator
     - LCActionSheet
     - TRZXKit
@@ -64,6 +64,19 @@ PODS:
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
+  - TRZXPersonalAppointment (0.0.2):
+    - CTMediator
+    - DVSwitch
+    - IQKeyboardManager
+    - Masonry
+    - MJExtension
+    - MLLabel
+    - ReactiveCocoa (~> 2.5)
+    - SDAutoLayout
+    - SDWebImage
+    - TRZXComplaint
+    - TRZXDIYRefresh
+    - TRZXNetwork
   - TRZXPersonalCustomerCenter (0.0.6):
     - CTMediator
     - MJExtension
@@ -91,6 +104,7 @@ DEPENDENCIES:
   - TRZXDIYRefresh
   - TRZXMyWallet
   - TRZXNetwork
+  - TRZXPersonalAppointment
   - TRZXPersonalCustomerCenter
   - TRZXPersonalProfile
   - TRZXShufflingView
@@ -109,19 +123,20 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TRZXComplaint: 8310057ee979009f52d7c7632c84d0f8468d8454
+  TRZXComplaint: 4f6ff40eec0052d7f78623275ba87ead158c3db8
   TRZXDIYRefresh: a89e7cf1658ff7d57aad081c596c2a9cf137dcf2
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
   TRZXLogin: 5645812a5e4e18e756e53394f4fb4c405be9a81d
   TRZXMyWallet: a7e81785cf8b39744ead549f303803043b788d15
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
+  TRZXPersonalAppointment: 181ca4a8463b0fb73048474fe15a16d6ffba8705
   TRZXPersonalCustomerCenter: 9822a34b41ee77454b70e206346744f0d53b92c8
   TRZXPersonalProfile: 7f986519e1872f6d1d385b4113b8cab08477aaed
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 7c02674762ab9f5fabf6edf86c55e8f05e7baf9c
+PODFILE CHECKSUM: 4fbbb56495513b1642389b22aba4fbd5ecce4512
 
 COCOAPODS: 1.2.0

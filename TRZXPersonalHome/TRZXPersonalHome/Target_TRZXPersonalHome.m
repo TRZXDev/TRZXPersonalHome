@@ -12,7 +12,7 @@
 #import <TRZXMyWallet/CTMediator+Wallet.h>
 //#import <TRZXMyCustomer/CTMediator+MyCustomer.h>
 #import <TRZXPersonalCustomerCenter/CTMediator+TRZXCustomerCenterController.h>
-
+#import <TRZXPersonalAppointment/CTMediator+TRZXPersonalAppointment.h>
 
 
 
@@ -76,6 +76,23 @@
  */
 + (UIViewController *)Action_TRZXCustomerCenterController{
     return [[CTMediator sharedInstance]TRZXCustomerCenterController_TRZXCustomerCenterController];
+}
+
+/**
+ 我的专家
+ 
+ @return ..
+ */
++ (UIViewController *)Action_PersonalAppointment_MyExpertViewController{
+    return [[CTMediator sharedInstance]PersonalAppointment_MyExpertViewController];
+}
+/**
+ 我的学员
+ 
+ @return ..
+ */
++ (UIViewController *)Action_PersonalAppointment_MyStudensController{
+    return [[CTMediator sharedInstance]PersonalAppointment_MyStudensController];
 }
 
 @end

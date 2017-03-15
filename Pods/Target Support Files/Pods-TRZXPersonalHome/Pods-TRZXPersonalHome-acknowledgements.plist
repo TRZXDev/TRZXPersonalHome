@@ -519,6 +519,17 @@ SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
+			<string>TRZXPersonalAppointment</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
 			<string>TRZXPersonalCustomerCenter</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

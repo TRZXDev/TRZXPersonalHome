@@ -95,7 +95,10 @@ static NSInteger photoCount = 9;
 }
 - (ComplaintsTitleTableViewCell *)tableView:(UITableView *)tableView cellForTitle:(NSIndexPath *)indexPath
 {
-    ComplaintsTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ComplaintsTitleTableViewCell" forIndexPath:indexPath];
+    ComplaintsTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ComplaintsTitleTableViewCell"];
+    if (cell == nil) {
+        cell = [[[NSBundle bundleForClass:[self class]]loadNibNamed:@"ComplaintsTitleTableViewCell" owner:self options:nil] firstObject];
+    }
     
     cell.titlesLabel.text = self.dataSource[indexPath.row];
     if (self.selectedPhotos.count > 0) {

@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
     s.dependency "TRZXPersonalProfile"
     s.dependency "TRZXPersonalCustomerCenter"
     s.dependency "TRZXDIYRefresh"
+    s.dependency "TRZXPersonalAppointment"
 #    s.dependency "TRZXLogin"
 
 

@@ -800,9 +800,11 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
        
     }else if ([cell.midLab.text isEqualToString:@"y126"]) {//我的约见
         if ([_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东（我的专家）
-           
+            UIViewController *vc = [Target_TRZXPersonalHome Action_PersonalAppointment_MyExpertViewController];
+            [self.navigationController pushViewController:vc animated:YES];
         }else{//专家、投资人（我的学员）
-           
+            UIViewController *vc = [Target_TRZXPersonalHome Action_PersonalAppointment_MyStudensController];
+            [self.navigationController pushViewController:vc animated:YES];
         }
     }else if ([cell.midLab.text isEqualToString:@"y128"]){
         WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];

@@ -51,4 +51,18 @@
  */
 + (UIViewController *)Action_TRZXCustomerCenterController;
 
+/**
+ 我的专家
+ 
+ @return ..
+ */
++ (UIViewController *)Action_PersonalAppointment_MyExpertViewController;
+
+/**
+ 我的学员
+ 
+ @return ..
+ */
++ (UIViewController *)Action_PersonalAppointment_MyStudensController;
+
 @end
