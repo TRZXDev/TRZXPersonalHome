@@ -35,7 +35,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TRZXComplaint (0.0.5):
+  - TRZXComplaint (0.0.7):
     - CTMediator
     - LCActionSheet
     - TRZXKit
@@ -49,6 +49,18 @@ PODS:
     - MJExtension
     - ReactiveCocoa (~> 2.5)
     - TRZXKit
+    - TRZXNetwork
+  - TRZXMyTheme (0.0.7):
+    - CTMediator
+    - DVSwitch
+    - IQKeyboardManager
+    - Masonry
+    - MJExtension
+    - MLLabel
+    - ReactiveCocoa (~> 2.5)
+    - SDAutoLayout
+    - SDWebImage
+    - TRZXDIYRefresh
     - TRZXNetwork
   - TRZXMyWallet (0.0.6):
     - CTMediator
@@ -86,6 +98,12 @@ PODS:
     - TRZXNetwork
   - TRZXPersonalProfile (0.0.6):
     - CTMediator
+  - TRZXShare (0.0.4):
+    - TRZXShare/Openshare (= 0.0.4)
+    - TRZXShareView
+  - TRZXShare/Openshare (0.0.4):
+    - TRZXShareView
+  - TRZXShareView (0.0.1)
   - TRZXShufflingView (0.0.4):
     - AFNetworking
   - TZImagePickerController (1.7.8)
@@ -103,11 +121,13 @@ DEPENDENCIES:
   - SDWebImage
   - TRZXDIYRefresh
   - TRZXLogin
+  - TRZXMyTheme
   - TRZXMyWallet
   - TRZXNetwork
   - TRZXPersonalAppointment
   - TRZXPersonalCustomerCenter
   - TRZXPersonalProfile
+  - TRZXShare
   - TRZXShufflingView
 
 SPEC CHECKSUMS:
@@ -124,20 +144,23 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TRZXComplaint: 4f6ff40eec0052d7f78623275ba87ead158c3db8
+  TRZXComplaint: 1047c0256b262176e3fa118cdbc7c719bade46c6
   TRZXDIYRefresh: a89e7cf1658ff7d57aad081c596c2a9cf137dcf2
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
   TRZXLogin: 5645812a5e4e18e756e53394f4fb4c405be9a81d
+  TRZXMyTheme: 81fc40e55247af2c2c870f37ef8237dc12c0cfa0
   TRZXMyWallet: a7e81785cf8b39744ead549f303803043b788d15
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
   TRZXPersonalAppointment: 181ca4a8463b0fb73048474fe15a16d6ffba8705
   TRZXPersonalCustomerCenter: 9822a34b41ee77454b70e206346744f0d53b92c8
   TRZXPersonalProfile: 7f986519e1872f6d1d385b4113b8cab08477aaed
+  TRZXShare: ea2ebd5d9e18df5c513c2fd9dd539228cd160955
+  TRZXShareView: b35a8aaafe753e1005c73272177867dd14066e13
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
   TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 133e98aba284adc6ad79e0ea3c330b0d0a287858
+PODFILE CHECKSUM: 1f3650dd6b2f0f628ec664fe747bf314e6c2a27a
 
 COCOAPODS: 1.2.0

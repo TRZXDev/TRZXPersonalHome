@@ -26,6 +26,8 @@ def pods
     pod 'TRZXPersonalCustomerCenter'
     pod 'TRZXPersonalAppointment'
     pod 'TRZXLogin'
+    pod 'TRZXMyTheme'
+    pod 'TRZXShare'
 
 end
 

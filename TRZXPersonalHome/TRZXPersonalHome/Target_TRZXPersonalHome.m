@@ -13,7 +13,7 @@
 //#import <TRZXMyCustomer/CTMediator+MyCustomer.h>
 #import <TRZXPersonalCustomerCenter/CTMediator+TRZXCustomerCenterController.h>
 #import <TRZXPersonalAppointment/CTMediator+TRZXPersonalAppointment.h>
-
+#import <TRZXMyTheme/CTMediator+TRZXMyTheme.h>
 
 
 @implementation Target_TRZXPersonalHome
@@ -93,6 +93,10 @@
  */
 + (UIViewController *)Action_PersonalAppointment_MyStudensController{
     return [[CTMediator sharedInstance]PersonalAppointment_MyStudensController];
+}
+//我的主题
++ (UIViewController *)Action_MyTheme_MyThemeViewController{
+    return [[CTMediator sharedInstance]MyTheme_MyThemeViewController];
 }
 
 @end

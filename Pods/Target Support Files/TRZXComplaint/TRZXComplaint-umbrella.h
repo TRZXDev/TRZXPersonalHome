@@ -17,6 +17,7 @@
 #import "TRZXComplaintsMsgViewController.h"
 #import "TRZXComplaintsViewController.h"
 #import "TRZXComplaintViewModel.h"
+#import "UIImage+Com_Load.h"
 
 FOUNDATION_EXPORT double TRZXComplaintVersionNumber;
 FOUNDATION_EXPORT const unsigned char TRZXComplaintVersionString[];

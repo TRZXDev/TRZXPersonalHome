@@ -9,6 +9,7 @@
 #import "TRZXComplaintsViewController.h"
 #import "TRZXComplaintsMsgViewController.h"
 #import "TRZXComplaintCell.h"
+#import "UIImage+Com_Load.h"
 
 @interface TRZXComplaintsViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -131,7 +132,7 @@
 
 -(UIImageView *)tickImageView{
     if (!_tickImageView) {
-        _tickImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"TRZXComplaints_Selected"]];
+        _tickImageView = [[UIImageView alloc]initWithImage:[UIImage loadImage:@"TRZXComplaints_Selected" class:[self class]]];
         _tickImageView.frame = CGRectMake(self.view.bounds.size.width - 30, 15, 15, 15);
     }
     return _tickImageView;

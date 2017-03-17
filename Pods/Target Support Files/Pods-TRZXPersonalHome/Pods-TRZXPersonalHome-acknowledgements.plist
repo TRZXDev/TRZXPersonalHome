@@ -483,6 +483,17 @@ SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>MIT
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>TRZXMyTheme</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>MIT License
 
 Copyright (c) 2017 投融在线技术团队
@@ -562,6 +573,28 @@ SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>TRZXPersonalProfile</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>TRZXShare</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>TRZXShareView</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

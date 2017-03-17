@@ -64,5 +64,11 @@
  @return ..
  */
 + (UIViewController *)Action_PersonalAppointment_MyStudensController;
+/**
+ 我的主题
+ 
+ @return ..
+ */
++ (UIViewController *)Action_MyTheme_MyThemeViewController;
 
 @end

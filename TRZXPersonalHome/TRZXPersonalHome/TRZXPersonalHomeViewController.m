@@ -816,6 +816,8 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         wowenView.title2Str = @"我的问答";
         [self.navigationController pushViewController:wowenView animated:YES];
     }else if ([cell.midLab.text isEqualToString:@"y109"]){//我的主题
+        UIViewController *vc = [Target_TRZXPersonalHome Action_MyTheme_MyThemeViewController];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }else if ([cell.midLab.text isEqualToString:@"y132"]){//成为运营商
         TRZXPersonalYYSViewController * myThemeViewController = [[TRZXPersonalYYSViewController alloc]init];

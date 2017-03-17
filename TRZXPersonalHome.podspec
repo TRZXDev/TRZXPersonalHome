@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
     s.dependency "TRZXDIYRefresh"
     s.dependency "TRZXPersonalAppointment"
     s.dependency "TRZXLogin"
+    s.dependency "TRZXMyTheme"
 
 
     s.requires_arc = true
