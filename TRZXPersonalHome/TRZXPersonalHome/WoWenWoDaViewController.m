@@ -123,8 +123,9 @@
                     _tableView.mj_footer.hidden = YES;
                 }
                 
-                [_tableView reloadData];
             }
+            [_tableView reloadData];
+
         }else{
             
         }
