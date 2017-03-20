@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DVSwitch.h"
+#import <DVSwitch/DVSwitch.h>
 
 @interface PersonalJiaoYiTabCell : UITableViewCell
 
