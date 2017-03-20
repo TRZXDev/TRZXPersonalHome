@@ -61,7 +61,6 @@
 #import "TRZXFriendDetailsViewController.h"
 #import "TRZXFriendDetailsCell.h"
 #import "TRZXNewCommentsView.h"
-#import "TRZXSDBaseRefreshView.h"
 #import "TRZXSendTimeLineHeaderView.h"
 
 FOUNDATION_EXPORT double TRZXFriendCircleVersionNumber;

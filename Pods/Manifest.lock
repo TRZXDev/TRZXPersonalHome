@@ -44,7 +44,7 @@ PODS:
   - TRZXDIYRefresh (0.0.1):
     - MJRefresh
   - TRZXDVSwitch (0.0.6)
-  - TRZXFriendCircle (0.0.3):
+  - TRZXFriendCircle (0.0.4):
     - CTMediator
     - IQKeyboardManager
     - Masonry
@@ -167,7 +167,7 @@ SPEC CHECKSUMS:
   TRZXComplaint: 1047c0256b262176e3fa118cdbc7c719bade46c6
   TRZXDIYRefresh: a89e7cf1658ff7d57aad081c596c2a9cf137dcf2
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
-  TRZXFriendCircle: 920b09ff86db2be8fcd8792287f8462c7e2c6592
+  TRZXFriendCircle: ae6dfe32aafc8b87160a24c5afaf0421fb6a1251
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
   TRZXLogin: 5645812a5e4e18e756e53394f4fb4c405be9a81d
   TRZXMSSBrowse: 8457018b72ba433f010d782b0ff045f08bcfbad3
