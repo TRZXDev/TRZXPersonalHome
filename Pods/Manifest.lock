@@ -44,12 +44,29 @@ PODS:
   - TRZXDIYRefresh (0.0.1):
     - MJRefresh
   - TRZXDVSwitch (0.0.6)
+  - TRZXFriendCircle (0.0.3):
+    - CTMediator
+    - IQKeyboardManager
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - MLLabel
+    - SDAutoLayout
+    - SDWebImage
+    - TRZXDIYRefresh
+    - TRZXKit
+    - TRZXMSSBrowse
+    - TRZXNetwork
+    - TRZXZJWPhotoPicker
+    - TZImagePickerController
   - TRZXKit (0.0.9)
   - TRZXLogin (0.0.3):
     - MJExtension
     - ReactiveCocoa (~> 2.5)
     - TRZXKit
     - TRZXNetwork
+  - TRZXMSSBrowse (0.0.1):
+    - SDWebImage
   - TRZXMyTheme (0.0.7):
     - CTMediator
     - DVSwitch
@@ -106,6 +123,8 @@ PODS:
   - TRZXShareView (0.0.1)
   - TRZXShufflingView (0.0.4):
     - AFNetworking
+  - TRZXZJWPhotoPicker (0.0.4):
+    - SDWebImage
   - TZImagePickerController (1.7.8)
   - YYCache (1.0.4)
 
@@ -120,6 +139,7 @@ DEPENDENCIES:
   - SDAutoLayout
   - SDWebImage
   - TRZXDIYRefresh
+  - TRZXFriendCircle
   - TRZXLogin
   - TRZXMyTheme
   - TRZXMyWallet
@@ -147,8 +167,10 @@ SPEC CHECKSUMS:
   TRZXComplaint: 1047c0256b262176e3fa118cdbc7c719bade46c6
   TRZXDIYRefresh: a89e7cf1658ff7d57aad081c596c2a9cf137dcf2
   TRZXDVSwitch: 42ea134959131e7340eec0b363639af369880bd3
+  TRZXFriendCircle: 920b09ff86db2be8fcd8792287f8462c7e2c6592
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
   TRZXLogin: 5645812a5e4e18e756e53394f4fb4c405be9a81d
+  TRZXMSSBrowse: 8457018b72ba433f010d782b0ff045f08bcfbad3
   TRZXMyTheme: 81fc40e55247af2c2c870f37ef8237dc12c0cfa0
   TRZXMyWallet: a7e81785cf8b39744ead549f303803043b788d15
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
@@ -158,9 +180,10 @@ SPEC CHECKSUMS:
   TRZXShare: ea2ebd5d9e18df5c513c2fd9dd539228cd160955
   TRZXShareView: b35a8aaafe753e1005c73272177867dd14066e13
   TRZXShufflingView: c08a623176d51abfd57ac8b400742d64a41606a5
+  TRZXZJWPhotoPicker: 84f869c75d84d33b44741aa59d408b3456814a51
   TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 2a96263f0003107e26b8364a732cebb0523a8464
+PODFILE CHECKSUM: 2b502c2e740e3f625f2fa2061cb7350c0c149c96
 
 COCOAPODS: 1.2.0

@@ -352,12 +352,22 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+## TRZXFriendCircle
+
+MIT
+
+
 ## TRZXKit
 
 MIT
 
 
 ## TRZXLogin
+
+MIT
+
+
+## TRZXMSSBrowse
 
 MIT
 
@@ -433,6 +443,11 @@ MIT
 
 
 ## TRZXShareView
+
+MIT
+
+
+## TRZXZJWPhotoPicker
 
 MIT
 

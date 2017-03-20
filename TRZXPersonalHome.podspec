@@ -31,6 +31,9 @@ Pod::Spec.new do |s|
     s.dependency "TRZXLogin"
     s.dependency "TRZXMyTheme"
     s.dependency "TRZXShare"
+    s.dependency "TRZXFriendCircle"
+
+
 
 
     s.requires_arc = true

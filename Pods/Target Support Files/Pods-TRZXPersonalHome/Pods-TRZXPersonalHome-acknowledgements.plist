@@ -466,6 +466,17 @@ SOFTWARE.
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
+			<string>TRZXFriendCircle</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
 			<string>TRZXKit</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
@@ -478,6 +489,17 @@ SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>TRZXLogin</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>TRZXMSSBrowse</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -595,6 +617,17 @@ SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>TRZXShareView</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>MIT
+</string>
+			<key>License</key>
+			<string>MIT</string>
+			<key>Title</key>
+			<string>TRZXZJWPhotoPicker</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

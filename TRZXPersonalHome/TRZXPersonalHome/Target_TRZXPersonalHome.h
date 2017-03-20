@@ -71,4 +71,11 @@
  */
 + (UIViewController *)Action_MyTheme_MyThemeViewController;
 
+/**
+ 相册
+ 
+ @return ..
+ */
++ (UIViewController *)FriendCircle_PhotoTimeLineTableViewController;
+
 @end

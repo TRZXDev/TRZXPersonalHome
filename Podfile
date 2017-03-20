@@ -30,6 +30,9 @@ def pods
     pod 'TRZXLogin'
     pod 'TRZXMyTheme'
     pod 'TRZXShare'
+    pod 'TRZXFriendCircle'
+
+
 
 end
 

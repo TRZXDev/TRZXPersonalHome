@@ -14,7 +14,8 @@
 #import <TRZXPersonalCustomerCenter/CTMediator+TRZXCustomerCenterController.h>
 #import <TRZXPersonalAppointment/CTMediator+TRZXPersonalAppointment.h>
 #import <TRZXMyTheme/CTMediator+TRZXMyTheme.h>
-
+//#import <TRZXFriendCircle/CTMediator+TRZXFriendCircle.h>
+#import "CTMediator+TRZXFriendCircle.h"
 
 @implementation Target_TRZXPersonalHome
 
@@ -98,5 +99,15 @@
 + (UIViewController *)Action_MyTheme_MyThemeViewController{
     return [[CTMediator sharedInstance]MyTheme_MyThemeViewController];
 }
+
+/**
+ 相册
+ 
+ @return ..
+ */
++ (UIViewController *)FriendCircle_PhotoTimeLineTableViewController{
+    return [[CTMediator sharedInstance]FriendCircle_PhotoTimeLineTableViewController];
+}
+
 
 @end

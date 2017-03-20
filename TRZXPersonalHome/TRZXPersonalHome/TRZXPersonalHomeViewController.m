@@ -1287,6 +1287,29 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 {
     //行被选中后，自动变回反选状态的方法
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 2) {
+        if ([_otherTwoStr isEqualToString:@"2"]) {
+            if ([_peopleStr isEqualToString:@"Complete"]) {
+                UIViewController *vc = [Target_TRZXPersonalHome FriendCircle_PhotoTimeLineTableViewController];
+                [self.navigationController pushViewController:vc animated:YES];
+                
+            }else if ([_PersonalMode.userType isEqualToString:@"Proxy"]){
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"暂无权限查看" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+                [alert show];
+            }else{
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"加好友才可以查看相册" message:nil delegate:self cancelButtonTitle:@"添加好友" otherButtonTitles:@"取消", nil];
+                [alert show];
+                [[alert rac_buttonClickedSignal] subscribeNext:^(NSNumber *indexNumber) {
+                    if ([indexNumber intValue] == 0) {
+                        //加好友
+                    }
+                }];
+            }
+        }else{
+            UIViewController *vc = [Target_TRZXPersonalHome FriendCircle_PhotoTimeLineTableViewController];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
     if (indexPath.section == 4) {
         if ([_otherTwoStr isEqualToString:@"2"]) {
             if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
