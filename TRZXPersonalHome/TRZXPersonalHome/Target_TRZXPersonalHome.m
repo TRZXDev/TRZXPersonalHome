@@ -16,10 +16,11 @@
 #import <TRZXMyTheme/CTMediator+TRZXMyTheme.h>
 //#import <TRZXFriendCircle/CTMediator+TRZXFriendCircle.h>
 #import "CTMediator+TRZXFriendCircle.h"
+#import "TRZXCollectionViewController.h"
 
 @implementation Target_TRZXPersonalHome
 
-- (UIViewController *)Action_PersonalHomeViewController:(NSDictionary *)params;
+- (UIViewController *)Action_PersonalHomeViewController:(NSDictionary *)params
 {
     TRZXPersonalHomeViewController *PersonalHomeVC = [[TRZXPersonalHomeViewController alloc] init];
     PersonalHomeVC.midStrr = params[@"midStrr"];
@@ -27,6 +28,16 @@
     return PersonalHomeVC;
 }
 
+/**
+ 我的收藏
+ 
+ @param params ..
+ @return ..
+ */
+- (UIViewController *)Action_CollectionViewController:(NSDictionary *)params{
+    TRZXCollectionViewController *TRZXCollectionViewC = [[TRZXCollectionViewController alloc] init];
+    return TRZXCollectionViewC;
+}
 
 
 /**

@@ -36,6 +36,9 @@
 @property (strong, nonatomic) UILabel * noLabelView;
 @property (strong, nonatomic)shoucangModel *shoucangMode;
 
+@property(nonatomic, strong) NSMutableArray *dataArr;
+
+
 @end
 
 @implementation TRZXCollectionViewController

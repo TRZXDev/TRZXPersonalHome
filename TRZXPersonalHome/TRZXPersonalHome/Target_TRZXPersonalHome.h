@@ -12,7 +12,13 @@
 
 - (UIViewController *)Action_PersonalHomeViewController:(NSDictionary *)params;
 
-
+/**
+ 我的收藏
+ 
+ @param params ..
+ @return ..
+ */
+- (UIViewController *)Action_CollectionViewController:(NSDictionary *)params;
 
 /**
  关于我

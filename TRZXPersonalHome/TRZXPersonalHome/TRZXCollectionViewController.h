@@ -10,8 +10,4 @@
 
 @interface TRZXCollectionViewController : UIViewController
 
-
-@property(nonatomic, strong) NSMutableArray *dataArr;
-@property(nonatomic, assign) BOOL selectedPresent;
-
 @end
