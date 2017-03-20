@@ -474,11 +474,6 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
-    
-    UINib *nib = [UINib nibWithNibName:@"PersonalJiaoYiTabCell" bundle:nil];
-    [_tableView registerNib:nib forCellReuseIdentifier:@"PersonalJiaoYiTabCell"];
-    
-    
     [self.view addSubview:_tableView];
     
     
@@ -1185,9 +1180,9 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         
     }else if (indexPath.section == 6){
         PersonalJiaoYiTabCell*cell = [tableView dequeueReusableCellWithIdentifier:@"PersonalJiaoYiTabCell"];
-        //        if (!cell) {
-        //            cell = [[[NSBundle mainBundle] loadNibNamed:@"PersonalJiaoYiTabCell" owner:self options:nil] lastObject];
-        //        }
+            if (!cell) {
+                cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"PersonalJiaoYiTabCell" owner:self options:nil] lastObject];
+            }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = backColor;
         UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(BzhiboClick:)];

@@ -54,7 +54,6 @@
 		B73D1BFA1E6FFE2600510C3A /* TRZXPInvestSeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BF51E6FFE2600510C3A /* TRZXPInvestSeeCell.xib */; };
 		B73D1BFB1E6FFE2600510C3A /* ZaixianerjiyedeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BF71E6FFE2600510C3A /* ZaixianerjiyedeCell.m */; };
 		B73D1BFC1E6FFE2600510C3A /* ZaixianerjiyedeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D1BF81E6FFE2600510C3A /* ZaixianerjiyedeCell.xib */; };
-		B73D1BFF1E6FFE4E00510C3A /* TRZXPWatchViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1BFE1E6FFE4E00510C3A /* TRZXPWatchViewMode.m */; };
 		B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */; };
 		B73D1C051E6FFE5D00510C3A /* TRZXPersonalWatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C041E6FFE5D00510C3A /* TRZXPersonalWatchController.m */; };
 		B73D1C081E70033900510C3A /* TRZXPersonalTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D1C071E70033900510C3A /* TRZXPersonalTopButtonController.m */; };
@@ -280,8 +279,6 @@
 		B73D1BF61E6FFE2600510C3A /* ZaixianerjiyedeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZaixianerjiyedeCell.h; sourceTree = "<group>"; };
 		B73D1BF71E6FFE2600510C3A /* ZaixianerjiyedeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZaixianerjiyedeCell.m; sourceTree = "<group>"; };
 		B73D1BF81E6FFE2600510C3A /* ZaixianerjiyedeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZaixianerjiyedeCell.xib; sourceTree = "<group>"; };
-		B73D1BFD1E6FFE4E00510C3A /* TRZXPWatchViewMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPWatchViewMode.h; sourceTree = "<group>"; };
-		B73D1BFE1E6FFE4E00510C3A /* TRZXPWatchViewMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPWatchViewMode.m; sourceTree = "<group>"; };
 		B73D1C001E6FFE5300510C3A /* TRZXPersonalWatchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalWatchModel.h; sourceTree = "<group>"; };
 		B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalWatchModel.m; sourceTree = "<group>"; };
 		B73D1C031E6FFE5D00510C3A /* TRZXPersonalWatchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalWatchController.h; sourceTree = "<group>"; };
@@ -630,8 +627,6 @@
 				B71CFF731E710C8B00778A37 /* ZXShouMode.m */,
 				B73D1C001E6FFE5300510C3A /* TRZXPersonalWatchModel.h */,
 				B73D1C011E6FFE5300510C3A /* TRZXPersonalWatchModel.m */,
-				B73D1BFD1E6FFE4E00510C3A /* TRZXPWatchViewMode.h */,
-				B73D1BFE1E6FFE4E00510C3A /* TRZXPWatchViewMode.m */,
 				B7C0B7A91E5D6A160030D138 /* LatestLiveModel.h */,
 				B7C0B7AA1E5D6A160030D138 /* LatestLiveModel.m */,
 				B7C0B7AB1E5D6A160030D138 /* PersonalLiveVideoModel.h */,
@@ -1143,7 +1138,6 @@
 				B7C0B88D1E5D6A170030D138 /* xiaoxiCell.m in Sources */,
 				B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */,
 				B70E98F41E64097E00FA3145 /* Target_TRZXPersonalHome.m in Sources */,
-				B73D1BFF1E6FFE4E00510C3A /* TRZXPWatchViewMode.m in Sources */,
 				B7C0B88B1E5D6A170030D138 /* xiaoxi2Cell.m in Sources */,
 				B72E8A571E727FF900DE5DBE /* shoucangModel.m in Sources */,
 				B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */,
