@@ -8,7 +8,7 @@
 
 #import "TRZXPersonalCareAboutController.h"
 #import "PersonalGuanZhuCell.h"
-#import "TRZPersonalModell.h"
+#import "TRZXCareAboutModel.h"
 #import "MJRefresh.h"
 #import "MJExtension.h"
 #import "TRZXNetwork.h"
@@ -25,12 +25,13 @@
 
 @property (strong, nonatomic) UITableView *myTableView;
 
-@property (strong, nonatomic) NSMutableArray * personalArr;
+//@property (strong, nonatomic) NSMutableArray * personalArr;
 @property (nonatomic) NSInteger pageNo;
 @property (nonatomic) NSInteger totalPage;
 @property (strong, nonatomic) UILabel *noLabelView;
-@property (strong, nonatomic) NSString * refreshStr;
 @property (nonatomic, strong) UIImageView * bgdImage;
+@property (nonatomic, strong) TRZXCareAboutModel * cereAboutModel;
+
 
 @end
 
@@ -103,11 +104,9 @@
             if ([object[@"status_code"] isEqualToString:@"200"]) {
                 NSDictionary *personalArr = object[@"data"];
                 _totalPage = [object[@"totalPage"] integerValue];
-                
                 if(refreshIndex==0){
-                    _refreshStr = @"0";
-                    _personalArr = [[NSMutableArray alloc]initWithArray:[TRZPersonalModell mj_objectArrayWithKeyValuesArray:personalArr]];
-                    if (_personalArr.count>0) {
+                    _cereAboutModel = [TRZXCareAboutModel mj_objectWithKeyValues:object];
+                    if (_cereAboutModel.data.count>0) {
                         _myTableView.tableFooterView = [[UIView alloc]init];
                         _myTableView.mj_footer.hidden = NO;
                         _myTableView.backgroundColor = backColor;
@@ -127,10 +126,9 @@
                     }
                     [_myTableView.mj_header endRefreshing];
                 }else{
-                    _refreshStr = @"1";
-                    NSArray *array = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:personalArr];
+                    NSArray *array = [Data mj_objectArrayWithKeyValuesArray:personalArr];
                     if (array.count>0) {
-                        [_personalArr addObjectsFromArray:array];
+                        [_cereAboutModel.data addObjectsFromArray:array];
                         [_myTableView.mj_footer endRefreshing];
                         
                     }else{
@@ -161,7 +159,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _personalArr.count;
+    return _cereAboutModel.data.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -174,7 +172,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    Data *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
     PersonalGuanZhuCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonalGuanZhuCell"];
     if (!cell) {
         cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"PersonalGuanZhuCell" owner:self options:nil] lastObject];
@@ -184,20 +182,15 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     _myTableView.showsVerticalScrollIndicator =
     NO;
-    
     cell.backgroundColor = [UIColor whiteColor];
-    TRZPersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
-    [cell.icmImage sd_setImageWithURL:[NSURL URLWithString:model.photo]placeholderImage:[UIImage imageNamed:@"展位图"]];
-    cell.nameLabel.text = model.name;
-    cell.gongsiLabel.text = [NSString stringWithFormat:@"%@,%@",model.company,model.position];
-    
+    cell.model = model;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //行被选中后，自动变回反选状态的方法
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    TRZPersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
+    Data *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
     TRZXPersonalHomeViewController * studentPersonal=[[TRZXPersonalHomeViewController alloc]init];
     studentPersonal.midStrr = model.userId;
     studentPersonal.otherStr = @"1";
@@ -205,7 +198,6 @@
 }
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     return YES;
     
 }
@@ -217,10 +209,7 @@
 //定义编辑样式
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
-    //    [tableView setEditing:YES animated:YES];
-    
+//    [tableView setEditing:YES animated:YES];
     return UITableViewCellEditingStyleDelete;
 }
 
@@ -229,7 +218,7 @@
     [tableView setEditing:NO animated:YES];
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        TRZPersonalModell *model = [_personalArr objectAtIndex:indexPath.row];
+        Data *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
         
         NSDictionary *params = @{@"requestType":@"Collection_Tools_List",
                                  @"apiType":@"cancelFollow",

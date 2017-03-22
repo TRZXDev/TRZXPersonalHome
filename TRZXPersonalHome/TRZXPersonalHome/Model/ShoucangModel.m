@@ -6,10 +6,10 @@
 //  Copyright © 2015年 JWZhang. All rights reserved.
 //
 
-#import "shoucangModel.h"
+#import "ShoucangModel.h"
 #import <objc/runtime.h>
 
-@implementation shoucangModel
+@implementation ShoucangModel
 
 
 

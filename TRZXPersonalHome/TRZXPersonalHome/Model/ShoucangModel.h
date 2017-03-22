@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class MyData,Collectioned;
-@interface shoucangModel : NSObject
+@interface ShoucangModel : NSObject
 @property (nonatomic, copy) NSString *equipment;
 
 @property (nonatomic, assign) NSInteger pageSize;

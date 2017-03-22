@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TRZXCareAboutModel.h"
 @interface PersonalGuanZhuCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *icmImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *gongsiLabel;
+
+@property (strong, nonatomic) Data * model;
 
 @end

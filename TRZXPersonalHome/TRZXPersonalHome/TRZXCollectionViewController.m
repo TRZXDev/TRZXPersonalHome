@@ -11,7 +11,7 @@
 #import "TRZXYdyTableViewCell.h"
 #import "TRZXPOneToOneListCell.h"
 #import "TRZXPInvestSeeCell.h"
-#import "shoucangModel.h"
+#import "ShoucangModel.h"
 #import "SCViewTableViewCell.h"
 #import "TRZXPShareDeleViewController.h"
 #import "TRPCollectionProjectTableViewCell.h"
@@ -34,7 +34,7 @@
 @property (nonatomic) NSInteger pageNo;
 @property (nonatomic) NSInteger totalPage;
 @property (strong, nonatomic) UILabel * noLabelView;
-@property (strong, nonatomic)shoucangModel *shoucangMode;
+@property (strong, nonatomic)ShoucangModel *shoucangMode;
 
 @property(nonatomic, strong) NSMutableArray *dataArr;
 
@@ -110,7 +110,7 @@
             _totalPage = [object[@"totalPage"] integerValue];
 
             if(refreshIndex==0){
-                _shoucangMode = [shoucangModel mj_objectWithKeyValues:Arr];
+                _shoucangMode = [ShoucangModel mj_objectWithKeyValues:object];
                 if (_shoucangMode.data.count>0) {
                     _CollectionTableView.tableFooterView = [[UIView alloc]init];
                     _CollectionTableView.backgroundColor = backColor;
@@ -129,7 +129,7 @@
                 [_CollectionTableView.mj_header endRefreshing];
             }else{
                 
-                NSArray *array = [shoucangModel mj_objectArrayWithKeyValuesArray:Arr];
+                NSArray *array = [MyData mj_objectArrayWithKeyValuesArray:Arr];
                 
                 if (array.count>0) {
                     [_shoucangMode.data addObjectsFromArray:array];

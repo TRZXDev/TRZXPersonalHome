@@ -23,13 +23,14 @@
 		B72E8A4F1E727E5800DE5DBE /* TRZXYdyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A4D1E727E5800DE5DBE /* TRZXYdyTableViewCell.xib */; };
 		B72E8A531E727F5200DE5DBE /* TRZXPOneToOneListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A511E727F5200DE5DBE /* TRZXPOneToOneListCell.m */; };
 		B72E8A541E727F5200DE5DBE /* TRZXPOneToOneListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A521E727F5200DE5DBE /* TRZXPOneToOneListCell.xib */; };
-		B72E8A571E727FF900DE5DBE /* shoucangModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A561E727FF900DE5DBE /* shoucangModel.m */; };
+		B72E8A571E727FF900DE5DBE /* ShoucangModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A561E727FF900DE5DBE /* ShoucangModel.m */; };
 		B72E8A6A1E7280DC00DE5DBE /* SCViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A681E7280DC00DE5DBE /* SCViewTableViewCell.m */; };
 		B72E8A6B1E7280DC00DE5DBE /* SCViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A691E7280DC00DE5DBE /* SCViewTableViewCell.xib */; };
 		B72E8A6F1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A6D1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.m */; };
 		B72E8A701E72810300DE5DBE /* TRPCollectionProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A6E1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.xib */; };
 		B72E8A731E7285BA00DE5DBE /* TRZXPShareDeleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A721E7285BA00DE5DBE /* TRZXPShareDeleViewController.m */; };
 		B72E8A751E7290C500DE5DBE /* TRPshareimg_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A741E7290C500DE5DBE /* TRPshareimg_delete.png */; };
+		B73842491E821CD100D59314 /* TRZXCareAboutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73842481E821CD100D59314 /* TRZXCareAboutModel.m */; };
 		B73936AF1E79205800F4D547 /* PersonalZhiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73936AE1E79205800F4D547 /* PersonalZhiBoViewController.m */; };
 		B73936B21E79206900F4D547 /* PersonalChengJiuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B73936B11E79206900F4D547 /* PersonalChengJiuVC.m */; };
 		B73936B51E7920DE00F4D547 /* TRZPWaterfallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B73936B41E7920DE00F4D547 /* TRZPWaterfallFlowLayout.m */; };
@@ -233,8 +234,8 @@
 		B72E8A501E727F5200DE5DBE /* TRZXPOneToOneListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPOneToOneListCell.h; sourceTree = "<group>"; };
 		B72E8A511E727F5200DE5DBE /* TRZXPOneToOneListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPOneToOneListCell.m; sourceTree = "<group>"; };
 		B72E8A521E727F5200DE5DBE /* TRZXPOneToOneListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXPOneToOneListCell.xib; sourceTree = "<group>"; };
-		B72E8A551E727FF900DE5DBE /* shoucangModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoucangModel.h; sourceTree = "<group>"; };
-		B72E8A561E727FF900DE5DBE /* shoucangModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoucangModel.m; sourceTree = "<group>"; };
+		B72E8A551E727FF900DE5DBE /* ShoucangModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoucangModel.h; sourceTree = "<group>"; };
+		B72E8A561E727FF900DE5DBE /* ShoucangModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoucangModel.m; sourceTree = "<group>"; };
 		B72E8A671E7280DC00DE5DBE /* SCViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewTableViewCell.h; sourceTree = "<group>"; };
 		B72E8A681E7280DC00DE5DBE /* SCViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewTableViewCell.m; sourceTree = "<group>"; };
 		B72E8A691E7280DC00DE5DBE /* SCViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCViewTableViewCell.xib; sourceTree = "<group>"; };
@@ -244,6 +245,8 @@
 		B72E8A711E7285BA00DE5DBE /* TRZXPShareDeleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPShareDeleViewController.h; sourceTree = "<group>"; };
 		B72E8A721E7285BA00DE5DBE /* TRZXPShareDeleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPShareDeleViewController.m; sourceTree = "<group>"; };
 		B72E8A741E7290C500DE5DBE /* TRPshareimg_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TRPshareimg_delete.png; sourceTree = "<group>"; };
+		B73842471E821CD100D59314 /* TRZXCareAboutModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXCareAboutModel.h; sourceTree = "<group>"; };
+		B73842481E821CD100D59314 /* TRZXCareAboutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXCareAboutModel.m; sourceTree = "<group>"; };
 		B73936AD1E79205800F4D547 /* PersonalZhiBoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalZhiBoViewController.h; sourceTree = "<group>"; };
 		B73936AE1E79205800F4D547 /* PersonalZhiBoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalZhiBoViewController.m; sourceTree = "<group>"; };
 		B73936B01E79206900F4D547 /* PersonalChengJiuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalChengJiuVC.h; sourceTree = "<group>"; };
@@ -621,8 +624,8 @@
 		B7C0B7A81E5D6A160030D138 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B72E8A551E727FF900DE5DBE /* shoucangModel.h */,
-				B72E8A561E727FF900DE5DBE /* shoucangModel.m */,
+				B72E8A551E727FF900DE5DBE /* ShoucangModel.h */,
+				B72E8A561E727FF900DE5DBE /* ShoucangModel.m */,
 				B71CFF721E710C8B00778A37 /* ZXShouMode.h */,
 				B71CFF731E710C8B00778A37 /* ZXShouMode.m */,
 				B73D1C001E6FFE5300510C3A /* TRZXPersonalWatchModel.h */,
@@ -637,6 +640,8 @@
 				B7C0B7B01E5D6A160030D138 /* TRZXPCourse.m */,
 				B7C0B7B31E5D6A160030D138 /* UIButton+Extension.h */,
 				B7C0B7B41E5D6A160030D138 /* UIButton+Extension.m */,
+				B73842471E821CD100D59314 /* TRZXCareAboutModel.h */,
+				B73842481E821CD100D59314 /* TRZXCareAboutModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1139,7 +1144,7 @@
 				B7C0B88F1E5D6A170030D138 /* xihuanTableViewCell.m in Sources */,
 				B70E98F41E64097E00FA3145 /* Target_TRZXPersonalHome.m in Sources */,
 				B7C0B88B1E5D6A170030D138 /* xiaoxi2Cell.m in Sources */,
-				B72E8A571E727FF900DE5DBE /* shoucangModel.m in Sources */,
+				B72E8A571E727FF900DE5DBE /* ShoucangModel.m in Sources */,
 				B73D1C021E6FFE5300510C3A /* TRZXPersonalWatchModel.m in Sources */,
 				B72E8A491E727BE000DE5DBE /* TRZXCollectionViewController.m in Sources */,
 				B7C0B7391E5D610E0030D138 /* AppDelegate.m in Sources */,
@@ -1176,6 +1181,7 @@
 				B73936AF1E79205800F4D547 /* PersonalZhiBoViewController.m in Sources */,
 				B72E8A731E7285BA00DE5DBE /* TRZXPShareDeleViewController.m in Sources */,
 				B7C0B8831E5D6A170030D138 /* StudentJianJieCell.m in Sources */,
+				B73842491E821CD100D59314 /* TRZXCareAboutModel.m in Sources */,
 				B72E8A3C1E72428F00DE5DBE /* TRZXStrategyViewController.m in Sources */,
 				B72E8A6F1E72810300DE5DBE /* TRPCollectionProjectTableViewCell.m in Sources */,
 				B7C0B8691E5D6A160030D138 /* PersonalBottomView.m in Sources */,

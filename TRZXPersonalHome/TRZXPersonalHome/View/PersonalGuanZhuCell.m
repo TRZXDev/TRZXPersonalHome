@@ -7,6 +7,8 @@
 //
 
 #import "PersonalGuanZhuCell.h"
+#import "UIImageView+WebCache.h"
+
 
 @implementation PersonalGuanZhuCell
 
@@ -15,6 +17,17 @@
     self.icmImage.layer.cornerRadius = 6;
     self.icmImage.layer.masksToBounds = YES;
     // Initialization code
+}
+
+-(void)setModel:(Data *)model{
+    if (_model!=model) {
+        _model = model;
+        
+        [self.icmImage sd_setImageWithURL:[NSURL URLWithString:model.photo]placeholderImage:[UIImage imageNamed:@"展位图"]];
+        self.nameLabel.text = model.name;
+        self.gongsiLabel.text = [NSString stringWithFormat:@"%@,%@",model.company,model.position];
+
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
