@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TRZPersonalModell.h"
+#import "TRZXPersonalNModel.h"
 #import "PersonalCollectionView.h"
 #import "PersonalZBCollectionView.h"
 #import "LatestLiveModel.h"
-#import "PersonalLiveVideoModel.h"
 
 
 @protocol gengduoDelegate <NSObject>
@@ -31,7 +30,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *chengguoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *chengguo2Lab;
 
-@property (strong, nonatomic) NSArray * chengjiuArr;
 @property (strong, nonatomic) NSString * oneLabStr;
 @property (strong, nonatomic) NSString * twoLabStr;
 @property (strong, nonatomic) NSArray * zhiboViewArr;
@@ -44,6 +42,8 @@
 
 @property (strong, nonatomic) NSString * chengguoStr;
 @property (strong, nonatomic) PersonalCollectionView * PersonalCollectionView;
+
+@property (strong, nonatomic) TRZXPersonalNModel * personalMode;
 
 @property (strong, nonatomic) PersonalZBCollectionView * PersonalZBCollectionView;
 

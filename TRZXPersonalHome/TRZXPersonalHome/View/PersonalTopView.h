@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TRZPersonalModell.h"
+#import "TRZXPersonalNModel.h"
 
 
 @protocol PersonalDelegate <NSObject>
@@ -23,7 +23,7 @@
 //@property (weak, nonatomic) IBOutlet UIView *btnView;
 
 @property (weak, nonatomic) IBOutlet UILabel *zhiweiLabel;
-@property (strong, nonatomic)TRZPersonalModell *model;
+@property (strong, nonatomic)personalData *model;
 
 @property(nonatomic,weak)id<PersonalDelegate>delegatee;
 @property (weak, nonatomic) IBOutlet UIImageView *proxyImage;
@@ -47,7 +47,6 @@
 
 @property (strong, nonatomic) NSArray *NewbtnArr;
 @property (strong, nonatomic) NSArray *NewLabArr;
-@property (strong, nonatomic) NSString *fansCountStr;
 @property (strong, nonatomic) NSString *seeCountStr;
 @property (strong, nonatomic) NSString *meetCountStr;
 @property (strong, nonatomic) NSString *roadCountStr;

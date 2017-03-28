@@ -29,7 +29,7 @@
 //    self.nameLabel.text = [KPOUserDefaults name];
     
 }
--(void)setModel:(TRZPersonalModell *)model{
+-(void)setModel:(personalData *)model{
     
     if (_model!=model) {
         _model = model;
@@ -42,7 +42,6 @@
             make.right.equalTo(self.mas_right).offset(0);
             make.height.equalTo(@(35));
         }];
-        _fansCountStr = model.fansCount;
         self.proxyImage.hidden = YES;
         if ([model.sex isEqualToString:@"男"]) {
             self.xingbieImage.image = [UIImage imageNamed:@"男"];
@@ -82,11 +81,11 @@
             self.yyImage.hidden = YES;
         }else if ([model.userType isEqualToString:@"Share"]||[_vipStr isEqualToString:@"1"]||[model.userType isEqualToString:@"ShareInvestor"]||[model.userType isEqualToString:@"ShareProxy"]){//股东、会员股东、股东投资人
             _NewbtnArr = @[@"粉丝",@"路演观众"];
-            _NewLabArr = @[_fansCountStr,model.roadCount];
+            _NewLabArr = @[[NSString stringWithFormat:@"%ld",(long)model.fansCount],[NSString stringWithFormat:@"%ld",(long)model.roadCount]];
             
         }else if ([model.userType isEqualToString:@"Brokerage"]||[model.userType isEqualToString:@"OrgInvestor"]||[model.userType isEqualToString:@"Investor"]||[model.userType isEqualToString:@"Expert"]||[model.userType isEqualToString:@"ExpertProxy"]||[model.userType isEqualToString:@"OrgInvestorProxy"]||[model.userType isEqualToString:@"BrokerageProxy"]){//券商、专家、投资人
             _NewbtnArr = @[@"粉丝",@"课程观众",@"学员咨询"];
-            _NewLabArr = @[_fansCountStr,model.seeCount,model.meetCount];
+            _NewLabArr = @[[NSString stringWithFormat:@"%ld",(long)model.fansCount],[NSString stringWithFormat:@"%ld",(long)model.seeCount],[NSString stringWithFormat:@"%ld",(long)model.meetCount]];
         }
         CGSize sizee;
         sizee.width = (self.frame.size.width-(_NewbtnArr.count-1))/_NewbtnArr.count;

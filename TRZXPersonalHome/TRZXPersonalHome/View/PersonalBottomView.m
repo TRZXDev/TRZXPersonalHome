@@ -8,7 +8,6 @@
 
 #import "PersonalBottomView.h"
 #import <FDStackView/FDStackView.h>
-#import "TRZPersonalModell.h"
 #import "Masonry.h"
 #import "UIButton+Extension.h"
 
@@ -57,12 +56,12 @@
 }
 
 #pragma mark - setter
--(void)setModel:(TRZPersonalModell *)model{
+-(void)setModel:(personalData *)model{
     _model = model;
     
     self.hidden = NO;
     //是否关注
-    if ([model.followFlag isEqualToString:@"1"]||
+    if ((model.followFlag == 1)||
         [model.userType isEqualToString:@"Proxy"]) {
         [self.stackView removeArrangedSubview:self.guanzhuBtn];
         [self.guanzhuBtn removeFromSuperview];

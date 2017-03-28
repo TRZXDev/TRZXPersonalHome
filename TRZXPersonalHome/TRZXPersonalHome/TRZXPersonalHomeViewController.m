@@ -16,7 +16,7 @@
 #import "StudentJingLiBTCell.h"
 #import "PersonalJianJieCell.h"
 #import "PersonalCollectionView.h"
-#import "TRZPersonalModell.h"
+#import "TRZXPersonalNModel.h"
 #import "presonalNavgationViw.h"
 #import "CeHuaTableViewCell.h"
 #import "CeHuaCollectionViewCell.h"
@@ -25,6 +25,9 @@
 #import "PhotoDTableViewCell.h"
 #import "TRZXZHScrollViewLB.h"
 #import "PersonalLiveVideoModel.h"
+
+#import "TRZPersonalModell.h"
+
 #import "CeHuaTableView2Cell.h"
 #import "PersonalZBCollectionView.h"
 #import "GifView.h"
@@ -76,12 +79,12 @@
 // 关注点击 同时改变
 NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
-@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate,GuanKanDelegate,yysDelegate,gengduoDelegate>
-//,UMSocialUIDelegate,AllSettingDelegate,PhotoDelegate,VideoDelegate>
+@interface TRZXPersonalHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate,UINavigationControllerDelegate,UIAlertViewDelegate,PersonalDelegate,GuanZhuDelegate,GuanKanDelegate,yysDelegate,gengduoDelegate,VideoDelegate>
+//,UMSocialUIDelegate,AllSettingDelegate,PhotoDelegate>
 
 
-@property (strong, nonatomic) NSDictionary *dataDic;
-@property (strong, nonatomic) NSArray *chengjiuArr;
+//@property (strong, nonatomic) NSDictionary *dataDic;
+//@property (strong, nonatomic) NSArray *chengjiuArr;
 @property (strong, nonatomic) NSString * otherTwoStr;
 @property (strong, nonatomic) UILabel * titleLab;
 @property (strong, nonatomic) UITableView * tableView;
@@ -92,16 +95,18 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 @property (copy, nonatomic) NSString * guanzhuStr;
 
-@property (copy, nonatomic) NSString * gjStr;
+//@property (copy, nonatomic) NSString * gjStr;
 
-@property (copy, nonatomic) NSString * peopleStr;
+//@property (copy, nonatomic) NSString * peopleStr;
 
 
 @property (nonatomic, strong)TRZXZHScrollViewLB *scrollView;
 @property (strong, nonatomic) PersonalTopView *PersonalTopView;
 @property (strong, nonatomic) PersonalCollectionView *PersonalCollectionView;
 @property (strong, nonatomic) PersonalZBCollectionView*PersonalZBCollectionView;
-@property (strong, nonatomic) TRZPersonalModell *PersonalMode;
+//@property (strong, nonatomic) TRZPersonalModell *PersonalMode;
+
+@property (strong, nonatomic) TRZXPersonalNModel *personalModes;
 
 
 @property (strong, nonatomic) presonalNavgationViw *presonalNavgationViw;
@@ -110,21 +115,21 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 @property (copy, nonatomic)NSString *ckptyhStr;
 
-@property (strong, nonatomic) NSArray *jiaoyuArr;
-@property (strong, nonatomic) NSArray *gongzuoArr;
+//@property (strong, nonatomic) NSArray *jiaoyuArr;
+//@property (strong, nonatomic) NSArray *gongzuoArr;
 
 
 //侧滑的
 @property (copy, nonatomic)NSMutableArray *cehuatiteArr;
 //o菜单o
-@property (copy, nonatomic)NSMutableArray * omenuArr;
+//@property (copy, nonatomic)NSMutableArray * omenuArr;
 
 //菜单
 @property (copy, nonatomic)NSMutableArray * menuArr;
 //运营商
 @property (copy, nonatomic)NSMutableArray * proxyArr;
 
-@property (copy, nonatomic)NSArray * personalArr;
+//@property (copy, nonatomic)NSArray * personalArr;
 
 
 @property (strong, nonatomic) TRZPersonalModell * menuModel;
@@ -139,13 +144,13 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 @property (copy, nonatomic) NSString * dangqianStr;
 @property (strong, nonatomic) DVSwitch * switcher;
 
-@property (strong, nonatomic) NSArray * xiangceArr;
+//@property (strong, nonatomic) NSArray * xiangceArr;
 
 @property (strong, nonatomic) NSString * zhenfuStr;
 @property (strong, nonatomic) NSString * jiaoyiStr;
 
-@property (nonatomic,copy) NSString * smsUrl;
-@property (nonatomic,copy) NSString * smsInviteUrl;
+//@property (nonatomic,copy) NSString * smsUrl;
+//@property (nonatomic,copy) NSString * smsInviteUrl;
 
 @property (strong, nonatomic) NSString * rzyysStr;//认证运营商
 
@@ -162,16 +167,15 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 @property (nonatomic, assign)BOOL isImageCompleteSecond;
 
-@property (strong, nonatomic) NSString * imageStr;
+//@property (strong, nonatomic) NSString * imageStr;
 
 @property (nonatomic, strong) NSString * vipStr;
 
 
 @property (nonatomic, strong) NSArray * liveVedioArray;
 
-@property (strong, nonatomic) NSArray * dangqianArr;
+//@property (strong, nonatomic) NSArray * dangqianArr;
 
-@property (nonatomic, strong) NSString * qihuashuStr;
 
 @property (strong, nonatomic) NSArray * NewbtnArr;
 @property (strong, nonatomic) NSArray * NewLabArr;
@@ -195,11 +199,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 //view 不显示的时候删除数据
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
-    
-    
 }
-
-
 
 - (void)viewWillAppear:(BOOL)animated{
     
@@ -209,7 +209,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     
-    if(_personalArr == nil)[self caidanShuJu];
+    if(_personalModes.data == nil)[self caidanShuJu];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -218,7 +218,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 }
 
 -(void)caidanShuJu{
-    if ([_otherTwoStr isEqualToString:@"2"]||[_otherTwoStr isEqualToString:@"1"]||_personalArr == nil) {
+    if ([_otherTwoStr isEqualToString:@"2"]||[_otherTwoStr isEqualToString:@"1"]||_personalModes.data == nil) {
         if (![_guanzhuStr isEqualToString:@"1"]) {
             
         }
@@ -249,90 +249,66 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     NSDictionary *params = @{@"requestType":@"UserHomePage_Api",
                              @"apiType":@"findData",
                              @"id":_midStrr};
-    //    RACSignal * requestShuJu = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-    
-    
-    [TRZXNetwork requestWithUrl:nil params:params method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id data, NSError *error) {
+    [TRZXNetwork requestWithUrl:nil params:params method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id object, NSError *error) {
         
+        _personalModes = [TRZXPersonalNModel mj_objectWithKeyValues:object];
         
-        if (data) {
-            _dataDic = data[@"data"];
-            _peopleStr = data[@"isAlso"];
-            _personalArr = data[@"data"];
-            _xiangceArr = data[@"picList"];
-            _gjStr = data[@"exchangeId"];
-            
-            _imageStr = data[@"twoCode"];
-            _smsUrl = data[@"inviteUrl"];
-            _smsInviteUrl = data[@"smsInviteUrl"];
-            _omenuArr = [LatestLiveModel mj_objectArrayWithKeyValuesArray:data[@"menus"]];
+        if (object) {
+//            _personalArr = object[@"data"];
             [_menuArr removeAllObjects];
             [_proxyArr removeAllObjects];
-            for (int i = 0; i<_omenuArr.count; i++) {
-                TRZPersonalModell * mode = [_omenuArr objectAtIndex:i];
+            for (int i = 0; i<_personalModes.menus.count; i++) {
+                Menus * mode = [_personalModes.menus objectAtIndex:i];
                 if ([mode.mid isEqualToString:@"y129"]||
                     [mode.mid isEqualToString:@"y130"]||
                     [mode.mid isEqualToString:@"y131"]) {
                     
                     NSDictionary *dict = @{@"mid":mode.mid,@"name":mode.name};
                     [_proxyArr addObject:dict];
-                }
-            }
-            for (int i = 0; i<_omenuArr.count; i++) {
-                TRZPersonalModell * mode = [_omenuArr objectAtIndex:i];
-                if (!([mode.mid isEqualToString:@"y129"]||[mode.mid isEqualToString:@"y130"]||[mode.mid isEqualToString:@"y131"])) {
-                    NSDictionary *dict = @{@"mid":mode.mid,@"name":mode.name};
                     [_menuArr addObject:dict];
                 }
             }
-            _qihuashuStr = data[@"myBusinessPlan"];
             if ([_otherTwoStr isEqualToString:@"0"]||[_otherTwoStr isEqualToString:@"1"]) {
-                _vipStr = data[@"vip"];
+                _vipStr = object[@"vip"];
             }
-            _dangqianArr = data[@"sessionUserType"];
-            for (int i = 0; i<_dangqianArr.count; i++) {
-                if ([_dangqianArr[i] isEqualToString:@"Tourist"]||[_dangqianArr[i] isEqualToString:@"User"]) {
+            for (int i = 0; i<_personalModes.sessionUserType.count; i++) {
+                if ([_personalModes.sessionUserType[i] isEqualToString:@"Tourist"]||[_personalModes.sessionUserType[i] isEqualToString:@"User"]) {
                     _dangqianStr = @"1";
                 }else{
                     _dangqianStr = @"0";
                 }
-                if ([_dangqianArr[i] isEqualToString:@"TradingCenter"]) {
+                if ([_personalModes.sessionUserType[i] isEqualToString:@"TradingCenter"]) {
                     _jiaoyiStr = @"1";
                 }else{
                     _jiaoyiStr = @"0";
                 }
-                if ([_dangqianArr[i] isEqualToString:@"Gov"]) {
-                    _zhenfuStr = @"1";
-                }else{
-                    _zhenfuStr = @"0";
-                }
             }
             
-            if (_personalArr.count) {
+            if (_personalModes.data) {
                 
-                _PersonalMode = [TRZPersonalModell mj_objectWithKeyValues:_personalArr];
-                _PersonalMode.currentUser = data[@"currentUser"];
-                _PersonalMode.isAlso = data[@"isAlso"];
-                if ([_otherTwoStr isEqualToString:@"2"]&&([_PersonalMode.userType isEqualToString:@"Tourist"]||[_PersonalMode.userType isEqualToString:@"User"]||[_PersonalMode.userType isEqualToString:@"Proxy"])) {
+//                _PersonalMode = [TRZPersonalModell mj_objectWithKeyValues:_personalArr];
+                _personalModes.data.currentUser = object[@"currentUser"];
+                _personalModes.data.isAlso = _personalModes.isAlso;
+                if ([_otherTwoStr isEqualToString:@"2"]&&([_personalModes.data.userType isEqualToString:@"Tourist"]||[_personalModes.data.userType isEqualToString:@"User"]||[_personalModes.data.userType isEqualToString:@"Proxy"])) {
                     _ckptyhStr = @"1";
                     _presonalNavgationViw.fenxiangBtn.hidden = YES;
                 }else{
                     _ckptyhStr = @"0";
                 }
                 if ([_otherTwoStr isEqualToString:@"2"]&&[_ckptyhStr isEqualToString:@"0"]) {
-                    _vipStr = _PersonalMode.vip;
+                    _vipStr = _personalModes.data.vip;
                 }else if ([_otherTwoStr isEqualToString:@"2"]&&[_ckptyhStr isEqualToString:@"1"]){
-                    _vipStr = _PersonalMode.vip;
+                    _vipStr = _personalModes.data.vip;
                 }
                 
                 if ([_otherTwoStr isEqualToString:@"0"]) {
                     _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-49);
                 }else if ([_otherTwoStr isEqualToString:@"2"]){
-                    if ([_PersonalMode.userType isEqualToString:@"User"]||
-                        [_PersonalMode.userType isEqualToString:@"TradingCenter"]||
-                        [_PersonalMode.userType isEqualToString:@"Tourist"]) {
+                    if ([_personalModes.data.userType isEqualToString:@"User"]||
+                        [_personalModes.data.userType isEqualToString:@"TradingCenter"]||
+                        [_personalModes.data.userType isEqualToString:@"Tourist"]) {
                         _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-                    }else if ((![_PersonalMode.userType isEqualToString:@"Proxy"])&&[_PersonalMode.currentUser isEqualToString:@"Proxy"]) {
+                    }else if ((![_personalModes.data.userType isEqualToString:@"Proxy"])&&[_personalModes.data.currentUser isEqualToString:@"Proxy"]) {
                         _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
                     }else{
                         _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-49);
@@ -343,17 +319,17 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 
                 _PersonalTopView.frame = CGRectMake(0, 0, self.view.frame.size.width, 180);
                 if ([_otherTwoStr isEqualToString:@"2"]&&
-                    ![_PersonalMode.currentUser isEqualToString:@"User"] &&
-                    ![_PersonalMode.currentUser isEqualToString:@"Tourist"] &&
-                    ![_PersonalMode.userType isEqualToString:@"User"] &&
-                    ![_PersonalMode.userType isEqualToString:@"Tourist"] &&
-                    ![_PersonalMode.userType isEqualToString:@"TradingCenter"] &&
+                    ![_personalModes.data.currentUser isEqualToString:@"User"] &&
+                    ![_personalModes.data.currentUser isEqualToString:@"Tourist"] &&
+                    ![_personalModes.data.userType isEqualToString:@"User"] &&
+                    ![_personalModes.data.userType isEqualToString:@"Tourist"] &&
+                    ![_personalModes.data.userType isEqualToString:@"TradingCenter"] &&
                     _PersonalBottomView == nil) {
                     
                     [self.view addSubview:self.PersonalBottomView];
-                    self.PersonalBottomView.model = _PersonalMode;
+                    self.PersonalBottomView.model = _personalModes.data;
                 }
-                if (![_PersonalMode.userType isEqualToString:@"Proxy"]&&[_PersonalMode.currentUser isEqualToString:@"Proxy"]){
+                if (![_personalModes.data.userType isEqualToString:@"Proxy"]&&[_personalModes.data.currentUser isEqualToString:@"Proxy"]){
                     self.PersonalBottomView.hidden = YES;
                 }
                 //先注销了
@@ -361,9 +337,9 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 _PersonalTopView.hidden = NO;
                 [_PersonalTopView.icmBtn addTarget:self action:@selector(touxiangClick:) forControlEvents:UIControlEventTouchUpInside];
                 
-                _chengjiuArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"achievements"]];
+                //_chengjiuArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"achievements"]];
                 _PersonalTopView.AmplifyImageView = [[UIImageView alloc]init];
-                [_PersonalTopView.AmplifyImageView sd_setImageWithURL:[NSURL URLWithString:_PersonalMode.maxPhoto] placeholderImage:[UIImage imageNamed:@"展位图1"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                [_PersonalTopView.AmplifyImageView sd_setImageWithURL:[NSURL URLWithString:_personalModes.data.maxPhoto] placeholderImage:[UIImage imageNamed:@"展位图1"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                     
                     dispatch_async(dispatch_get_main_queue(), ^{
                         //                        weakSelf.maxImageComplete();
@@ -371,36 +347,30 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                     });
                     
                 }];
-                _PersonalTopView.nameLabel.text = _PersonalMode.name;//姓名
+                _PersonalTopView.nameLabel.text = _personalModes.data.name;//姓名
                 _PersonalTopView.delegatee = self;
                 _PersonalTopView.vipStr = _vipStr;
                 _PersonalTopView.midStrr = _midStrr;
-                _PersonalTopView.model = _PersonalMode;
-                _jiaoyuArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"userEducationExperiences"]];//教育
-                //                NSData *datae = [[NSUserDefaults standardUserDefaults] objectForKey:@"BackBJImage"];
-                //                if (datae) {
-                //                    UIImage *image = [UIImage imageWithData:datae];
-                //                    self.PersonalTopView.beijiagImage.image = image;
-                //                }else{
-                [self.PersonalTopView.beijiagImage sd_setImageWithURL:[NSURL URLWithString:_PersonalMode.bgImage] placeholderImage:[UIImage imageNamed:@"个人主页图"]];
-                //                }
-                _gongzuoArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:_dataDic[@"userWorkExperience"]];//工作
+                _PersonalTopView.model = _personalModes.data;
+
+                [self.PersonalTopView.beijiagImage sd_setImageWithURL:[NSURL URLWithString:_personalModes.data.bgImage] placeholderImage:[UIImage imageNamed:@"个人主页图"]];
+
                 
-                if ([_PersonalMode.userType isEqualToString:@"ShareProxy"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]){
+                if ([_personalModes.data.userType isEqualToString:@"ShareProxy"]||[_personalModes.data.userType isEqualToString:@"ExpertProxy"]||[_personalModes.data.userType isEqualToString:@"OrgInvestorProxy"]||[_personalModes.data.userType isEqualToString:@"BrokerageProxy"]){
                     
                     _rzyysStr = @"1";//认证运营商
                 }else{
                     _rzyysStr = @"0";//非认证运营商
                 }
-                if ([_PersonalMode.userType isEqualToString:@"Tourist"]||[_PersonalMode.userType isEqualToString:@"User"]) {//普通用户
+                if ([_personalModes.data.userType isEqualToString:@"Tourist"]||[_personalModes.data.userType isEqualToString:@"User"]) {//普通用户
                     _cehuatiteArr =  [NSMutableArray arrayWithArray:@[@"一键认证",@"钱包",@"客服中心"]]  ;
-                }else if ([_PersonalMode.userType isEqualToString:@"Proxy"]) {//代理用户
+                }else if ([_personalModes.data.userType isEqualToString:@"Proxy"]) {//代理用户
                     _cehuatiteArr =  [NSMutableArray arrayWithArray:@[@"钱包",@"客服中心",@"我的购买"]]  ;
                 }else {
                     _cehuatiteArr = [NSMutableArray arrayWithArray:@[@"钱包",@"收藏",@"客服中心"]];
                 }
                 
-                if([_PersonalMode.userType isEqualToString:@"trzx"]){
+                if([_personalModes.data.userType isEqualToString:@"trzx"]){
                     [_cehuatiteArr removeObject:@"钱包"];
                     [_cehuatiteArr addObject:@""];
                 }
@@ -461,7 +431,6 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     _proxyArr = [[NSMutableArray alloc]init];
     _cehuatiteArr = [[NSMutableArray alloc]init];
     _menuArr = [[NSMutableArray alloc]init];
-    _omenuArr = [[NSMutableArray alloc]init];
     
     self.view.backgroundColor = backColor;
     _gonggaoArr = [NSMutableArray array];
@@ -537,7 +506,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     [_presonalNavgationViw.fenxiangBtn addTarget:self action:@selector(fenxiangClick:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:_presonalNavgationViw];
-    if ([_PersonalMode.currentUser isEqualToString:@"TradingCenter"]){//交易中心
+    if ([_personalModes.data.currentUser isEqualToString:@"TradingCenter"]){//交易中心
         _presonalNavgationViw.biaotiLabel.text = @"交易中心的主页";
     }else{
         if ([_otherTwoStr isEqualToString:@"2"]) {
@@ -565,7 +534,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     //        UIImage *image = [UIImage imageWithData:datae];
     //        self.PersonalTopView.beijiagImage.image = image;
     //    }else{
-    //        [self.PersonalTopView.beijiagImage sd_setImageWithURL:[NSURL URLWithString:_PersonalMode.bgImage] placeholderImage:[UIImage imageNamed:@"个人主页图"]];
+    //        [self.PersonalTopView.beijiagImage sd_setImageWithURL:[NSURL URLWithString:_personalModes.data.bgImage] placeholderImage:[UIImage imageNamed:@"个人主页图"]];
     //    }
     
     //    注册通知 更换背景图片
@@ -686,7 +655,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 #pragma mark collection data source
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    if ([_PersonalMode.userType isEqualToString:@"Tourist"]||[_PersonalMode.userType isEqualToString:@"User"]||[_dangqianStr isEqualToString:@"1"]) {
+    if ([_personalModes.data.userType isEqualToString:@"Tourist"]||[_personalModes.data.userType isEqualToString:@"User"]||[_dangqianStr isEqualToString:@"1"]) {
         return 2;
     }else if ([_rzyysStr isEqualToString:@"1"]) {//认证运营商
         return 3;
@@ -705,7 +674,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     if (section == 0) {
         return _cehuatiteArr.count;
     }else if (section == 1) {
-        if ([_PersonalMode.userType isEqualToString:@"Proxy"]) {//代表
+        if ([_personalModes.data.userType isEqualToString:@"Proxy"]) {//代表
             if (_proxyArr.count <= 3) {
                 return 3;
             }else if (_proxyArr.count <= 6) {
@@ -741,7 +710,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         
         cell.icmImage.image = [UIImage imageNamed:_cehuatiteArr[indexPath.row]];
     }else if (indexPath.section == 1) {
-        if ([_PersonalMode.userType isEqualToString:@"Proxy"]) {
+        if ([_personalModes.data.userType isEqualToString:@"Proxy"]) {
             NSArray * proxy1Arr = [LatestLiveModel mj_objectArrayWithKeyValuesArray:_proxyArr];
             if (indexPath.row < proxy1Arr.count) {
                 _proxyModel = [proxy1Arr objectAtIndex:indexPath.row];
@@ -778,7 +747,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     }else if ([cell.titleLabel.text isEqualToString:@"客服中心"]){
         UIViewController *vc = [Target_TRZXPersonalHome Action_TRZXCustomerCenterController];
         [self.navigationController pushViewController:vc animated:YES];
-    }else if ([cell.titleLabel.text isEqualToString:@"我的购买"]&&[_PersonalMode.userType isEqualToString:@"Proxy"]){
+    }else if ([cell.titleLabel.text isEqualToString:@"我的购买"]&&[_personalModes.data.userType isEqualToString:@"Proxy"]){
         
     }else if ([cell.titleLabel.text isEqualToString:@"一键认证"]){
         
@@ -792,7 +761,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     }else if ([cell.midLab.text isEqualToString:@"y131"]){ // 我的业绩
        
     }else if ([cell.midLab.text isEqualToString:@"y126"]) {//我的约见
-        if ([_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东（我的专家）
+        if ([_personalModes.data.userType isEqualToString:@"ShareInvestor"]||[_personalModes.data.userType isEqualToString:@"Share"]||[_personalModes.data.userType isEqualToString:@"ShareProxy"]) {//股东（我的专家）
             UIViewController *vc = [Target_TRZXPersonalHome Action_PersonalAppointment_MyExpertViewController];
             [self.navigationController pushViewController:vc animated:YES];
         }else{//专家、投资人（我的学员）
@@ -803,9 +772,9 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];
         
         wowenView.midStrr = _midStrr;
-        if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
+        if ([_personalModes.data.userType isEqualToString:@"OrgInvestor"]||[_personalModes.data.userType isEqualToString:@"Expert"]||[_personalModes.data.userType isEqualToString:@"Brokerage"]||[_personalModes.data.userType isEqualToString:@"ExpertProxy"]||[_personalModes.data.userType isEqualToString:@"OrgInvestorProxy"]||[_personalModes.data.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
             wowenView.titleStrr = @"我的答复";
-        }else if ([_PersonalMode.userType isEqualToString:@"Investor"]||[_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
+        }else if ([_personalModes.data.userType isEqualToString:@"Investor"]||[_personalModes.data.userType isEqualToString:@"ShareInvestor"]||[_personalModes.data.userType isEqualToString:@"Share"]||[_personalModes.data.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
             wowenView.titleStrr = @"我的问答";
         }
         wowenView.title2Str = @"我的问答";
@@ -839,23 +808,23 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0||section == 2||section == 5) {
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {
+        if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {
             return 0;
         }else{
             return 1;
         }
     }else if (section == 1){
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {
+        if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {
             return 0;
         }else{
-            if (_omenuArr.count == 0) {
+            if (_personalModes.menus.count == 0) {
                 return 0;
             }else{
                 return 1;
             }
         }
     }else if (section == 3) {
-        if ([_PersonalMode.userType isEqualToString:@"Tourist"]||[_PersonalMode.userType isEqualToString:@"User"]||[_PersonalMode.userType isEqualToString:@"TradingCenter"]||[_PersonalMode.userType isEqualToString:@"Proxy"]) {
+        if ([_personalModes.data.userType isEqualToString:@"Tourist"]||[_personalModes.data.userType isEqualToString:@"User"]||[_personalModes.data.userType isEqualToString:@"TradingCenter"]||[_personalModes.data.userType isEqualToString:@"Proxy"]) {
             return 0;
         }else{
             if ([_otherTwoStr isEqualToString:@"2"]){
@@ -866,7 +835,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         }
         //        return 0;
     }else if (section == 4){
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {
+        if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {
             return 0;
         }else{
             if ([_ckptyhStr isEqualToString:@"1"]) {
@@ -876,13 +845,13 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
             }
         }
     }else if (section == 6) {
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {
+        if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {
             return 1;
         }else{
             return 0;
         }
     }else{
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {
+        if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {
             if ([_HDGGStr isEqualToString:@"activity"]) {
                 return _huodongArr.count;
             }else{
@@ -904,9 +873,9 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         if ([_otherTwoStr isEqualToString:@"2"]){
             return 50;
         }else{
-            if ([_PersonalMode.userType isEqualToString:@"Tourist"]||[_PersonalMode.userType isEqualToString:@"User"]||[_dangqianStr isEqualToString:@"1"]) {//普通用户
+            if ([_personalModes.data.userType isEqualToString:@"Tourist"]||[_personalModes.data.userType isEqualToString:@"User"]||[_dangqianStr isEqualToString:@"1"]) {//普通用户
                 return (_cehuatiteArr.count+2)/3*66+2+60+(12+66);
-            }else if ([_PersonalMode.userType isEqualToString:@"Proxy"]) {//业务代表
+            }else if ([_personalModes.data.userType isEqualToString:@"Proxy"]) {//业务代表
                 return (_cehuatiteArr.count+2)/3*66+(_proxyArr.count+2)/3*67+12+60;
             }else if ([_rzyysStr isEqualToString:@"1"]) {//代理商
                 return (_cehuatiteArr.count+2)/3*66+(_menuArr.count+2)/3*67+(_proxyArr.count+2)/3*67+22+60;
@@ -924,7 +893,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                 return 210;
             }
         }else{
-            if (_chengjiuArr.count == 0) {
+            if (_personalModes.data.achievements.count == 0) {
                 return 53;
             }else{
                 return 210;
@@ -947,7 +916,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    if (_personalArr) {
+    if (_personalModes.data) {
         return 8;
     }else{
         return 0;
@@ -963,22 +932,20 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         cell.backgroundColor = [UIColor whiteColor];
-        NSString * roadSeeCountStr;
-        if (_PersonalMode.roadSeeCount.length == 0) {
-            roadSeeCountStr = @"0";
-        }else{
-            roadSeeCountStr = _PersonalMode.roadSeeCount;//观看路演
-        }
-        if ([_PersonalMode.userType isEqualToString:@"User"]||[_PersonalMode.userType isEqualToString:@"Proxy"]) {
+        NSString * roadSeeCount = [NSString stringWithFormat:@"%ld",(long)_personalModes.data.roadSeeCount];
+        NSString * roadSeeUserCount = [NSString stringWithFormat:@"%ld",(long)_personalModes.data.seeUserCount];
+        NSString * roadFollowCount = [NSString stringWithFormat:@"%ld",(long)_personalModes.data.followCount];
+        NSString * roadSangCount = [NSString stringWithFormat:@"%ld",(long)_personalModes.data.sangCount];
+        if ([_personalModes.data.userType isEqualToString:@"User"]||[_personalModes.data.userType isEqualToString:@"Proxy"]) {
             _NewbtnArr = @[@"观看课程(集)",@"润嗓(次)"];
-            _NewLabArr = @[_PersonalMode.seeUserCount,roadSeeCountStr];
-        }else if([_PersonalMode.userType isEqualToString:@"Gov"]||[_PersonalMode.userType isEqualToString:@"TradingCenter"]){
+            _NewLabArr = @[roadSeeUserCount,roadSangCount];
+        }else if([_personalModes.data.userType isEqualToString:@"Gov"]||[_personalModes.data.userType isEqualToString:@"TradingCenter"]){
             _NewbtnArr = @[@"关注(人)",@"观看课程(集)",@"观看路演(次)"];
-            _NewLabArr = @[_PersonalMode.followCount,_PersonalMode.seeUserCount,roadSeeCountStr];
+            _NewLabArr = @[roadFollowCount,roadSeeUserCount,roadSeeCount];
             
         }else{
             _NewbtnArr = @[@"关注(人)",@"观看课程(集)",@"观看路演(次)",@"润嗓(次)"];
-            _NewLabArr = @[_PersonalMode.followCount,_PersonalMode.seeUserCount,roadSeeCountStr,_PersonalMode.sangCount];
+            _NewLabArr = @[roadFollowCount,roadSeeUserCount,roadSeeCount,roadSangCount];
         }
         CGSize sizee;
         sizee.width = (self.view.frame.size.width-(_NewbtnArr.count-1))/_NewbtnArr.count;
@@ -1052,19 +1019,19 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         cell.lineLab.backgroundColor = backColor;
-        if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
+        if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {//交易中心
             cell.titleLab.text = @"相册";
         }
         cell.imageOne.hidden = YES;
         cell.imageTwo.hidden = YES;
         cell.imageThree.hidden = YES;
-        if (_xiangceArr.count >3) {
+        if (_personalModes.picList.count >3) {
             if (IS_IPHONE_4_OR_LESS||IS_IPHONE_5){
                 for (int i = 0; i < 3; i ++) {
                     UIImageView * images = [[UIImageView alloc]init];
                     images.contentMode = UIViewContentModeScaleAspectFill;
                     images.clipsToBounds = YES;
-                    [images sd_setImageWithURL:[NSURL URLWithString:[_xiangceArr objectAtIndex:i]] placeholderImage:[UIImage imageNamed:@"展位图"]];
+                    [images sd_setImageWithURL:[NSURL URLWithString:[_personalModes.picList objectAtIndex:i]] placeholderImage:[UIImage imageNamed:@"展位图"]];
                     images.frame = CGRectMake(i*56 + 10 *(i + 1)+78, 27, 56, 56);
                     [cell addSubview:images];
                 }
@@ -1073,17 +1040,17 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                     UIImageView * images = [[UIImageView alloc]init];
                     images.contentMode = UIViewContentModeScaleAspectFill;
                     images.clipsToBounds = YES;
-                    [images sd_setImageWithURL:[NSURL URLWithString:[_xiangceArr objectAtIndex:i]] placeholderImage:[UIImage imageNamed:@"展位图"]];
+                    [images sd_setImageWithURL:[NSURL URLWithString:[_personalModes.picList objectAtIndex:i]] placeholderImage:[UIImage imageNamed:@"展位图"]];
                     images.frame = CGRectMake(i*56 + 10 *(i + 1)+78, 27, 56, 56);
                     [cell addSubview:images];
                 }
             }
         }else{
-            for (int i = 0; i < _xiangceArr.count; i ++) {
+            for (int i = 0; i < _personalModes.picList.count; i ++) {
                 UIImageView * images = [[UIImageView alloc]init];
                 images.contentMode = UIViewContentModeScaleAspectFill;
                 images.clipsToBounds = YES;
-                [images sd_setImageWithURL:[NSURL URLWithString:[_xiangceArr objectAtIndex:i]] placeholderImage:[UIImage imageNamed:@"展位图"]];
+                [images sd_setImageWithURL:[NSURL URLWithString:[_personalModes.picList objectAtIndex:i]] placeholderImage:[UIImage imageNamed:@"展位图"]];
                 images.frame = CGRectMake(i*56 + 10 *(i + 1)+78, 27, 56, 56);
                 [cell addSubview:images];
             }
@@ -1100,24 +1067,24 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         
         
         if (indexPath.row == 1) {
-            if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
+            if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {//交易中心
                 cell.chengguo2Lab.text = @"成果";
             }else{
                 cell.chengguo2Lab.text = @"个人成果";
             }
             [cell.gengduoBtn setTitle:@"更多成果" forState:UIControlStateNormal];
-            cell.chengjiuArr = _chengjiuArr;
+            cell.personalMode = _personalModes;
             [cell jiazaichegguoView];
             [cell.gengduoBtn addTarget:self action:@selector(gengduoClick:) forControlEvents:UIControlEventTouchUpInside];
             //先注销
-//            cell.moreDelegate = self;
+            cell.moreDelegate = self;
             cell.chengguoStr = @"2";
         }else{
-            if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
+            if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {//交易中心
                 cell.chengguo2Lab.text = @"直播";
-            }else if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//投资人、专家、券商
+            }else if ([_personalModes.data.userType isEqualToString:@"OrgInvestor"]||[_personalModes.data.userType isEqualToString:@"Expert"]||[_personalModes.data.userType isEqualToString:@"Brokerage"]||[_personalModes.data.userType isEqualToString:@"ExpertProxy"]||[_personalModes.data.userType isEqualToString:@"OrgInvestorProxy"]||[_personalModes.data.userType isEqualToString:@"BrokerageProxy"]) {//投资人、专家、券商
                 cell.chengguo2Lab.text = @"直播课堂";
-            }else if ([_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东
+            }else if ([_personalModes.data.userType isEqualToString:@"ShareInvestor"]||[_personalModes.data.userType isEqualToString:@"Share"]||[_personalModes.data.userType isEqualToString:@"ShareProxy"]) {//股东
                 cell.chengguo2Lab.text = @"路演直播";
             }else{
                 cell.chengguo2Lab.text = @"个人直播";
@@ -1142,14 +1109,14 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         if (indexPath.section == 4) {
             if ([_otherTwoStr isEqualToString:@"2"]) {
-                if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
-                    if ([_PersonalMode.sex isEqualToString:@"女"]) {
+                if ([_personalModes.data.userType isEqualToString:@"OrgInvestor"]||[_personalModes.data.userType isEqualToString:@"Expert"]||[_personalModes.data.userType isEqualToString:@"Brokerage"]||[_personalModes.data.userType isEqualToString:@"ExpertProxy"]||[_personalModes.data.userType isEqualToString:@"OrgInvestorProxy"]||[_personalModes.data.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
+                    if ([_personalModes.data.sex isEqualToString:@"女"]) {
                         cell.jingli2Lab.text = @"她的问答";//以前是答复
                     }else{
                         cell.jingli2Lab.text = @"他的问答";
                     }
-                }else if ([_PersonalMode.userType isEqualToString:@"Investor"]||[_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
-                    if ([_PersonalMode.sex isEqualToString:@"女"]) {
+                }else if ([_personalModes.data.userType isEqualToString:@"Investor"]||[_personalModes.data.userType isEqualToString:@"ShareInvestor"]||[_personalModes.data.userType isEqualToString:@"Share"]||[_personalModes.data.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
+                    if ([_personalModes.data.sex isEqualToString:@"女"]) {
                         cell.jingli2Lab.text = @"她的问答";
                     }else{
                         cell.jingli2Lab.text = @"他的问答";
@@ -1164,7 +1131,7 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
         }else{
             cell.lineLab.backgroundColor = backColor;
             if ([_otherTwoStr isEqualToString:@"2"]) {
-                if ([_PersonalMode.sex isEqualToString:@"女"]) {
+                if ([_personalModes.data.sex isEqualToString:@"女"]) {
                     cell.jingli2Lab.text = @"关于她";
                 }else{
                     cell.jingli2Lab.text = @"关于他";
@@ -1252,28 +1219,31 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 }
 //交易中心网络请求
 - (void)createCommentData{
+    NSDictionary *params = @{@"requestType":@"Temple_Exchange_Api",
+                            @"apiType":@"noticeOrActivity",
+                            @"type":_HDGGStr?_HDGGStr:@"",
+                            @"exchangeId":_personalModes.exchangeId?_personalModes.exchangeId:@""
+                            };
+    [TRZXNetwork requestWithUrl:nil params:params method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id object, NSError *error) {
     
-    //    [JiaoYiZhongXinModelView gethuodongggonggaoMsgType:_HDGGStr exchangeId:_gjStr Success:^(id responseObj) {
-    //
-    //        if ([responseObj[@"status_code"] isEqualToString:@"200"]) {
-    //
-    //            if ([_HDGGStr isEqualToString:@"notice"]) {
-    //                NSDictionary *Dic1 = responseObj[@"data"];
-    //                _gonggaoArr = [PersonalModell mj_objectArrayWithKeyValuesArray:Dic1];
-    //            }else {
-    //                NSDictionary *Dic = responseObj[@"data"];
-    //                _huodongArr = [PersonalModell mj_objectArrayWithKeyValuesArray:Dic];
-    //            }
-    //            NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:7];
-    //            [_tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
-    //
-    //
-    //        } else {
-    //
-    //        }
-    //    } failure:^(NSError *error) {
-    //
-    //    }];
+        if ([object[@"status_code"] isEqualToString:@"200"]) {
+
+            if ([_HDGGStr isEqualToString:@"notice"]) {
+                NSDictionary *Dic1 = object[@"data"];
+                _gonggaoArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:Dic1];
+            }else {
+                NSDictionary *Dic = object[@"data"];
+                _huodongArr = [TRZPersonalModell mj_objectArrayWithKeyValuesArray:Dic];
+            }
+            NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:7];
+            [_tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+
+
+        } else {
+
+        }
+
+    }];
 }
 
 
@@ -1289,11 +1259,11 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 2) {
         if ([_otherTwoStr isEqualToString:@"2"]) {
-            if ([_peopleStr isEqualToString:@"Complete"]) {
+            if ([_personalModes.isAlso isEqualToString:@"Complete"]) {
                 UIViewController *vc = [Target_TRZXPersonalHome FriendCircle_PhotoTimeLineTableViewController];
                 [self.navigationController pushViewController:vc animated:YES];
                 
-            }else if ([_PersonalMode.userType isEqualToString:@"Proxy"]){
+            }else if ([_personalModes.data.userType isEqualToString:@"Proxy"]){
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"暂无权限查看" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
                 [alert show];
             }else{
@@ -1312,10 +1282,10 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     }
     if (indexPath.section == 4) {
         if ([_otherTwoStr isEqualToString:@"2"]) {
-            if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
+            if ([_personalModes.data.userType isEqualToString:@"OrgInvestor"]||[_personalModes.data.userType isEqualToString:@"Expert"]||[_personalModes.data.userType isEqualToString:@"Brokerage"]||[_personalModes.data.userType isEqualToString:@"ExpertProxy"]||[_personalModes.data.userType isEqualToString:@"OrgInvestorProxy"]||[_personalModes.data.userType isEqualToString:@"BrokerageProxy"]) {//机构投资人、专家、券商
                 WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];
                 wowenView.midStrr = _midStrr;
-                if ([_PersonalMode.sex isEqualToString:@"女"]) {
+                if ([_personalModes.data.sex isEqualToString:@"女"]) {
                     wowenView.titleStrr = @"她的答复";
                     wowenView.title2Str = @"她的问答";
                 }else{
@@ -1323,10 +1293,10 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
                     wowenView.title2Str = @"他的问答";
                 }
                 [self.navigationController pushViewController:wowenView animated:YES];
-            }else if ([_PersonalMode.userType isEqualToString:@"Investor"]||[_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
+            }else if ([_personalModes.data.userType isEqualToString:@"Investor"]||[_personalModes.data.userType isEqualToString:@"ShareInvestor"]||[_personalModes.data.userType isEqualToString:@"Share"]||[_personalModes.data.userType isEqualToString:@"ShareProxy"]) {//股东、投资人
                 WoWenWoDaViewController * wowenView = [[WoWenWoDaViewController alloc] init];
                 wowenView.midStrr = _midStrr;
-                if ([_PersonalMode.sex isEqualToString:@"女"]) {
+                if ([_personalModes.data.sex isEqualToString:@"女"]) {
                     wowenView.titleStrr = @"她的问答";
                     wowenView.title2Str = @"她的问答";
                 }else{
@@ -1337,15 +1307,15 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
             }
         }else{
             TRNewShareViewController *InviteFriend = [[TRNewShareViewController alloc]initWithNibName:@"TRNewShareViewController" bundle:nil];
-            InviteFriend.imageUrl = _imageStr;
-            InviteFriend.smsUrl = _smsUrl;
-            InviteFriend.smsInviteUrl = _smsInviteUrl;
+            InviteFriend.imageUrl = _personalModes.twoCode;
+            InviteFriend.smsUrl = _personalModes.inviteUrl;
+            InviteFriend.smsInviteUrl = _personalModes.smsInviteUrl;
             [self.navigationController pushViewController:InviteFriend animated:YES];
         }
     }
     if (indexPath.section == 5) {
         //关于我
-        UIViewController *vc = [Target_TRZXPersonalHome Action_PersonalProfileViewControllerTitle:@"" eduArr:_jiaoyuArr workArr:_gongzuoArr userType:_PersonalMode.userType abstract:_PersonalMode.abstractz];
+        UIViewController *vc = [Target_TRZXPersonalHome Action_PersonalProfileViewControllerTitle:@"" eduArr:_personalModes.data.userEducationExperiences workArr:_personalModes.data.userWorkExperience userType:_personalModes.data.userType abstract:_personalModes.data.abstractz];
         [self.navigationController pushViewController:vc animated:YES];
     }
     
@@ -1385,11 +1355,11 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
     
     zhiBoVc.delegate = self;
     
-    if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
+    if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {//交易中心
         zhiBoVc.titleStr = @"直播";
-    }else if ([_PersonalMode.userType isEqualToString:@"OrgInvestor"]||[_PersonalMode.userType isEqualToString:@"Expert"]||[_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"ExpertProxy"]||[_PersonalMode.userType isEqualToString:@"OrgInvestorProxy"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//投资人、专家、券商
+    }else if ([_personalModes.data.userType isEqualToString:@"OrgInvestor"]||[_personalModes.data.userType isEqualToString:@"Expert"]||[_personalModes.data.userType isEqualToString:@"Brokerage"]||[_personalModes.data.userType isEqualToString:@"ExpertProxy"]||[_personalModes.data.userType isEqualToString:@"OrgInvestorProxy"]||[_personalModes.data.userType isEqualToString:@"BrokerageProxy"]) {//投资人、专家、券商
         zhiBoVc.titleStr = @"直播课堂";
-    }else if ([_PersonalMode.userType isEqualToString:@"ShareInvestor"]||[_PersonalMode.userType isEqualToString:@"Share"]||[_PersonalMode.userType isEqualToString:@"ShareProxy"]) {//股东
+    }else if ([_personalModes.data.userType isEqualToString:@"ShareInvestor"]||[_personalModes.data.userType isEqualToString:@"Share"]||[_personalModes.data.userType isEqualToString:@"ShareProxy"]) {//股东
         zhiBoVc.titleStr = @"路演直播";
     }else{
         zhiBoVc.titleStr = @"个人直播";
@@ -1403,11 +1373,11 @@ NSString *const collectionStasusChangeKey = @"collectionStasusChange";
 - (void)gengduoClick:(UIButton *)sender{
     
     PersonalChengJiuVC * gengduo = [[PersonalChengJiuVC alloc] init];
-    if ([_PersonalMode.userType isEqualToString:@"Brokerage"]||[_PersonalMode.userType isEqualToString:@"BrokerageProxy"]) {//券商
+    if ([_personalModes.data.userType isEqualToString:@"Brokerage"]||[_personalModes.data.userType isEqualToString:@"BrokerageProxy"]) {//券商
         gengduo.titleStrr = @"个人成果";
-    }else if ([_PersonalMode.userType isEqualToString:@"TradingCenter"]) {//交易中心
+    }else if ([_personalModes.data.userType isEqualToString:@"TradingCenter"]) {//交易中心
         gengduo.titleStrr = @"交易中心的成果";
-    }else if ([_PersonalMode.userType isEqualToString:@"Gov"]) {//政府
+    }else if ([_personalModes.data.userType isEqualToString:@"Gov"]) {//政府
         gengduo.titleStrr = @"政府的成果";
     }else{
         gengduo.titleStrr = @"个人成果";

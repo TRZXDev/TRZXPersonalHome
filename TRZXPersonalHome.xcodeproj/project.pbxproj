@@ -31,6 +31,7 @@
 		B72E8A731E7285BA00DE5DBE /* TRZXPShareDeleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E8A721E7285BA00DE5DBE /* TRZXPShareDeleViewController.m */; };
 		B72E8A751E7290C500DE5DBE /* TRPshareimg_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = B72E8A741E7290C500DE5DBE /* TRPshareimg_delete.png */; };
 		B73842491E821CD100D59314 /* TRZXCareAboutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73842481E821CD100D59314 /* TRZXCareAboutModel.m */; };
+		B738424C1E825DC700D59314 /* TRZXPersonalNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B738424B1E825DC700D59314 /* TRZXPersonalNModel.m */; };
 		B73936AF1E79205800F4D547 /* PersonalZhiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73936AE1E79205800F4D547 /* PersonalZhiBoViewController.m */; };
 		B73936B21E79206900F4D547 /* PersonalChengJiuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B73936B11E79206900F4D547 /* PersonalChengJiuVC.m */; };
 		B73936B51E7920DE00F4D547 /* TRZPWaterfallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B73936B41E7920DE00F4D547 /* TRZPWaterfallFlowLayout.m */; };
@@ -247,6 +248,8 @@
 		B72E8A741E7290C500DE5DBE /* TRPshareimg_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TRPshareimg_delete.png; sourceTree = "<group>"; };
 		B73842471E821CD100D59314 /* TRZXCareAboutModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXCareAboutModel.h; sourceTree = "<group>"; };
 		B73842481E821CD100D59314 /* TRZXCareAboutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXCareAboutModel.m; sourceTree = "<group>"; };
+		B738424A1E825DC700D59314 /* TRZXPersonalNModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPersonalNModel.h; sourceTree = "<group>"; };
+		B738424B1E825DC700D59314 /* TRZXPersonalNModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPersonalNModel.m; sourceTree = "<group>"; };
 		B73936AD1E79205800F4D547 /* PersonalZhiBoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalZhiBoViewController.h; sourceTree = "<group>"; };
 		B73936AE1E79205800F4D547 /* PersonalZhiBoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalZhiBoViewController.m; sourceTree = "<group>"; };
 		B73936B01E79206900F4D547 /* PersonalChengJiuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalChengJiuVC.h; sourceTree = "<group>"; };
@@ -642,6 +645,8 @@
 				B7C0B7B41E5D6A160030D138 /* UIButton+Extension.m */,
 				B73842471E821CD100D59314 /* TRZXCareAboutModel.h */,
 				B73842481E821CD100D59314 /* TRZXCareAboutModel.m */,
+				B738424A1E825DC700D59314 /* TRZXPersonalNModel.h */,
+				B738424B1E825DC700D59314 /* TRZXPersonalNModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1165,6 +1170,7 @@
 				B7C0B8811E5D6A170030D138 /* presonalNavgationViw.m in Sources */,
 				B7C0B8551E5D6A160030D138 /* UIButton+Extension.m in Sources */,
 				B7C0B86F1E5D6A160030D138 /* PersonalCollectionView.m in Sources */,
+				B738424C1E825DC700D59314 /* TRZXPersonalNModel.m in Sources */,
 				B77F00C51E729E3100DE8F28 /* WoWenWoDaViewController.m in Sources */,
 				B7C0B8561E5D6A160030D138 /* CeHuaButtonCell.m in Sources */,
 				B7C0B7361E5D610E0030D138 /* main.m in Sources */,
@@ -1344,6 +1350,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 487PQPPTGA;
 				INFOPLIST_FILE = TRZXPersonalHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JWZhang.TRZXPersonalHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1358,6 +1365,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 487PQPPTGA;
 				INFOPLIST_FILE = TRZXPersonalHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JWZhang.TRZXPersonalHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -34,25 +34,25 @@
     
 }
 -(void)jiazaichegguoView{
-    if (!(_chengjiuArr.count ==0)) {
+    if (!(_personalMode.data.achievements.count ==0)) {
         _topScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 140)];
         _topScrollView.backgroundColor = [UIColor whiteColor];
         _topScrollView.delegate = self;
-        _topScrollView.contentSize = CGSizeMake(130 *_chengjiuArr.count + 10*(_chengjiuArr.count + 1), 140);
+        _topScrollView.contentSize = CGSizeMake(130 *_personalMode.data.achievements.count + 10*(_personalMode.data.achievements.count + 1), 140);
         self.topScrollView.directionalLockEnabled = YES;
         //滚动条
         self.topScrollView.showsVerticalScrollIndicator = NO;
         self.topScrollView.showsHorizontalScrollIndicator = NO;
         [self addSubview:_topScrollView];
-        for (int i = 0; i < _chengjiuArr.count; i ++) {
+        for (int i = 0; i < _personalMode.data.achievements.count; i ++) {
             _PersonalCollectionView = [[[NSBundle mainBundle]loadNibNamed:@"PersonalCollectionView" owner:self options:nil] objectAtIndex:0];
             _PersonalCollectionView.logoImage.layer.cornerRadius = 6;
             _PersonalCollectionView.logoImage.layer.masksToBounds = YES;
-            TRZPersonalModell *mode = [_chengjiuArr objectAtIndex:i];
+            Achievements *mode = [_personalMode.data.achievements objectAtIndex:i];
 
             [self.gengduoBtn setTitle:@"更多成果" forState:UIControlStateNormal];
             
-            if (_chengjiuArr.count == 0) {
+            if (_personalMode.data.achievements.count == 0) {
                 self.labLin.hidden = YES;
                 self.topScrollView.hidden = YES;
                 //先注释了
@@ -178,28 +178,6 @@
     //先注释了
     
     
-//    [MobClick event:MYVedioShowEvent];
-//    if ([_zhiboStr isEqualToString:@"1"]) {
-//        UIImageView *iv = (UIImageView *)tap.view;
-//        long i = iv.tag-2000;
-//        LatestLiveModel *model = _zhiboViewArr[i];
-//        LiveListPlayViewController *liveListPlayViewController = [[LiveListPlayViewController alloc] init];
-//        liveListPlayViewController.mid = model.mid;
-//        _ViedoStr = @"1";
-//        [self personalDelegateMethod:liveListPlayViewController];
-//
-//
-//    }else if ([_zhiboStr isEqualToString:@"2"]){
-//        
-//        
-//        UIImageView *iv = (UIImageView *)tap.view;
-//        long i = iv.tag-2000;
-//        PersonalLiveVideoModel *model = _zhiboViewArr[i];
-//        LiveListPlayViewController *liveListPlayViewController = [[LiveListPlayViewController alloc] init];
-//        _ViedoStr = @"1";
-//        liveListPlayViewController.mid = model.mid;
-//        [self personalDelegateMethod:liveListPlayViewController];
-//    }
 }
 //个人成果
 - (void)videoxhClick:(UITapGestureRecognizer *)sender
