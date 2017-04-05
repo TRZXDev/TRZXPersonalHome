@@ -19,7 +19,7 @@
     // Initialization code
 }
 
--(void)setModel:(Data *)model{
+-(void)setModel:(careAboutData *)model{
     if (_model!=model) {
         _model = model;
         

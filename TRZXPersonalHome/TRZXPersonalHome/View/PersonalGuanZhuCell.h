@@ -13,6 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *gongsiLabel;
 
-@property (strong, nonatomic) Data * model;
+@property (strong, nonatomic) careAboutData * model;
 
 @end

@@ -126,7 +126,7 @@
                     }
                     [_myTableView.mj_header endRefreshing];
                 }else{
-                    NSArray *array = [Data mj_objectArrayWithKeyValuesArray:personalArr];
+                    NSArray *array = [careAboutData mj_objectArrayWithKeyValuesArray:personalArr];
                     if (array.count>0) {
                         [_cereAboutModel.data addObjectsFromArray:array];
                         [_myTableView.mj_footer endRefreshing];
@@ -172,7 +172,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Data *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
+    careAboutData *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
     PersonalGuanZhuCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonalGuanZhuCell"];
     if (!cell) {
         cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"PersonalGuanZhuCell" owner:self options:nil] lastObject];
@@ -190,7 +190,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //行被选中后，自动变回反选状态的方法
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    Data *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
+    careAboutData *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
     TRZXPersonalHomeViewController * studentPersonal=[[TRZXPersonalHomeViewController alloc]init];
     studentPersonal.midStrr = model.userId;
     studentPersonal.otherStr = @"1";
@@ -218,7 +218,7 @@
     [tableView setEditing:NO animated:YES];
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Data *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
+        careAboutData *model = [_cereAboutModel.data objectAtIndex:indexPath.row];
         
         NSDictionary *params = @{@"requestType":@"Collection_Tools_List",
                                  @"apiType":@"cancelFollow",

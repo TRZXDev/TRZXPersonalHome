@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class Data;
+@class careAboutData;
 @interface TRZXCareAboutModel : NSObject
 
 @property (nonatomic , strong) NSMutableArray<NSString *> * sessionUserType;
@@ -18,7 +18,7 @@
 @property (nonatomic , copy) NSString              * equipment;
 @property (nonatomic , copy) NSString              * userId;
 @property (nonatomic , copy) NSString              * requestType;
-@property (nonatomic , strong) NSMutableArray<Data *>              * data;
+@property (nonatomic , strong) NSMutableArray<careAboutData *>              * data;
 @property (nonatomic , copy) NSString              * apiType;
 @property (nonatomic , copy) NSString              * sessionUserTypeStr;
 @property (nonatomic , copy) NSString              * iosOnline;
@@ -30,7 +30,7 @@
 @end
 
 
-@interface Data :NSObject
+@interface careAboutData :NSObject
 @property (nonatomic , copy) NSString              * userId;
 @property (nonatomic , copy) NSString              * position;
 @property (nonatomic , copy) NSString              * city;

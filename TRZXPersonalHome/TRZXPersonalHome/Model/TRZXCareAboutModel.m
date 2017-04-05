@@ -12,11 +12,11 @@
 @implementation TRZXCareAboutModel
 
 + (NSDictionary *)objectClassInArray{
-    return @{@"data" : [Data class]};
+    return @{@"data" : [careAboutData class]};
 }
 
 @end
 
-@implementation Data
+@implementation careAboutData
 
 @end
